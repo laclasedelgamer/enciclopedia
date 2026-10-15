@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>La Clase del Gamer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Enciclopedia de videojuegos retro del Profesor L: fichas, portadas, historia y datos curiosos.">
+<meta name="theme-color" content="#17130F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Clase Gamer">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@400;500;600;700;800&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: estante de cartuchos — rejilla de portadas; la ficha abre como una boleta de calificación a pantalla completa. Diseño oscuro único, con la paleta del Boletín del Profe L. */
+:root{
+  color-scheme:dark;
+  --bg:#211D18;
+  --surface:#2A2520;
+  --surface2:#17130F;
+  --ink:#F2E9DC;
+  --muted:#ADA394;
+  --gold:#E8B13A;
+  --red:#C8102E;
+  --green:#5FAE6B;
+  --line:rgba(232,177,58,.22);
+  --f-pixel:'Press Start 2P',ui-monospace,'Courier New',monospace;
+  --f-ui:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-read:'PT Serif',Georgia,'Times New Roman',serif;
+  --gutter-l:max(16px,env(safe-area-inset-left,0px));
+  --gutter-r:max(16px,env(safe-area-inset-right,0px));
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--ink);overflow-x:hidden}
+body{
+  font-family:var(--f-ui);font-size:15px;line-height:1.45;min-height:100%;
+  background:repeating-linear-gradient(to bottom,transparent 0 39px,rgba(255,255,255,.025) 39px 40px),var(--bg);
+  -webkit-tap-highlight-color:transparent;
+}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
+
+/* ---------- cabecera ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface2);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1;background:none;border:0;padding:0;cursor:pointer;text-align:left}
+.brand img{height:40px;width:auto;flex:0 0 auto}
+.brand .t{min-width:0}
+.brand .kicker{font-family:var(--f-pixel);font-size:8px;color:var(--gold);letter-spacing:.06em;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand .name{font-weight:800;font-size:15px;letter-spacing:.02em;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.icon-btn{flex:0 0 auto;border:1.5px solid rgba(232,177,58,.35);background:var(--surface);border-radius:8px;padding:8px 12px;font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.icon-btn:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ---------- controles ---------- */
+.controls{display:grid;gap:10px;padding-block:16px 6px}
+.search{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+.search input{min-width:0;width:100%;background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;font-size:16px}
+.search input::placeholder{color:var(--muted)}
+.search select{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:0 10px;font-size:14px;width:auto;max-width:9.5em}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:1.5px solid var(--line);background:transparent;border-radius:999px;padding:7px 14px;font-weight:600;font-size:13px;cursor:pointer;color:var(--muted);white-space:nowrap}
+.tab .n{font-variant-numeric:tabular-nums;opacity:.7;margin-left:4px;font-size:12px}
+.tab[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--surface2)}
+.tab.hw[aria-pressed="true"]{background:#E8742A;border-color:#E8742A}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--muted);font-size:13px;padding-block:6px}
+.meta b{color:var(--ink);font-variant-numeric:tabular-nums}
+.link{white-space:nowrap;background:none;border:0;color:var(--gold);font-weight:600;cursor:pointer;padding:4px 0}
+
+.notice{display:flex;gap:12px;align-items:center;justify-content:space-between;background:linear-gradient(90deg,rgba(200,16,46,.28),rgba(200,16,46,.08));border:1px solid rgba(200,16,46,.55);border-radius:12px;padding:10px 14px;margin-top:10px;font-size:14px}
+.notice .pix{font-family:var(--f-pixel);font-size:9px;color:var(--gold);display:block;margin-bottom:4px}
+.install{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:12px 14px;margin-top:10px;font-size:14px;color:var(--muted)}
+.install b{color:var(--ink)}
+.install .row{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+
+/* ---------- rejilla de cartuchos ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(150px,100%),1fr));gap:18px 14px;padding-block:14px 48px}
+@media (max-width:420px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px}}
+.card{display:flex;flex-direction:column;gap:8px;background:none;border:0;padding:0;text-align:left;cursor:pointer;min-width:0}
+.cover{position:relative;aspect-ratio:3/4;width:100%;max-width:100%;border-radius:6px;overflow:hidden;background:var(--surface2);border:1px solid rgba(255,255,255,.06);box-shadow:0 6px 16px rgba(0,0,0,.35);transition:transform .15s ease,box-shadow .15s ease}
+.card:hover .cover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.5)}
+.cover img{width:100%;height:100%;object-fit:contain;display:block}
+.cover .ph{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--f-pixel);font-size:9px;color:var(--muted);text-align:center;padding:10px}
+.chip{position:absolute;left:6px;top:6px;font-family:var(--f-pixel);font-size:7px;padding:5px 6px;border-radius:3px;background:rgba(23,19,15,.88);color:var(--gold);letter-spacing:.04em}
+.badge-new{position:absolute;right:6px;top:6px;font-family:var(--f-pixel);font-size:7px;padding:5px 6px;border-radius:3px;background:var(--red);color:var(--ink)}
+.stamp{position:absolute;right:6px;bottom:6px;min-width:34px;height:34px;border-radius:50%;background:var(--red);color:var(--ink);display:grid;place-items:center;font-weight:800;font-size:13px;border:2px solid var(--ink);transform:rotate(-8deg);font-variant-numeric:tabular-nums}
+.pills{position:absolute;left:6px;bottom:6px;display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.own,.mine{font-size:11px;font-weight:700;padding:3px 7px;border-radius:999px;font-variant-numeric:tabular-nums}
+.own{background:var(--green);color:var(--surface2)}
+.mine{background:var(--gold);color:var(--surface2)}
+.myrate{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;justify-items:center;text-align:center}
+.myrate .lbl{font-family:var(--f-pixel);font-size:9px;letter-spacing:.06em;color:var(--gold)}
+.mystars{display:flex;gap:2px}
+.mystar{position:relative;width:40px;height:44px;font-size:38px;line-height:44px;text-align:center;color:rgba(242,233,220,.18);user-select:none}
+.mystar::before{content:"★";position:absolute;left:0;top:0;width:var(--fill,0%);overflow:hidden;color:var(--gold);white-space:nowrap}
+.mystar button{position:absolute;top:0;bottom:0;width:50%;background:transparent;border:0;padding:0;cursor:pointer}
+.mystar button:first-of-type{left:0}.mystar button:last-of-type{right:0}
+@media (max-width:360px){.mystar{width:34px;font-size:32px}}
+.myrate .verdict{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:14px;min-height:1.4em;font-variant-numeric:tabular-nums}
+.myrate .cmp{font-size:13px;color:var(--muted)}
+.myrate .hint{font-size:12px;color:var(--muted)}
+.mystars.small .mystar{width:28px;height:30px;font-size:26px;line-height:30px}
+.community .cnum{font-weight:800;font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
+.community .cnum small{font-size:15px;color:var(--muted);font-weight:600}
+.card .ttl{font-weight:700;font-size:14px;line-height:1.25;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card .sub{font-size:12px;color:var(--muted);margin-top:-4px}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 10px}
+.empty .pix{font-family:var(--f-pixel);font-size:10px;color:var(--gold);display:block;margin-bottom:10px}
+
+/* ---------- ficha (boleta) ---------- */
+.sheet{position:fixed;inset:0;z-index:40;background:var(--bg);overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet-bar{position:sticky;top:0;z-index:2;background:var(--surface2);border-bottom:1px solid var(--line)}
+.sheet-bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-block:10px}
+.boleta{max-width:760px;margin:0 auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r);padding-block:18px 60px;display:grid;gap:22px}
+.b-head{display:grid;gap:6px}
+.b-head .pix{font-family:var(--f-pixel);font-size:9px;color:var(--gold);letter-spacing:.06em}
+.b-head h1{margin:0;font-weight:800;font-size:clamp(24px,6vw,34px);line-height:1.1;text-wrap:balance;overflow-wrap:anywhere}
+.b-head .line{color:var(--muted);font-size:14px}
+.covers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.covers figure,.covers button{min-width:0;width:100%}
+.covers figure{margin:0;display:grid;gap:6px}
+.covers button{padding:0;border:0;background:none;cursor:zoom-in}
+.covers .cover{aspect-ratio:3/4}
+.covers figcaption{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;text-align:center}
+.rating{background:var(--red);border-radius:12px;padding:16px;display:grid;gap:4px;justify-items:center;text-align:center;box-shadow:inset 0 0 0 2px rgba(242,233,220,.25)}
+.rating .lbl{font-family:var(--f-pixel);font-size:9px;letter-spacing:.06em}
+.rating .stars{font-size:22px;letter-spacing:2px;color:var(--gold)}
+.rating .num{font-weight:800;font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
+.rating .word{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+.rating.none{background:var(--surface);box-shadow:inset 0 0 0 1.5px var(--line)}
+.rating.none .num{font-size:18px;color:var(--muted)}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{border:1.5px solid rgba(232,177,58,.45);background:var(--surface);border-radius:10px;padding:10px 14px;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:6px}
+.btn[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--surface2)}
+.btn.yt{background:var(--red);border-color:var(--red)}
+h2.sec{margin:0 0 10px;font-family:var(--f-pixel);font-size:11px;color:var(--gold);letter-spacing:.06em;line-height:1.6;padding-bottom:8px;border-bottom:3px double rgba(232,177,58,.45)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+@media (max-width:420px){.facts{grid-template-columns:1fr}}
+.fact{background:var(--surface);padding:10px 12px;min-width:0}
+.fact dt{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.fact dd{margin:2px 0 0;font-weight:600;overflow-wrap:anywhere}
+.read{font-family:var(--f-read);font-size:17px;line-height:1.65;max-width:65ch}
+.read p{margin:0}
+.curios{margin:0;padding:0;list-style:none;counter-reset:c;display:grid;gap:12px}
+.curios li{counter-increment:c;display:grid;grid-template-columns:30px 1fr;gap:10px;font-family:var(--f-read);font-size:16px;line-height:1.55}
+.curios li::before{content:counter(c);font-family:var(--f-pixel);font-size:10px;width:30px;height:30px;border-radius:6px;background:var(--surface);border:1px solid var(--line);color:var(--gold);display:grid;place-items:center}
+.world{position:relative;border-radius:12px;background:var(--surface);border:1px solid var(--line);overflow:hidden}
+.world .content{padding:16px;font-family:var(--f-read);font-size:16px;line-height:1.6}
+.world .veil{position:absolute;inset:0;display:grid;place-items:center;background:repeating-linear-gradient(45deg,var(--surface2) 0 10px,#1E1914 10px 20px);border:0;width:100%;cursor:pointer;font-family:var(--f-pixel);font-size:10px;color:var(--gold);padding:16px;line-height:1.8}
+.foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:12px}
+
+.lightbox{position:fixed;inset:0;z-index:60;background:rgba(10,8,6,.94);display:grid;place-items:center;padding:calc(env(safe-area-inset-top,0px) + 56px) var(--gutter-r) calc(env(safe-area-inset-bottom,0px) + 20px) var(--gutter-l)}
+.lightbox img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px}
+.lightbox .icon-btn{position:absolute;top:calc(env(safe-area-inset-top,0px) + 12px);right:var(--gutter-r)}
+
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:80;background:var(--surface2);border:1px solid var(--gold);color:var(--ink);border-radius:10px;padding:10px 16px;font-size:14px;max-width:calc(100% - 32px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <button class="brand" id="homeBtn" type="button" aria-label="Ir al inicio">
+      <img src="icons/logo.png" alt="Logo de La Clase del Gamer">
+      <span class="t"><span class="kicker">ENCICLOPEDIA RETRO</span><span class="name">Boletín del Profe L</span></span>
+    </button>
+    <button class="icon-btn" id="refreshBtn" type="button">↻ Actualizar</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="newNotice"></div>
+  <div id="installBox"></div>
+  <div class="controls">
+    <div class="search">
+      <input id="q" type="search" placeholder="Buscar juego, género o empresa…" autocomplete="off" aria-label="Buscar">
+      <select id="sort" aria-label="Ordenar">
+        <option value="alpha">A – Z</option>
+        <option value="recent">Más recientes</option>
+        <option value="year">Por año</option>
+        <option value="rating">Mejor nota del Profe</option>
+        <option value="mine">Mi nota</option>
+      </select>
+    </div>
+    <div class="tabs" id="tabs" role="toolbar" aria-label="Filtrar por consola"></div>
+  </div>
+  <div class="meta"><span id="count">Cargando catálogo…</span><span id="updated"></span></div>
+  <section class="grid" id="grid" aria-live="polite"></section>
+</main>
+
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <div class="sheet-bar"><div class="wrap">
+    <button class="icon-btn" id="backBtn" type="button">← Catálogo</button>
+    <button class="icon-btn" id="shareBtn" type="button">Compartir</button>
+  </div></div>
+  <article class="boleta" id="boleta"></article>
+</div>
+
+<div class="lightbox" id="lightbox" hidden><button class="icon-btn" id="lbClose" type="button">✕ Cerrar</button><img id="lbImg" alt=""></div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="config.js"></script>
+<script>
+(function(){
+'use strict';
+var CATALOG_URL='catalogo.json';
+var LS='lcg:';
+var NOTAS={1:'Nefasto',1.5:'Muy deficiente',2:'Muy malo',2.5:'Flojo',3:'Malo',3.5:'Mediocre',4:'Solo si te sobra tiempo',4.5:'Pasable',5:'Salva con lo justo',5.5:'Bueno',6:'Entretenido y divierte',6.5:'Muy bueno',7:'Imprescindible'};
+var TABS=[['','Todas'],['NES','NES'],['SNES','SNES'],['Game Boy','Game Boy'],['N64','N64'],['__hw','🎃 Halloween'],['__mine','✔ Mi colección'],['__rated','★ Mis notas']];
+
+function lsGet(k,d){try{var v=localStorage.getItem(LS+k);return v==null?d:JSON.parse(v)}catch(e){return d}}
+function lsSet(k,v){try{localStorage.setItem(LS+k,JSON.stringify(v))}catch(e){}}
+
+var state={games:[],version:0,filter:lsGet('filter',''),sort:lsGet('sort','alpha'),q:'',owned:lsGet('owned',{}),mine:lsGet('myRatings',{}),known:lsGet('known',null),newIds:{}};
+var $=function(id){return document.getElementById(id)};
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+function slug(id){return 'j-'+String(id).replace(/^game:/,'').replace(/[^A-Za-z0-9._~-]/g,'-')}
+function stars(n){var s='';for(var i=1;i<=7;i++){s+= n>=i?'★':(n>=i-.5?'⯪':'☆')}return s}
+function toast(msg){var t=$('toast');t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(function(){t.hidden=true},2600)}
+
+/* ---------- carga del catálogo ---------- */
+function load(manual){
+  $('refreshBtn').disabled=true;
+  return fetch(CATALOG_URL+'?t='+Date.now(),{cache:'no-store'})
+    .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})
+    .then(function(data){apply(data);lsSet('cache',data);if(manual)toast('Catálogo al día: '+state.games.length+' juegos')})
+    .catch(function(){
+      var c=lsGet('cache',null);
+      if(c&&!state.games.length){apply(c);toast('Sin conexión: mostrando la última versión guardada')}
+      else if(manual)toast('No hay conexión. Intenta de nuevo en un rato.');
+      else if(!state.games.length){$('count').textContent='No se pudo cargar el catálogo. Revisa tu conexión y toca Actualizar.'}
+    })
+    .then(function(){$('refreshBtn').disabled=false});
+}
+function apply(data){
+  var list=Array.isArray(data)?data:(data.juegos||[]);
+  state.version=data.version||0;
+  state.games=list;
+  state.newIds={};
+  if(!state.known){markAllSeen()}
+  else{list.forEach(function(g){if(state.known[g.id]!==fp(g))state.newIds[g.id]=1})}
+  if(state.filter==='__new'&&!Object.keys(state.newIds).length)state.filter='';
+  renderNotice();renderTabs();render();
+  var d=state.version?new Date(state.version):null;
+  $('updated').textContent=d?'Actualizado '+d.toLocaleDateString('es-CL',{day:'numeric',month:'short',year:'numeric'}):'';
+  routeFromHash();
+}
+function renderNotice(){
+  var n=Object.keys(state.newIds).length,box=$('newNotice');
+  if(!n){box.innerHTML='';return}
+  box.innerHTML='<div class="notice"><div><span class="pix">¡NUEVO CARTUCHO!</span>'+n+(n===1?' ficha nueva o actualizada':' fichas nuevas o actualizadas')+' desde tu última visita.</div><span style="display:flex;gap:10px;align-items:center"><button class="btn" id="seeNew" type="button">Ver</button><button class="link" id="allSeen" type="button">Ya las vi</button></span></div>';
+  $('seeNew').onclick=function(){state.filter='__new';render();renderTabs();window.scrollTo({top:0})};
+  $('allSeen').onclick=function(){markAllSeen();state.newIds={};if(state.filter==='__new')state.filter='';renderNotice();renderTabs();render()};
+}
+function fp(g){return g.huella||String(g.actualizado||'')}
+function markAllSeen(){var k={};state.games.forEach(function(g){k[g.id]=fp(g)});state.known=k;lsSet('known',k)}
+function markOneSeen(g){if(!state.known)state.known={};state.known[g.id]=fp(g);lsSet('known',state.known)}
+
+/* ---------- filtros ---------- */
+function matches(g,f){
+  if(!f)return true;
+  if(f==='__hw')return !!g.halloween;
+  if(f==='__mine')return !!state.owned[g.id];
+  if(f==='__rated')return !!state.mine[g.id];
+  if(f==='__new')return !!state.newIds[g.id];
+  return g.consola===f;
+}
+function renderTabs(){
+  var tabs=TABS.slice();
+  if(Object.keys(state.newIds).length)tabs.splice(1,0,['__new','★ Novedades']);
+  var html=tabs.map(function(t){
+    var n=state.games.filter(function(g){return matches(g,t[0])}).length;
+    if(!n&&t[0]&&t[0]!=='__mine'&&t[0]!=='__rated'&&t[0]!==state.filter)return '';
+    return '<button type="button" class="tab'+(t[0]==='__hw'?' hw':'')+'" data-f="'+esc(t[0])+'" aria-pressed="'+(state.filter===t[0])+'">'+esc(t[1])+'<span class="n">'+n+'</span></button>';
+  }).join('');
+  $('tabs').innerHTML=html;
+}
+$('tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;state.filter=b.dataset.f;lsSet('filter',state.filter.indexOf('__new')===0?'':state.filter);renderTabs();render()});
+$('q').addEventListener('input',function(){state.q=this.value;render()});
+$('sort').value=state.sort;
+$('sort').addEventListener('change',function(){state.sort=this.value;lsSet('sort',state.sort);render()});
+
+function visible(){
+  var q=norm(state.q).trim();
+  var list=state.games.filter(function(g){
+    if(!matches(g,state.filter))return false;
+    if(!q)return true;
+    return norm([g.titulo,g.consola,g.genero,g.desarrolladora,g.anio].join(' ')).indexOf(q)>-1;
+  });
+  var by={
+    alpha:function(a,b){return norm(a.titulo).localeCompare(norm(b.titulo))},
+    recent:function(a,b){return (b.actualizado||0)-(a.actualizado||0)},
+    year:function(a,b){return (parseInt(a.anio)||9999)-(parseInt(b.anio)||9999)||norm(a.titulo).localeCompare(norm(b.titulo))},
+    rating:function(a,b){return (b.nota||0)-(a.nota||0)||norm(a.titulo).localeCompare(norm(b.titulo))},
+    community:function(a,b){var x=comm(a.id),y=comm(b.id);return (y?y.avg:0)-(x?x.avg:0)||(y?y.v:0)-(x?x.v:0)||norm(a.titulo).localeCompare(norm(b.titulo))},
+    mine:function(a,b){return (state.mine[b.id]||0)-(state.mine[a.id]||0)||norm(a.titulo).localeCompare(norm(b.titulo))}
+  }[state.sort]||function(){return 0};
+  return list.sort(by);
+}
+function render(){
+  var list=visible();
+  $('count').innerHTML='<b>'+list.length+'</b> de '+state.games.length+' juegos';
+  if(!list.length){
+    $('grid').innerHTML='<div class="empty"><span class="pix">GAME OVER</span>'+(state.filter==='__mine'?'Aún no marcas juegos como tuyos. Abre una ficha y toca “Lo tengo”.':state.filter==='__rated'?'Aún no calificas ningún juego. Abre una ficha y toca las estrellas.':'Ningún juego coincide con tu búsqueda.')+'</div>';return;
+  }
+  $('grid').innerHTML=list.map(function(g){
+    return '<button type="button" class="card" data-id="'+esc(g.id)+'">'+
+      '<div class="cover">'+(g.portada?'<img loading="lazy" decoding="async" src="'+esc(g.portada)+'" alt="Portada de '+esc(g.titulo)+'">':'<span class="ph">SIN PORTADA</span>')+
+      '<span class="chip">'+esc(g.consola||'—')+'</span>'+
+      (state.newIds[g.id]?'<span class="badge-new">NUEVO</span>':'')+
+      (g.nota?'<span class="stamp">'+esc(g.nota)+'</span>':'')+
+      ((state.owned[g.id]||state.mine[g.id])?'<span class="pills">'+(state.mine[g.id]?'<span class="mine">Tú: '+state.mine[g.id]+'</span>':'')+(state.owned[g.id]?'<span class="own">✔ Lo tengo</span>':'')+'</span>':'')+
+      '</div><span class="ttl">'+esc(g.titulo)+'</span><span class="sub">'+esc([g.anio,g.genero].filter(Boolean).join(' · '))+(comm(g.id)?' · <span title="Nota de la comunidad">👥 '+comm(g.id).avg+'</span>':'')+'</span></button>';
+  }).join('');
+}
+$('grid').addEventListener('click',function(e){var c=e.target.closest('.card');if(c)open(c.dataset.id,true)});
+
+/* ---------- ficha ---------- */
+var current=null,lastScroll=0;
+function fact(label,val){return val?'<div class="fact"><dt>'+esc(label)+'</dt><dd>'+esc(val)+'</dd></div>':''}
+function isYT(u){return /^https:\/\/(www\.|m\.)?(youtube\.com|youtu\.be)\//.test(u||'')}
+function open(id,push){
+  var g=state.games.find(function(x){return x.id===id});if(!g)return;
+  current=g;
+  if(push){lastScroll=window.scrollY;try{history.pushState(null,'','#'+slug(id))}catch(e){location.hash=slug(id)}}
+  var n=Number(g.nota)||0;
+  var facts=fact('Año',g.anio)+fact('Género',g.genero)+fact('Desarrolladora',g.desarrolladora)+fact('Duración',g.duracion)+fact('Dificultad',g.dificultad)+fact('Rareza',g.rareza)+fact('Precio estimado',g.precio)+fact('Qué tan difícil es de conseguir',g.disponibilidad);
+  var cur=(g.curiosidades||[]).filter(Boolean);
+  $('boleta').innerHTML=
+    '<header class="b-head"><span class="pix">BOLETÍN DE CALIFICACIÓN</span><h1 id="sheetTitle">'+esc(g.titulo)+'</h1><span class="line">'+esc([g.consola,g.anio,g.desarrolladora].filter(Boolean).join(' · '))+'</span></header>'+
+    '<div class="covers">'+cov(g.portada,'Portada',g.titulo)+cov(g.contraportada,'Contraportada',g.titulo)+'</div>'+
+    (n?'<div class="rating"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="stars" aria-hidden="true">'+stars(n)+'</span><span class="num">'+n+' / 7</span><span class="word">'+esc(NOTAS[n]||'')+'</span></div>'
+      :'<div class="rating none"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="num">Próximamente en el canal</span></div>')+
+    '<section class="myrate community" id="community" hidden></section>'+
+    '<section class="myrate" id="myrate"></section>'+
+    '<div class="actions"><button type="button" class="btn" id="ownBtn" aria-pressed="'+!!state.owned[g.id]+'">'+(state.owned[g.id]?'✔ Lo tengo':'＋ Lo tengo')+'</button>'+
+      (isYT(g.youtubeUrl)?'<a class="btn yt" href="'+esc(g.youtubeUrl)+'" target="_blank" rel="noopener">▶ Ver en YouTube</a>':'')+'</div>'+
+    (facts?'<section><h2 class="sec">FICHA EDITORIAL</h2><dl class="facts">'+facts+'</dl></section>':'')+
+    (g.historia?'<section><h2 class="sec">HISTORIA DEL JUEGO</h2><div class="read"><p>'+esc(g.historia)+'</p></div></section>':'')+
+    (cur.length?'<section><h2 class="sec">DATOS CURIOSOS Y MISTERIOS</h2><ol class="curios">'+cur.map(function(c){return '<li><span>'+esc(c)+'</span></li>'}).join('')+'</ol></section>':'')+
+    (g.notaMundial?'<section><h2 class="sec">NOTA A NIVEL MUNDIAL</h2><div class="world"><div class="content">'+esc(g.notaMundial)+'</div><button type="button" class="veil" id="veil">🔒 TOCA PARA REVELAR<br>LA NOTA MUNDIAL</button></div></section>':'')+
+    '<footer class="foot"><span>Calificado por El Profe L · La Clase del Gamer</span></footer>';
+  $('sheet').hidden=false;$('sheet').scrollTop=0;document.body.style.overflow='hidden';
+  if(state.newIds[g.id]){delete state.newIds[g.id];markOneSeen(g);renderNotice();}
+  renderCommunity(g);renderMyRate(g);
+  var v=$('veil');if(v)v.onclick=function(){v.remove()};
+  $('ownBtn').onclick=function(){
+    if(state.owned[g.id])delete state.owned[g.id];else state.owned[g.id]=1;
+    lsSet('owned',state.owned);this.setAttribute('aria-pressed',!!state.owned[g.id]);this.textContent=state.owned[g.id]?'✔ Lo tengo':'＋ Lo tengo';
+    toast(state.owned[g.id]?'Agregado a Mi colección':'Quitado de Mi colección');
+  };
+  $('boleta').querySelectorAll('[data-zoom]').forEach(function(b){b.onclick=function(){$('lbImg').src=b.dataset.zoom;$('lbImg').alt=b.getAttribute('aria-label');$('lightbox').hidden=false}});
+  $('backBtn').focus({preventScroll:true});
+}
+function renderMyRate(g){
+  var box=$('myrate');if(!box)return;
+  var n=state.mine[g.id]||0,profe=Number(g.nota)||0,html='';
+  for(var i=1;i<=7;i++){
+    var fill=n>=i?100:(n>=i-.5?50:0);
+    var lo=i===1?1:i-.5;
+    html+='<span class="mystar" style="--fill:'+fill+'%">☆<button type="button" data-r="'+lo+'" aria-label="Calificar '+lo+'"></button><button type="button" data-r="'+i+'" aria-label="Calificar '+i+'"></button></span>';
+  }
+  var cmp='';
+  if(n&&profe){var d=n-profe;cmp=d===0?'¡Coincides con el Profe L!':(d>0?'Le diste '+d+' más que el Profe L ('+profe+')':'Le diste '+(-d)+' menos que el Profe L ('+profe+')')}
+  box.innerHTML='<span class="lbl">TU CALIFICACIÓN</span><div class="mystars" role="group" aria-label="Tu nota de 1 a 7">'+html+'</div>'+
+    '<span class="verdict">'+(n?n+' · '+esc(NOTAS[n]||''):'')+'</span>'+
+    (n?(cmp?'<span class="cmp">'+cmp+'</span>':'')+'<button type="button" class="link" id="clearMine">Borrar mi nota</button>':'<span class="hint">Toca una estrella. Mitad izquierda = media nota.</span>');
+  box.querySelectorAll('button[data-r]').forEach(function(b){b.onclick=function(){
+    state.mine[g.id]=Number(b.dataset.r);lsSet('myRatings',state.mine);sendVote(g.id,state.mine[g.id]);renderMyRate(g);toast('Tu nota: '+b.dataset.r+' · '+NOTAS[b.dataset.r]);
+  }});
+  var c=$('clearMine');if(c)c.onclick=function(){delete state.mine[g.id];lsSet('myRatings',state.mine);sendVote(g.id,0);renderMyRate(g)};
+}
+function cov(src,label,t){
+  return '<figure>'+(src?'<button type="button" data-zoom="'+esc(src)+'" aria-label="'+label+' de '+esc(t)+' (ampliar)"><div class="cover"><img src="'+esc(src)+'" alt="'+label+' de '+esc(t)+'"></div></button>':'<div class="cover"><span class="ph">SIN '+label.toUpperCase()+'</span></div>')+'<figcaption>'+label+'</figcaption></figure>';
+}
+function close(fromPop){
+  if($('sheet').hidden)return;
+  $('sheet').hidden=true;document.body.style.overflow='';current=null;
+  render();renderTabs();window.scrollTo(0,lastScroll);
+  if(!fromPop){try{history.pushState(null,'',location.pathname+location.search)}catch(e){location.hash=''}}
+}
+$('backBtn').onclick=function(){close(false)};
+$('homeBtn').onclick=function(){close(false);state.filter='';state.q='';$('q').value='';renderTabs();render();window.scrollTo({top:0,behavior:'smooth'})};
+$('lbClose').onclick=function(){$('lightbox').hidden=true};
+$('lightbox').onclick=function(e){if(e.target===this)this.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(!$('lightbox').hidden)$('lightbox').hidden=true;else close(false)}});
+function routeFromHash(){
+  var h=location.hash.slice(1);
+  if(!h){close(true);return}
+  var g=state.games.find(function(x){return slug(x.id)===h});
+  if(g)open(g.id,false);
+}
+window.addEventListener('popstate',routeFromHash);
+window.addEventListener('hashchange',routeFromHash);
+$('shareBtn').onclick=function(){
+  if(!current)return;
+  var url=location.href.split('#')[0]+'#'+slug(current.id);
+  var data={title:current.titulo+' · La Clase del Gamer',text:'Mira la ficha de '+current.titulo+' en la enciclopedia del Profe L',url:url};
+  if(navigator.share){navigator.share(data).catch(function(){});return}
+  if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){toast('Enlace copiado')},function(){toast(url)})}else toast(url);
+};
+$('refreshBtn').onclick=function(){load(true);fetchStats()};
+document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible'&&Date.now()-(load._at||0)>600000){load._at=Date.now();load(false)}});
+load._at=Date.now();
+
+/* ---------- instalación ---------- */
+var deferred=null;
+var standalone=window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+var isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+function renderInstall(){
+  if(standalone||lsGet('hideInstall',false)){$('installBox').innerHTML='';return}
+  var body;
+  if(deferred)body='<b>Instala la app</b> en tu teléfono para abrirla como cualquier otra.';
+  else if(isIOS)body='<b>Instálala en tu iPhone:</b> toca Compartir <span aria-hidden="true">⎋</span> y luego “Agregar a pantalla de inicio”.';
+  else return;
+  $('installBox').innerHTML='<div class="install"><div class="row"><span>'+body+'</span><span>'+(deferred?'<button class="btn" id="instBtn" type="button">Instalar</button> ':'')+'<button class="link" id="instHide" type="button">Ocultar</button></span></div></div>';
+  if($('instBtn'))$('instBtn').onclick=function(){deferred.prompt();deferred.userChoice.finally(function(){deferred=null;renderInstall()})};
+  $('instHide').onclick=function(){lsSet('hideInstall',true);renderInstall()};
+}
+window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferred=e;renderInstall()});
+renderInstall();
+if('serviceWorker' in navigator&&location.protocol==='https:'){
+  try{navigator.serviceWorker.register('sw.js').catch(function(){})}catch(e){}
+}
+
+/* ---------- nota de la comunidad (Firebase) ---------- */
+var FB_VER='10.12.2';
+var cloud={on:false,db:null,uid:null,ready:null,stats:lsGet('stats',{}),pending:lsGet('pendingVotes',{})};
+function cid(id){return String(id).replace(/\//g,'_')}
+function comm(id){var x=cloud.stats[cid(id)];return x&&x.v>0?{avg:Math.round(x.s/x.v/2*10)/10,v:x.v}:null}
+function loadScript(src){return new Promise(function(res,rej){var s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s)})}
+function initCloud(){
+  var cfg=window.LCG_FIREBASE;
+  if(!cfg||!(cfg.apiKey||cfg.emulator))return;
+  var base='https://cdn.jsdelivr.net/npm/firebase@'+FB_VER+'/';
+  cloud.ready=loadScript(base+'firebase-app-compat.js')
+    .then(function(){return Promise.all([loadScript(base+'firebase-auth-compat.js'),loadScript(base+'firebase-firestore-compat.js')])})
+    .then(function(){
+      firebase.initializeApp(cfg);
+      var auth=firebase.auth();cloud.db=firebase.firestore();
+      if(cfg.emulator){auth.useEmulator('http://127.0.0.1:9099');cloud.db.useEmulator('127.0.0.1',8080)}
+      cloud.on=true;
+      var sel=$('sort');if(!sel.querySelector('option[value="community"]')){var o=document.createElement('option');o.value='community';o.textContent='Mejor nota comunidad';sel.appendChild(o);if(state.sort==='community')sel.value='community'}
+      fetchStats();
+      return auth.signInAnonymously().then(function(c){cloud.uid=c.user.uid;return flushPending()});
+    })
+    .catch(function(e){console.warn('Nota de la comunidad no disponible:',e)});
+}
+function fetchStats(){
+  if(!cloud.on)return Promise.resolve();
+  return cloud.db.doc('stats/global').get().then(function(s){
+    cloud.stats=(s.exists&&s.data().j)||{};lsSet('stats',cloud.stats);
+    render();if(current)renderCommunity(current);
+  }).catch(function(e){console.warn(e)});
+}
+function sendVote(id,nota){
+  cloud.pending[cid(id)]=nota||0;lsSet('pendingVotes',cloud.pending);
+  if(cloud.ready)cloud.ready.then(function(){if(cloud.uid)return flushOne(cid(id))});
+}
+function flushOne(key){
+  if(!(key in cloud.pending))return Promise.resolve();
+  var d=Math.round((cloud.pending[key]||0)*2);
+  var db=cloud.db,statsRef=db.doc('stats/global'),voteRef=db.collection('juegos').doc(key).collection('votos').doc(cloud.uid);
+  return db.runTransaction(function(tx){
+    return tx.get(statsRef).then(function(st){return tx.get(voteRef).then(function(vt){
+      var j=st.exists?(st.data().j||{}):{};var prev=j[key]||{s:0,v:0};var a=vt.exists?(vt.data().p||0):0;
+      if(a===d)return j;
+      var nj=Object.assign({},j);nj[key]={s:prev.s-a+d,v:prev.v-(a?1:0)+(d?1:0)};
+      tx.set(statsRef,{j:nj,ultimo:key});
+      if(d)tx.set(voteRef,{p:d,at:firebase.firestore.FieldValue.serverTimestamp()});else tx.delete(voteRef);
+      return nj;
+    })});
+  }).then(function(nj){
+    delete cloud.pending[key];lsSet('pendingVotes',cloud.pending);
+    cloud.stats=nj;lsSet('stats',nj);render();
+    if(current&&cid(current.id)===key)renderCommunity(current);
+  }).catch(function(e){console.warn('Voto pendiente, se reintentará:',e)});
+}
+function flushPending(){return Object.keys(cloud.pending).reduce(function(p,k){return p.then(function(){return flushOne(k)})},Promise.resolve())}
+function starsHtml(n){var h='';for(var i=1;i<=7;i++){h+='<span class="mystar" style="--fill:'+(n>=i?100:(n>=i-.5?50:0))+'%">☆</span>'}return h}
+function renderCommunity(g){
+  var box=$('community');if(!box)return;
+  var c=comm(g.id);
+  if(!cloud.on&&!c){box.hidden=true;return}
+  box.hidden=false;
+  box.innerHTML='<span class="lbl">NOTA DE LA COMUNIDAD</span>'+
+    (c?'<div class="mystars small" aria-hidden="true">'+starsHtml(Math.round(c.avg*2)/2)+'</div><span class="cnum">'+c.avg.toFixed(1).replace('.0','')+' <small>/ 7</small></span><span class="hint">'+c.v+(c.v===1?' voto':' votos')+' de la audiencia de La Clase del Gamer</span>'
+       :'<span class="hint">Aún nadie la califica. ¡Pon tu nota y sé el primero!</span>');
+}
+
+initCloud();
+load(false);
+})();
+</script>
+
+</html>

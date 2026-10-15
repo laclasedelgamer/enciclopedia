@@ -1,0 +1,16 @@
+{
+  "name": "La Clase del Gamer — Enciclopedia del Profe L",
+  "short_name": "Clase Gamer",
+  "description": "Fichas, portadas, historia y datos curiosos de videojuegos retro, calificados por el Profesor L.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#211D18",
+  "theme_color": "#17130F",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
