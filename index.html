@@ -213,7 +213,13 @@ h2.sec{margin:0 0 10px;font-family:var(--f-pixel);font-size:11px;color:var(--gol
 var CATALOG_URL='catalogo.json';
 var LS='lcg:';
 var NOTAS={1:'Nefasto',1.5:'Muy deficiente',2:'Muy malo',2.5:'Flojo',3:'Malo',3.5:'Mediocre',4:'Solo si te sobra tiempo',4.5:'Pasable',5:'Salva con lo justo',5.5:'Bueno',6:'Entretenido y divierte',6.5:'Muy bueno',7:'Imprescindible'};
-var TABS=[['','Todas'],['NES','NES'],['SNES','SNES'],['Game Boy','Game Boy'],['N64','N64'],['__hw','🎃 Halloween'],['__mine','✔ Mi colección'],['__rated','★ Mis notas']];
+var CONSOLE_ORDER=['NES','Famicom','Famicom Disk System','SNES','Super Famicom','Game Boy','Game Boy Color','Game Boy Advance','N64','GameCube','Virtual Boy'];
+var CONSOLE_LABEL={'Famicom Disk System':'Famicom Disk'};
+function buildTabs(){
+  var seen={};state.games.forEach(function(g){if(g.consola)seen[g.consola]=1});
+  var cons=Object.keys(seen).sort(function(a,b){var i=CONSOLE_ORDER.indexOf(a),j=CONSOLE_ORDER.indexOf(b);return (i<0?99:i)-(j<0?99:j)||a.localeCompare(b)});
+  return [['','Todas']].concat(cons.map(function(c){return [c,CONSOLE_LABEL[c]||c]}),[['__hw','🎃 Halloween'],['__mine','✔ Mi colección'],['__rated','★ Mis notas']]);
+}
 
 function lsGet(k,d){try{var v=localStorage.getItem(LS+k);return v==null?d:JSON.parse(v)}catch(e){return d}}
 function lsSet(k,v){try{localStorage.setItem(LS+k,JSON.stringify(v))}catch(e){}}
@@ -274,7 +280,7 @@ function matches(g,f){
   return g.consola===f;
 }
 function renderTabs(){
-  var tabs=TABS.slice();
+  var tabs=buildTabs();
   if(Object.keys(state.newIds).length)tabs.splice(1,0,['__new','★ Novedades']);
   var html=tabs.map(function(t){
     var n=state.games.filter(function(g){return matches(g,t[0])}).length;
