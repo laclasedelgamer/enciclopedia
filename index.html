@@ -223,8 +223,8 @@ h2.sec{margin:0 0 10px;font-family:var(--f-pixel);font-size:11px;color:var(--gol
 var CATALOG_URL='catalogo.json';
 var LS='lcg:';
 var NOTAS={1:'Nefasto',1.5:'Muy deficiente',2:'Muy malo',2.5:'Flojo',3:'Malo',3.5:'Mediocre',4:'Solo si te sobra tiempo',4.5:'Pasable',5:'Salva con lo justo',5.5:'Bueno',6:'Entretenido y divierte',6.5:'Muy bueno',7:'Imprescindible'};
-var CONSOLE_ORDER=['NES','Famicom','Famicom Disk System','SNES','Super Famicom','Game Boy','Game Boy Color','Game Boy Advance','N64','GameCube','Virtual Boy'];
-var CONSOLE_LABEL={'Famicom Disk System':'Famicom Disk'};
+var CONSOLE_ORDER=['GAME&WATCH','Game & Watch','NES','Famicom','Famicom Disk System','SNES','Super Famicom','Game Boy','Virtual Boy','Game Boy Color','N64','Game Boy Advance','GameCube','Nintendo DS','Wii','Nintendo 3DS','Wii U','Switch','Switch 2'];
+var CONSOLE_LABEL={'Famicom Disk System':'Famicom Disk','GAME&WATCH':'Game & Watch'};
 function buildTabs(){
   var seen={};state.games.forEach(function(g){if(g.consola)seen[g.consola]=1});
   var cons=Object.keys(seen).sort(function(a,b){var i=CONSOLE_ORDER.indexOf(a),j=CONSOLE_ORDER.indexOf(b);return (i<0?99:i)-(j<0?99:j)||a.localeCompare(b)});
@@ -332,7 +332,7 @@ function render(){
   $('grid').innerHTML=list.map(function(g){
     return '<button type="button" class="card" data-id="'+esc(g.id)+'">'+
       '<div class="cover">'+(g.portada?'<img loading="lazy" decoding="async" src="'+esc(g.portada)+'" alt="Portada de '+esc(g.titulo)+'">':'<span class="ph">SIN PORTADA</span>')+
-      '<span class="chip">'+esc(g.consola||'—')+'</span>'+
+      '<span class="chip">'+esc(CONSOLE_LABEL[g.consola]||g.consola||'—')+'</span>'+
       (state.newIds[g.id]?'<span class="badge-new">NUEVO</span>':'')+
       (g.nota?'<span class="stamp">'+esc(g.nota)+'</span>':'')+
       ((state.owned[g.id]||state.mine[g.id]||state.play[g.id])?'<span class="pills">'+(state.mine[g.id]?'<span class="mine">Tú: '+state.mine[g.id]+'</span>':'')+(state.play[g.id]==='done'?'<span class="done">🏁 Terminado</span>':state.play[g.id]==='played'?'<span class="played">🎮 Jugado</span>':'')+(state.owned[g.id]?'<span class="own">✔ Lo tengo</span>':'')+'</span>':'')+
@@ -353,7 +353,7 @@ function open(id,push){
   var facts=fact('Año',g.anio)+fact('Género',g.genero)+fact('Desarrolladora',g.desarrolladora)+fact('Duración',g.duracion)+fact('Dificultad',g.dificultad)+fact('Rareza',g.rareza)+fact('Precio estimado',g.precio)+fact('Qué tan difícil es de conseguir',g.disponibilidad);
   var cur=(g.curiosidades||[]).filter(Boolean);
   $('boleta').innerHTML=
-    '<header class="b-head"><span class="pix">BOLETÍN DE CALIFICACIÓN</span><h1 id="sheetTitle">'+esc(g.titulo)+'</h1><span class="line">'+esc([g.consola,g.anio,g.desarrolladora].filter(Boolean).join(' · '))+'</span></header>'+
+    '<header class="b-head"><span class="pix">BOLETÍN DE CALIFICACIÓN</span><h1 id="sheetTitle">'+esc(g.titulo)+'</h1><span class="line">'+esc([CONSOLE_LABEL[g.consola]||g.consola,g.anio,g.desarrolladora].filter(Boolean).join(' · '))+'</span></header>'+
     '<div class="covers">'+cov(g.portada,'Portada',g.titulo)+cov(g.contraportada,'Contraportada',g.titulo)+'</div>'+
     (n?'<div class="rating"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="stars" aria-hidden="true">'+stars(n)+'</span><span class="num">'+n+' / 7</span><span class="word">'+esc(NOTAS[n]||'')+'</span></div>'
       :'<div class="rating none"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="num">Próximamente en el canal</span></div>')+
