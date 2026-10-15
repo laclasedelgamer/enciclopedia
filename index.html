@@ -30,6 +30,8 @@
   --gold:#E8B13A;
   --red:#C8102E;
   --green:#5FAE6B;
+  --blue:#3D8BD9;
+  --orange:#E8742A;
   --line:rgba(232,177,58,.22);
   --f-pixel:'Press Start 2P',ui-monospace,'Courier New',monospace;
   --f-ui:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -93,8 +95,10 @@ button,input,select{font:inherit;color:inherit}
 .badge-new{position:absolute;right:6px;top:6px;font-family:var(--f-pixel);font-size:7px;padding:5px 6px;border-radius:3px;background:var(--red);color:var(--ink)}
 .stamp{position:absolute;right:6px;bottom:6px;min-width:34px;height:34px;border-radius:50%;background:var(--red);color:var(--ink);display:grid;place-items:center;font-weight:800;font-size:13px;border:2px solid var(--ink);transform:rotate(-8deg);font-variant-numeric:tabular-nums}
 .pills{position:absolute;left:6px;bottom:6px;display:flex;flex-direction:column;align-items:flex-start;gap:4px}
-.own,.mine{font-size:11px;font-weight:700;padding:3px 7px;border-radius:999px;font-variant-numeric:tabular-nums}
+.own,.mine,.done,.played{font-size:11px;font-weight:700;padding:3px 7px;border-radius:999px;font-variant-numeric:tabular-nums}
 .own{background:var(--green);color:var(--surface2)}
+.done{background:var(--blue);color:#fff}
+.played{background:var(--orange);color:var(--surface2)}
 .mine{background:var(--gold);color:var(--surface2)}
 .myrate{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;justify-items:center;text-align:center}
 .myrate .lbl{font-family:var(--f-pixel);font-size:9px;letter-spacing:.06em;color:var(--gold)}
@@ -140,6 +144,12 @@ button,input,select{font:inherit;color:inherit}
 .actions{display:flex;gap:10px;flex-wrap:wrap}
 .btn{border:1.5px solid rgba(232,177,58,.45);background:var(--surface);border-radius:10px;padding:10px 14px;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:6px}
 .btn[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--surface2)}
+.btn.st-own{border-color:var(--green)}.btn.st-done{border-color:var(--blue)}.btn.st-played{border-color:var(--orange)}
+.btn.st-done[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.st-played[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:var(--surface2)}
+.tab.t-own[aria-pressed="true"]{background:var(--green);border-color:var(--green)}
+.tab.t-done[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.tab.t-played[aria-pressed="true"]{background:var(--orange);border-color:var(--orange)}
 .btn.yt{background:var(--red);border-color:var(--red)}
 h2.sec{margin:0 0 10px;font-family:var(--f-pixel);font-size:11px;color:var(--gold);letter-spacing:.06em;line-height:1.6;padding-bottom:8px;border-bottom:3px double rgba(232,177,58,.45)}
 .facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
@@ -218,13 +228,13 @@ var CONSOLE_LABEL={'Famicom Disk System':'Famicom Disk'};
 function buildTabs(){
   var seen={};state.games.forEach(function(g){if(g.consola)seen[g.consola]=1});
   var cons=Object.keys(seen).sort(function(a,b){var i=CONSOLE_ORDER.indexOf(a),j=CONSOLE_ORDER.indexOf(b);return (i<0?99:i)-(j<0?99:j)||a.localeCompare(b)});
-  return [['','Todas']].concat(cons.map(function(c){return [c,CONSOLE_LABEL[c]||c]}),[['__hw','🎃 Halloween'],['__mine','✔ Mi colección'],['__rated','★ Mis notas']]);
+  return [['','Todas']].concat(cons.map(function(c){return [c,CONSOLE_LABEL[c]||c]}),[['__hw','🎃 Halloween'],['__mine','✔ Lo tengo'],['__done','🏁 Terminados'],['__played','🎮 Jugados'],['__rated','★ Mis notas']]);
 }
 
 function lsGet(k,d){try{var v=localStorage.getItem(LS+k);return v==null?d:JSON.parse(v)}catch(e){return d}}
 function lsSet(k,v){try{localStorage.setItem(LS+k,JSON.stringify(v))}catch(e){}}
 
-var state={games:[],version:0,filter:lsGet('filter',''),sort:lsGet('sort','alpha'),q:'',owned:lsGet('owned',{}),mine:lsGet('myRatings',{}),known:lsGet('known',null),newIds:{}};
+var state={games:[],version:0,filter:lsGet('filter',''),sort:lsGet('sort','alpha'),q:'',owned:lsGet('owned',{}),play:lsGet('playStatus',{}),mine:lsGet('myRatings',{}),known:lsGet('known',null),newIds:{}};
 var $=function(id){return document.getElementById(id)};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
@@ -275,6 +285,8 @@ function matches(g,f){
   if(!f)return true;
   if(f==='__hw')return !!g.halloween;
   if(f==='__mine')return !!state.owned[g.id];
+  if(f==='__done')return state.play[g.id]==='done';
+  if(f==='__played')return state.play[g.id]==='played';
   if(f==='__rated')return !!state.mine[g.id];
   if(f==='__new')return !!state.newIds[g.id];
   return g.consola===f;
@@ -284,7 +296,7 @@ function renderTabs(){
   if(Object.keys(state.newIds).length)tabs.splice(1,0,['__new','★ Novedades']);
   var html=tabs.map(function(t){
     var n=state.games.filter(function(g){return matches(g,t[0])}).length;
-    if(!n&&t[0]&&t[0]!=='__mine'&&t[0]!=='__rated'&&t[0]!==state.filter)return '';
+    if(!n&&t[0]&&t[0].indexOf('__')!==0||t[0]==='__hw'&&t[0]!==state.filter)return '';
     return '<button type="button" class="tab'+(t[0]==='__hw'?' hw':'')+'" data-f="'+esc(t[0])+'" aria-pressed="'+(state.filter===t[0])+'">'+esc(t[1])+'<span class="n">'+n+'</span></button>';
   }).join('');
   $('tabs').innerHTML=html;
@@ -315,7 +327,7 @@ function render(){
   var list=visible();
   $('count').innerHTML='<b>'+list.length+'</b> de '+state.games.length+' juegos';
   if(!list.length){
-    $('grid').innerHTML='<div class="empty"><span class="pix">GAME OVER</span>'+(state.filter==='__mine'?'Aún no marcas juegos como tuyos. Abre una ficha y toca “Lo tengo”.':state.filter==='__rated'?'Aún no calificas ningún juego. Abre una ficha y toca las estrellas.':'Ningún juego coincide con tu búsqueda.')+'</div>';return;
+    $('grid').innerHTML='<div class="empty"><span class="pix">GAME OVER</span>'+(state.filter==='__mine'?'Aún no marcas juegos como tuyos. Abre una ficha y toca “Lo tengo”.':state.filter==='__done'?'Aún no marcas juegos terminados. Abre una ficha y toca “Terminado”.':state.filter==='__played'?'Aún no marcas juegos jugados. Abre una ficha y toca “Jugado”.':state.filter==='__rated'?'Aún no calificas ningún juego. Abre una ficha y toca las estrellas.':'Ningún juego coincide con tu búsqueda.')+'</div>';return;
   }
   $('grid').innerHTML=list.map(function(g){
     return '<button type="button" class="card" data-id="'+esc(g.id)+'">'+
@@ -323,7 +335,7 @@ function render(){
       '<span class="chip">'+esc(g.consola||'—')+'</span>'+
       (state.newIds[g.id]?'<span class="badge-new">NUEVO</span>':'')+
       (g.nota?'<span class="stamp">'+esc(g.nota)+'</span>':'')+
-      ((state.owned[g.id]||state.mine[g.id])?'<span class="pills">'+(state.mine[g.id]?'<span class="mine">Tú: '+state.mine[g.id]+'</span>':'')+(state.owned[g.id]?'<span class="own">✔ Lo tengo</span>':'')+'</span>':'')+
+      ((state.owned[g.id]||state.mine[g.id]||state.play[g.id])?'<span class="pills">'+(state.mine[g.id]?'<span class="mine">Tú: '+state.mine[g.id]+'</span>':'')+(state.play[g.id]==='done'?'<span class="done">🏁 Terminado</span>':state.play[g.id]==='played'?'<span class="played">🎮 Jugado</span>':'')+(state.owned[g.id]?'<span class="own">✔ Lo tengo</span>':'')+'</span>':'')+
       '</div><span class="ttl">'+esc(g.titulo)+'</span><span class="sub">'+esc([g.anio,g.genero].filter(Boolean).join(' · '))+(comm(g.id)?' · <span title="Nota de la comunidad">👥 '+comm(g.id).avg+'</span>':'')+'</span></button>';
   }).join('');
 }
@@ -347,7 +359,9 @@ function open(id,push){
       :'<div class="rating none"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="num">Próximamente en el canal</span></div>')+
     '<section class="myrate community" id="community" hidden></section>'+
     '<section class="myrate" id="myrate"></section>'+
-    '<div class="actions"><button type="button" class="btn" id="ownBtn" aria-pressed="'+!!state.owned[g.id]+'">'+(state.owned[g.id]?'✔ Lo tengo':'＋ Lo tengo')+'</button>'+
+    '<div class="actions"><button type="button" class="btn st-own" id="ownBtn" aria-pressed="'+!!state.owned[g.id]+'">'+(state.owned[g.id]?'✔ Lo tengo':'＋ Lo tengo')+'</button>'+
+      '<button type="button" class="btn st-done" id="doneBtn" aria-pressed="'+(state.play[g.id]==='done')+'">🏁 Terminado</button>'+
+      '<button type="button" class="btn st-played" id="playedBtn" aria-pressed="'+(state.play[g.id]==='played')+'">🎮 Jugado, no terminado</button>'+
       (isYT(g.youtubeUrl)?'<a class="btn yt" href="'+esc(g.youtubeUrl)+'" target="_blank" rel="noopener">▶ Ver en YouTube</a>':'')+'</div>'+
     (facts?'<section><h2 class="sec">FICHA EDITORIAL</h2><dl class="facts">'+facts+'</dl></section>':'')+
     (g.historia?'<section><h2 class="sec">HISTORIA DEL JUEGO</h2><div class="read"><p>'+esc(g.historia)+'</p></div></section>':'')+
@@ -361,8 +375,17 @@ function open(id,push){
   $('ownBtn').onclick=function(){
     if(state.owned[g.id])delete state.owned[g.id];else state.owned[g.id]=1;
     lsSet('owned',state.owned);this.setAttribute('aria-pressed',!!state.owned[g.id]);this.textContent=state.owned[g.id]?'✔ Lo tengo':'＋ Lo tengo';
-    toast(state.owned[g.id]?'Agregado a Mi colección':'Quitado de Mi colección');
+    toast(state.owned[g.id]?'Marcado: lo tengo':'Quitado de “Lo tengo”');
   };
+  function setPlay(v){
+    if(state.play[g.id]===v)delete state.play[g.id];else state.play[g.id]=v;
+    lsSet('playStatus',state.play);
+    $('doneBtn').setAttribute('aria-pressed',state.play[g.id]==='done');
+    $('playedBtn').setAttribute('aria-pressed',state.play[g.id]==='played');
+    toast(state.play[g.id]==='done'?'🏁 Marcado como terminado':state.play[g.id]==='played'?'🎮 Marcado como jugado, no terminado':'Estado de juego quitado');
+  }
+  $('doneBtn').onclick=function(){setPlay('done')};
+  $('playedBtn').onclick=function(){setPlay('played')};
   $('boleta').querySelectorAll('[data-zoom]').forEach(function(b){b.onclick=function(){$('lbImg').src=b.dataset.zoom;$('lbImg').alt=b.getAttribute('aria-label');$('lightbox').hidden=false}});
   $('backBtn').focus({preventScroll:true});
 }
