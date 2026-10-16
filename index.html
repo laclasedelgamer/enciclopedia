@@ -280,6 +280,7 @@ function apply(data){
   var list=Array.isArray(data)?data:(data.juegos||[]);
   state.version=data.version||0;
   state.games=list;
+  list.forEach(function(g,i){g._i=i});  // orden en que se agregaron al panel (los más nuevos al final)
   state.newIds={};
   if(!state.known){markAllSeen()}
   else{list.forEach(function(g){if(state.known[g.id]!==fp(g))state.newIds[g.id]=1})}
@@ -336,7 +337,7 @@ function visible(){
   });
   var by={
     alpha:function(a,b){return norm(a.titulo).localeCompare(norm(b.titulo))},
-    recent:function(a,b){return (b.actualizado||0)-(a.actualizado||0)},
+    recent:function(a,b){return (b.actualizado||0)-(a.actualizado||0)||(b._i||0)-(a._i||0)},
     year:function(a,b){return (parseInt(a.anio)||9999)-(parseInt(b.anio)||9999)||norm(a.titulo).localeCompare(norm(b.titulo))},
     rating:function(a,b){return (b.nota||0)-(a.nota||0)||norm(a.titulo).localeCompare(norm(b.titulo))},
     community:function(a,b){var x=comm(a.id),y=comm(b.id);return (y?y.avg:0)-(x?x.avg:0)||(y?y.v:0)-(x?x.v:0)||norm(a.titulo).localeCompare(norm(b.titulo))},
