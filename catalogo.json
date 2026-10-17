@@ -1,5 +1,5 @@
 {
- "version": 1792237680785,
+ "version": 1792238022903,
  "juegos": [
   {
    "id": "game:bubsy-snes-1993",
@@ -27,8 +27,10 @@
    "portada": "img/c3103d5f2686d6b9.jpg",
    "contraportada": "img/4d981a0b2c127189.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "e749e35b3821a09d"
+   "actualizado": 1792238020049,
+   "trucos": [],
+   "secretos": [],
+   "huella": "bd07f4cbf15ffe8d"
   },
   {
    "id": "game:super-bomberman-snes-1993",
@@ -56,8 +58,18 @@
    "portada": "img/acd40ed85c3bb0d6.jpg",
    "contraportada": "img/80b8275a8b35f83c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "d5a6cbef094ddf39"
+   "actualizado": 1792238020049,
+   "trucos": [
+    {
+     "nombre": "Bombermans miniatura",
+     "donde": "Pantalla de contraseña",
+     "seq": "\"5656\"",
+     "efecto": "Ingresa 5656 como contraseña y todos los Bombermans se ven mucho más pequeños. No cambia la jugabilidad, es solo visual.",
+     "fuente": "Codex Gamicus y Critical Hits"
+    }
+   ],
+   "secretos": [],
+   "huella": "2589c0d6e72348b4"
   },
   {
    "id": "game:super-james-pond-gb-1992",
@@ -85,7 +97,7 @@
    "portada": "img/1c26c72e2e490ce8.jpg",
    "contraportada": "img/4e577cfb109a760d.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020049,
    "trucos": [],
    "secretos": [],
    "huella": "c2635bcc66209c36"
@@ -116,7 +128,7 @@
    "portada": "img/cb278eb578693af3.jpg",
    "contraportada": "img/da558163a9587129.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020049,
    "trucos": [],
    "secretos": [],
    "huella": "0f85dc63817d4331"
@@ -147,7 +159,7 @@
    "portada": "img/540c6f033dfaff41.jpg",
    "contraportada": "img/3634c1acf0daad8a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020049,
    "trucos": [],
    "secretos": [
     {
@@ -186,7 +198,7 @@
    "portada": "img/9f0e3d79e0331d17.jpg",
    "contraportada": "img/96085d3d3c92c67f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020049,
    "trucos": [],
    "secretos": [],
    "huella": "17fb129e550a19d0"
@@ -217,7 +229,7 @@
    "portada": "img/77c65b54a80ea8b6.jpg",
    "contraportada": "img/bbfafd9b2820c33d.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020049,
    "trucos": [],
    "secretos": [
     {
@@ -270,8 +282,18 @@
    "portada": "img/71e0b22e5bd99290.jpg",
    "contraportada": "img/128e7a78f9fb22ca.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "6db80d877228f3a5"
+   "actualizado": 1792238020049,
+   "trucos": [
+    {
+     "nombre": "Contraseñas de nivel",
+     "donde": "Pantalla de contraseña",
+     "seq": "\"QUESTION\" \"MASTERED\" \"MOTORWAY\" \"CABINETS\" \"SQUIRREL\"",
+     "efecto": "Cada palabra te lleva directo a un nivel: QUESTION al 2, MASTERED al 3, MOTORWAY al 4, CABINETS al 5 y SQUIRREL al 6.",
+     "fuente": "SuperCheats y Cyberly"
+    }
+   ],
+   "secretos": [],
+   "huella": "97dbfe3553d1de9f"
   },
   {
    "id": "game:bugs-bunny-crazy-castle-nes-1989",
@@ -299,7 +321,7 @@
    "portada": "img/a6983703f24a0455.jpg",
    "contraportada": "img/408a865c13f84832.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020049,
    "trucos": [],
    "secretos": [],
    "huella": "b51f7aec5471f7d2"
@@ -330,8 +352,10 @@
    "portada": "img/7f1a97c1ab9a8807.jpg",
    "contraportada": "img/704e028c8e535cea.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "5973bc0045170b4a"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [],
+   "huella": "5371b554dc2bd286"
   },
   {
    "id": "game:bomberman-nes-1987",
@@ -359,7 +383,7 @@
    "portada": "img/793af546afe75354.jpg",
    "contraportada": "img/2c11a955194a526b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [
     {
@@ -412,7 +436,7 @@
    "portada": "img/b0104cc8c0f0f3ca.jpg",
    "contraportada": "img/669997b5fa4de083.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [
     {
      "nombre": "Salta directo a la Parte III",
@@ -459,7 +483,7 @@
    "portada": "img/3d5b9457bf781b01.jpg",
    "contraportada": "img/25716404ae348f12.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [
     {
      "nombre": "Empieza con 6 vidas",
@@ -506,8 +530,18 @@
    "portada": "img/3d9ad09229b15460.jpg",
    "contraportada": "img/2d257811ead8d2c3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "bfd6a39b5fd4f089"
+   "actualizado": 1792238020050,
+   "trucos": [
+    {
+     "nombre": "Prueba de sonido",
+     "donde": "Durante el juego",
+     "seq": "START + SELECT",
+     "efecto": "Mantén START y aprieta SELECT mientras juegas: se abre un menú para escuchar la música del juego.",
+     "fuente": "The Cutting Room Floor y Cyberly"
+    }
+   ],
+   "secretos": [],
+   "huella": "a134b7b40d69dfae"
   },
   {
    "id": "game:street-fighter-2010-nes-1990",
@@ -535,7 +569,7 @@
    "portada": "img/e52acb79ef775333.jpg",
    "contraportada": "img/5b413e895d83753f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "b892b3aa786b6b14"
@@ -566,7 +600,7 @@
    "portada": "img/8b0046e79f907501.jpg",
    "contraportada": "img/f32e52c86b45cc26.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [
     {
      "nombre": "Salir de un área",
@@ -620,7 +654,7 @@
    "portada": "img/2580c77cded54052.jpg",
    "contraportada": "img/43d4bc254741353b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "a6eb01cf91a81c91"
@@ -651,8 +685,10 @@
    "portada": "img/bf559a4f5a7b56f9.jpg",
    "contraportada": "img/9a59480bd8a9d6bd.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "a4f811b6f3555240"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [],
+   "huella": "1cfca35245a0fc94"
   },
   {
    "id": "game:crash-dummies-gb-1992",
@@ -680,7 +716,7 @@
    "portada": "img/976862290c938d57.jpg",
    "contraportada": "img/dcd4c42756747c8d.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "545cdb3ebb6cb594"
@@ -711,7 +747,7 @@
    "portada": "img/ec3897f4bfaed95e.jpg",
    "contraportada": "img/9e993e4d9ab5b06b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "36e705c71ad2bcb1"
@@ -742,8 +778,10 @@
    "portada": "img/c35097e69fdb6578.jpg",
    "contraportada": "img/940c30bc9b9e6f22.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "4d8063544fd184ae"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [],
+   "huella": "62894898fce7142a"
   },
   {
    "id": "game:goof-troop-snes-1993",
@@ -771,8 +809,10 @@
    "portada": "img/cbc69639426d3e8b.jpg",
    "contraportada": "img/e0975f4829afc25a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "ff299c77773a6a89"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [],
+   "huella": "437e1077897afa89"
   },
   {
    "id": "game:mortal-kombat-snes-1993",
@@ -800,8 +840,18 @@
    "portada": "img/840b20ccde3f7c26.jpg",
    "contraportada": "img/e59d2fbbc7fcbe95.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "1aaff9a0e0f7c852"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [
+    {
+     "nombre": "Pelea contra Reptile",
+     "donde": "The Pit, en el modo de un jugador",
+     "seq": "",
+     "efecto": "Si ves una silueta cruzar la luna en The Pit, tienes la oportunidad: gana los dos rounds sin recibir daño y sin usar el botón de bloqueo, y termina con el movimiento final de tu personaje. Así aparece Reptile, el luchador secreto. Solo se puede hacer con Sub-Zero, Johnny Cage o Rayden, porque sus movimientos finales no usan el botón de bloqueo.",
+     "fuente": "Leedberg (MK Secrets) y Arcade-History"
+    }
+   ],
+   "huella": "44a6879aa47bdca4"
   },
   {
    "id": "game:mario-is-missing-snes-1993",
@@ -829,8 +879,18 @@
    "portada": "img/dee74defcb47c74d.jpg",
    "contraportada": "img/ec5d8648fe85c3de.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "adc27a70bc0de606"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [
+    {
+     "nombre": "Menú secreto de los programadores",
+     "donde": "Pantalla de título, cuando aparecen las opciones",
+     "seq": "L + R + SELECT + START",
+     "efecto": "Aparece un menú de depuración con prueba de sonido, elección del piso del castillo donde empieza Luigi y la opción \"Show Loot\", que hace parpadear a los Koopas que llevan un artefacto. Solo en la versión en inglés; según The Cutting Room Floor se hace con el control 2.",
+     "fuente": "The Cutting Room Floor y Super Mario Wiki"
+    }
+   ],
+   "huella": "f5f9cc1be6191629"
   },
   {
    "id": "game:yoshis-safari-snes-1993",
@@ -858,8 +918,18 @@
    "portada": "img/e2e70659e87b01b3.jpg",
    "contraportada": "img/1d2b4e244f114c5a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "b90b2a6254f1e70c"
+   "actualizado": 1792238020050,
+   "trucos": [
+    {
+     "nombre": "Desafío secreto",
+     "donde": "Pantalla de título",
+     "seq": "L + R + X + Y + START",
+     "efecto": "Aprieta los cinco botones al mismo tiempo para jugar una nueva aventura más difícil. El propio Yoshi da la pista dentro del juego.",
+     "fuente": "Super Mario Wiki y el propio juego"
+    }
+   ],
+   "secretos": [],
+   "huella": "59a0aeb88a1d706e"
   },
   {
    "id": "game:baby-t-rex-gb-1993",
@@ -887,7 +957,7 @@
    "portada": "img/36bc37e66089f930.jpg",
    "contraportada": "",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "d38f2feb8d246859"
@@ -918,7 +988,7 @@
    "portada": "img/e5024bb1d3ed67a3.jpg",
    "contraportada": "img/4fefbf0b01490971.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "da8ade9c3871806a"
@@ -949,8 +1019,10 @@
    "portada": "img/fe0d5d74762a426a.jpg",
    "contraportada": "img/e99690a99db8d6b7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "ae847f2e0ab52f1c"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [],
+   "huella": "f52e3aaa4efefc80"
   },
   {
    "id": "game:cool-world-snes-1993",
@@ -978,8 +1050,10 @@
    "portada": "img/2bcaf60924001ca3.jpg",
    "contraportada": "img/df4b66297e48ae93.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "e07af1a4b0aea052"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [],
+   "huella": "bee4a1283e65c16e"
   },
   {
    "id": "game:cool-world-gb-1993",
@@ -1007,7 +1081,7 @@
    "portada": "img/f7422120fd2e811a.jpg",
    "contraportada": "img/c07299a378d18b41.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "22f169af36ec59c9"
@@ -1038,8 +1112,10 @@
    "portada": "img/f4353ea89ef83df6.jpg",
    "contraportada": "img/d5f8590684ba4810.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "02769ad0790e58f6"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [],
+   "huella": "ed19c82445ba3d92"
   },
   {
    "id": "game:burai-fighter-nes-1990",
@@ -1067,7 +1143,7 @@
    "portada": "img/93a68bf46a62c63a.jpg",
    "contraportada": "img/efc1bcb690180670.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "83551fb8850a25e6"
@@ -1098,7 +1174,7 @@
    "portada": "img/cf5f893af48bfd64.jpg",
    "contraportada": "img/c1bab0006c0d89fa.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "e379475008805f0e"
@@ -1129,7 +1205,7 @@
    "portada": "img/8d3a74e9c6149227.jpg",
    "contraportada": "img/d85efea9e8f481af.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "fcb0a0c20b39873c"
@@ -1160,7 +1236,7 @@
    "portada": "img/73df479c3654bffe.jpg",
    "contraportada": "img/669cc9ab7db1a241.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "3f1b040feac742b1"
@@ -1191,7 +1267,7 @@
    "portada": "img/bef19fdc9456beda.jpg",
    "contraportada": "img/ff3400014693678f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "cc79a18d3dc491e7"
@@ -1222,7 +1298,7 @@
    "portada": "img/2c25b9fb128774e9.jpg",
    "contraportada": "img/dfb0319327d086c1.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [],
    "secretos": [],
    "huella": "28e6365e3519d280"
@@ -1253,8 +1329,10 @@
    "portada": "img/80bd0e0f4b9be365.jpg",
    "contraportada": "img/1bd5865f888123b9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "d37e7d2413cb85d2"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [],
+   "huella": "da6fd0a8ba6f7aee"
   },
   {
    "id": "game:cybernator-snes-1993",
@@ -1282,8 +1360,26 @@
    "portada": "img/63f300be5566f908.jpg",
    "contraportada": "img/d56c2cc18014f963.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "3bde439b736e37d9"
+   "actualizado": 1792238020050,
+   "trucos": [
+    {
+     "nombre": "Continuaciones extra",
+     "donde": "Pantalla de título",
+     "seq": "↑ + L + R + START",
+     "efecto": "Mantén arriba, L y R y aprieta START para empezar con continuaciones extra.",
+     "fuente": "Critical Hits y Cyberly"
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "El lanzallamas secreto (Napalm)",
+     "donde": "Misión 1",
+     "seq": "",
+     "efecto": "Termina la primera misión sin disparar a nada excepto al jefe y obtendrás el Napalm Gun, un arma secreta que no aparece de otra forma.",
+     "fuente": "Critical Hits y Cyberly"
+    }
+   ],
+   "huella": "14f60699e3c0cd4f"
   },
   {
    "id": "game:road-runner-death-valley-rally-snes-1992",
@@ -1311,8 +1407,10 @@
    "portada": "img/722b41aec3d10fc4.jpg",
    "contraportada": "img/b1e2f0b39c8e65e1.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "a7c96e77333acd69"
+   "actualizado": 1792238020050,
+   "trucos": [],
+   "secretos": [],
+   "huella": "348f52777f7a5369"
   },
   {
    "id": "game:alien3-nes-1993",
@@ -1340,7 +1438,7 @@
    "portada": "img/95ca01e7e79b2a11.jpg",
    "contraportada": "img/e362cd81af2d6e6b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
+   "actualizado": 1792238020050,
    "trucos": [
     {
      "nombre": "Salta al siguiente nivel",
@@ -1379,8 +1477,18 @@
    "portada": "img/fec16bca0cfcfc58.jpg",
    "contraportada": "img/3727a32dd4d5de8b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678500,
-   "huella": "395766aedd07c5c0"
+   "actualizado": 1792238020050,
+   "trucos": [
+    {
+     "nombre": "Más velocidades Turbo",
+     "donde": "Control 2, en el logo de Capcom",
+     "seq": "↓ R ↑ L Y B",
+     "efecto": "Desbloquea velocidades Turbo más rápidas que las normales, hasta 10 estrellas. En la versión japonesa la secuencia termina además con X A.",
+     "fuente": "StrategyWiki, Arcade-History y Wikipedia"
+    }
+   ],
+   "secretos": [],
+   "huella": "17836bf668951178"
   },
   {
    "id": "game:super-valis-iv-snes-1993",
@@ -1408,8 +1516,10 @@
    "portada": "img/8d7c9fd86a3c332a.jpg",
    "contraportada": "img/ce348c5c5e50763a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "40e81ba66185bf28"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "2bdca2c2898e893c"
   },
   {
    "id": "game:crash-dummies-nes-1994",
@@ -1437,7 +1547,7 @@
    "portada": "img/50495bb66f3a6d28.jpg",
    "contraportada": "img/0db727b88dac27b2.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "f4c37b72fd6ac8b4"
@@ -1468,8 +1578,10 @@
    "portada": "img/df313a19cbbb28ab.jpg",
    "contraportada": "img/f8be13cf6c3bd541.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "cc6b61510a561f8f"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "b0d7c351d4b8808f"
   },
   {
    "id": "game:taz-mania-snes-1993",
@@ -1497,8 +1609,10 @@
    "portada": "img/6017435b1f50fce1.jpg",
    "contraportada": "img/cc1447253e7b6767.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "3f8e2bcd07f415d7"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "054741bd367fed57"
   },
   {
    "id": "game:congos-caper-snes-1993",
@@ -1526,8 +1640,10 @@
    "portada": "img/c1d2d185ac6bc9bb.jpg",
    "contraportada": "img/88f6a176ee2538e8.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "668ca8acdb965eaa"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "42b806d05b3d90e6"
   },
   {
    "id": "game:spy-hunter-nes-1987",
@@ -1555,7 +1671,7 @@
    "portada": "img/06639bfe74c8e214.jpg",
    "contraportada": "img/0586086c787666d2.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "26331a71a7d378f7"
@@ -1586,7 +1702,7 @@
    "portada": "img/7dea3f240462f4d6.jpg",
    "contraportada": "img/50a00ad3db91ba71.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "3ce1153186350b07"
@@ -1617,7 +1733,7 @@
    "portada": "img/35c0adfca3403686.jpg",
    "contraportada": "img/946a7e9b2afe35fd.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [
     {
@@ -1663,7 +1779,7 @@
    "portada": "img/349af42d480ed76b.jpg",
    "contraportada": "img/3ede4f290368306f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [
     {
@@ -1702,7 +1818,7 @@
    "portada": "img/a0b373c020e9c366.jpg",
    "contraportada": "img/7bef0ce9a53741af.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "ebdaf86d647720bf"
@@ -1733,7 +1849,7 @@
    "portada": "img/3ed7ccdf6297bf25.jpg",
    "contraportada": "img/aadf79d326747419.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "3146bb8c2bda8f96"
@@ -1764,8 +1880,10 @@
    "portada": "img/77a54b1b9e5a092d.jpg",
    "contraportada": "img/1cc754e8f38baa6e.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "532f62b94279179b"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "ffd0fb795bfd4b0b"
   },
   {
    "id": "game:the-rocketeer-snes-1992",
@@ -1793,8 +1911,10 @@
    "portada": "img/069b6a07d8833c2d.jpg",
    "contraportada": "img/0de364dfd5d09fa9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "cb7eb612c4dd4e9c"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "afe2792e8bea2000"
   },
   {
    "id": "game:thunder-spirits-snes-1992",
@@ -1822,8 +1942,10 @@
    "portada": "img/8f4eaab8fbefc0e6.jpg",
    "contraportada": "img/153520b1a9ba671f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "4389b61d00d6bf7f"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "99db680d4d5c19ff"
   },
   {
    "id": "game:cool-spot-snes-1993",
@@ -1851,8 +1973,10 @@
    "portada": "img/4cf3ee43da018c49.jpg",
    "contraportada": "img/6843399ec6c71ff4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "c6f32fe7cf503825"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "e8a53b67511dbd35"
   },
   {
    "id": "game:flashback-snes-1993",
@@ -1880,8 +2004,10 @@
    "portada": "img/2ffded7ae791f138.jpg",
    "contraportada": "img/7990fde32ca87699.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "81a497f2bd3d7db0"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "645ded0ed92f3904"
   },
   {
    "id": "game:james-bond-jr-snes-1992",
@@ -1909,8 +2035,10 @@
    "portada": "img/2dd6a6786b29e0ae.jpg",
    "contraportada": "img/403ef9d77caea375.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "aac06eef8bd1bf81"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "01c3a16f08b59dc1"
   },
   {
    "id": "game:jim-power-lost-dimension-snes-1993",
@@ -1938,8 +2066,10 @@
    "portada": "img/1fb6e2dca7949416.jpg",
    "contraportada": "img/68c18b9e8058655c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
-   "huella": "fdd34b52c6b5dd88"
+   "actualizado": 1792238020068,
+   "trucos": [],
+   "secretos": [],
+   "huella": "6f0d146ec59b551c"
   },
   {
    "id": "game:jurassic-park-snes-1993",
@@ -1967,7 +2097,7 @@
    "portada": "img/f73a71d9b161d93b.jpg",
    "contraportada": "img/a1c7e6ad86ecb8bf.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "62481db02c1b8b2e"
   },
   {
@@ -1996,7 +2126,7 @@
    "portada": "img/fc3a7381b9ff2a6f.jpg",
    "contraportada": "img/9598743f704ed055.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "4ead167e55da9310"
@@ -2027,7 +2157,7 @@
    "portada": "img/b72b585071dd5216.jpg",
    "contraportada": "img/172ae33973c23707.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "8bb371e5b98eeba3"
   },
   {
@@ -2056,7 +2186,7 @@
    "portada": "img/d693d5329ba0e630.jpg",
    "contraportada": "img/7a552b359ad47c23.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "12ea8f20a4200aba"
@@ -2087,7 +2217,7 @@
    "portada": "img/1d7f278f222829ed.jpg",
    "contraportada": "img/9fe8d2a099041ede.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "c8f3531585ae6bcb"
@@ -2118,7 +2248,7 @@
    "portada": "img/b1f47180a6a750b6.jpg",
    "contraportada": "img/b0a39df64c1ab56c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [
     {
@@ -2157,7 +2287,7 @@
    "portada": "img/3475faf72536d44d.jpg",
    "contraportada": "img/64cf3baa2a9fe634.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "25b20a1b2039b485"
@@ -2188,7 +2318,7 @@
    "portada": "img/cfbd88e08c118bd2.jpg",
    "contraportada": "img/fa8ab7bed5da005c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "65afeb187a491fda"
   },
   {
@@ -2217,7 +2347,7 @@
    "portada": "img/1e521511da4a21f3.jpg",
    "contraportada": "img/4a49ba486400d2da.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "4391e0954e7fe677"
@@ -2248,7 +2378,7 @@
    "portada": "img/bce4e8c07349fd7a.jpg",
    "contraportada": "img/af04830df2da5b6b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "2ae3a88c263ecf5a"
   },
   {
@@ -2277,7 +2407,7 @@
    "portada": "img/2cdcd18c86a50a32.jpg",
    "contraportada": "img/cdac52450e5e36a3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "de82afa415256cde"
   },
   {
@@ -2306,7 +2436,7 @@
    "portada": "img/9baa3164f3ecdbb6.jpg",
    "contraportada": "img/ff58df086aa0624a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "11796fbb5b190ae9"
   },
   {
@@ -2335,7 +2465,7 @@
    "portada": "img/c4192683b0d9f999.jpg",
    "contraportada": "img/192a3a5cccebcc46.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "39c26b7141d08e5b"
@@ -2366,7 +2496,7 @@
    "portada": "img/73b7447b7686466d.jpg",
    "contraportada": "img/1edb21cccf2713c6.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "d8f2c1f3f78415d5"
   },
   {
@@ -2395,7 +2525,7 @@
    "portada": "img/0e663d4977f2ae33.jpg",
    "contraportada": "img/2cf485d7adc1f025.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "bb8cbd1cfc2a52be"
@@ -2426,7 +2556,7 @@
    "portada": "img/1cd3dd5bd9130485.jpg",
    "contraportada": "img/915cf00bd39d7b75.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "8284fa7ac81286d0"
@@ -2457,7 +2587,7 @@
    "portada": "img/8b51ccf3e81bd5cd.jpg",
    "contraportada": "img/ceed91458429d9bf.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "888f4674efef0f2a"
   },
   {
@@ -2486,7 +2616,7 @@
    "portada": "img/5ae3fbddce0b67a7.jpg",
    "contraportada": "img/d2893becd571f812.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "ed876ed4c22b2916"
@@ -2517,7 +2647,7 @@
    "portada": "img/c11eb509939b8b73.jpg",
    "contraportada": "img/f37cea9632f62a3c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "0fcd50dfd74edca9"
   },
   {
@@ -2546,7 +2676,7 @@
    "portada": "img/d04e15a396b9cab9.jpg",
    "contraportada": "img/2ee8a64c51fcc2ba.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "01e3c407d8eda195"
@@ -2577,7 +2707,7 @@
    "portada": "img/c77a7a3ef92c03f0.jpg",
    "contraportada": "",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "0f5ad25e4e390660"
@@ -2608,7 +2738,7 @@
    "portada": "img/ace30f77c0b278e5.jpg",
    "contraportada": "img/082c42d20b61c8b4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "18f857296af19fa7"
   },
   {
@@ -2637,7 +2767,7 @@
    "portada": "img/90bbded41ad31722.jpg",
    "contraportada": "img/54d7b8a4ea49f656.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "d3ad4a6a67d5b1f8"
@@ -2668,7 +2798,7 @@
    "portada": "img/0f6f5179b879ad97.jpg",
    "contraportada": "img/1e69d4cf43f8d735.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "8152390091d68c9a"
   },
   {
@@ -2697,7 +2827,7 @@
    "portada": "img/8328178bb5b317c9.jpg",
    "contraportada": "img/e7e3829772cf9ac5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "1811f3179c036849"
   },
   {
@@ -2726,7 +2856,7 @@
    "portada": "img/61c5d893e0e6aced.jpg",
    "contraportada": "img/c13b07d256d790e4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "a49ef6f9407310f7"
   },
   {
@@ -2755,7 +2885,7 @@
    "portada": "img/5b1d439cd57e55e6.jpg",
    "contraportada": "img/3a42047f0a833b21.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "12b5ae14d10c3586"
   },
   {
@@ -2784,7 +2914,7 @@
    "portada": "img/99dde58900ef9cff.jpg",
    "contraportada": "img/0bfa760d576381a7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "62128f6f4afbd251"
@@ -2815,7 +2945,7 @@
    "portada": "img/1c45040b41451b2d.jpg",
    "contraportada": "img/6cdb8dfc48c35756.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "f3112afeadf140d4"
@@ -2846,7 +2976,7 @@
    "portada": "img/daab737e73ae906c.jpg",
    "contraportada": "img/6fca89dcd1a50dea.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "590d0b20a85864a2"
   },
   {
@@ -2875,7 +3005,7 @@
    "portada": "img/d9aa919d33535233.jpg",
    "contraportada": "img/af3be2e17d8461df.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "95157632364a4868"
   },
   {
@@ -2904,7 +3034,7 @@
    "portada": "img/56b25ebee96f58e0.jpg",
    "contraportada": "img/b19a42b91fd8ce57.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [
     {
@@ -2943,7 +3073,7 @@
    "portada": "img/507413bbab0f99f1.jpg",
    "contraportada": "img/61e3b755de8b3783.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "997bcb53c52bfd91"
@@ -2974,7 +3104,7 @@
    "portada": "img/7d1291654890b917.jpg",
    "contraportada": "img/0b149693ab0c2ca5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "42c18415439a415f"
   },
   {
@@ -3003,7 +3133,7 @@
    "portada": "img/66d80c0a10c40510.jpg",
    "contraportada": "img/a95997cf86e1e8c5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [
     {
      "nombre": "Empieza con 10 vidas",
@@ -3064,7 +3194,7 @@
    "portada": "img/5b8971abbd588c71.jpg",
    "contraportada": "img/dd0da1986518dcde.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [
     {
@@ -3103,7 +3233,7 @@
    "portada": "img/a7a6c04ad7674c60.jpg",
    "contraportada": "img/7f75fc7cf33ea89e.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "ddb85e6bb1b635e5"
@@ -3134,7 +3264,7 @@
    "portada": "img/b381db08455bc6f2.jpg",
    "contraportada": "img/c1d15fb51d28716f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "f034d5d72a10ff5d"
@@ -3165,7 +3295,7 @@
    "portada": "img/079cf283707c0205.jpg",
    "contraportada": "img/54186d3e2f609200.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "d8c2e91e90c0dcfc"
@@ -3196,7 +3326,7 @@
    "portada": "img/2ceb86710e8560eb.jpg",
    "contraportada": "img/40138569582384fb.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "8a384360fd33b5ea"
@@ -3227,7 +3357,7 @@
    "portada": "img/e15f4919c0e84463.jpg",
    "contraportada": "img/5e95a399cfdfa2af.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "6d9a24e1d9d2a9cf"
@@ -3258,7 +3388,7 @@
    "portada": "img/911bad73af090431.jpg",
    "contraportada": "img/e9d4ab17495a72bd.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "54a1ed96ec972bdc"
@@ -3289,7 +3419,7 @@
    "portada": "img/e248656322f652f5.jpg",
    "contraportada": "img/cbf34d1621bb73a4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "f30d8c65171fb297"
@@ -3320,7 +3450,7 @@
    "portada": "img/cd11b9a208ded22c.jpg",
    "contraportada": "img/86a69b1a76445080.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "791e3f44a72bba22"
@@ -3351,7 +3481,7 @@
    "portada": "img/79c7b8cd7f974c4f.jpg",
    "contraportada": "img/e3ffd0bae75a4730.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "25d51328233b811a"
@@ -3382,7 +3512,7 @@
    "portada": "img/bd6fa7122039661c.jpg",
    "contraportada": "img/7e55903115c59c2f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "ebeb126199faa12f"
   },
   {
@@ -3411,7 +3541,7 @@
    "portada": "img/49861dbf6be08691.jpg",
    "contraportada": "img/62c538e990f7e39b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "65742fc7576b4241"
   },
   {
@@ -3440,7 +3570,7 @@
    "portada": "img/8849133d825f9117.jpg",
    "contraportada": "img/a8c0c7b94aede533.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "81c426fb34282251"
   },
   {
@@ -3469,7 +3599,7 @@
    "portada": "img/9007ce500562077e.jpg",
    "contraportada": "img/d1baf12763261eb9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "0c8892d4cf6fe40a"
   },
   {
@@ -3498,7 +3628,7 @@
    "portada": "img/81be59541d404f82.jpg",
    "contraportada": "img/ab75bfd6bf59fa94.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "b135b51271af6320"
   },
   {
@@ -3527,7 +3657,7 @@
    "portada": "img/8c91451cd135ffe2.jpg",
    "contraportada": "img/693ec5a0a3274b82.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "ad024b03ca782f5d"
   },
   {
@@ -3556,7 +3686,7 @@
    "portada": "img/490f70e127c5b57f.jpg",
    "contraportada": "img/14fe5641acba079b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "0c186f30d53aa912"
   },
   {
@@ -3585,7 +3715,7 @@
    "portada": "img/78c167d6e6681b2c.jpg",
    "contraportada": "img/1727265272da6a80.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "e7a2b2f1b5775927"
   },
   {
@@ -3614,7 +3744,7 @@
    "portada": "img/430b94f89aa1efc2.jpg",
    "contraportada": "img/53ab109d5090032b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "340426972ad4b51d"
   },
   {
@@ -3643,7 +3773,7 @@
    "portada": "img/fc06a3c08aa09aa6.jpg",
    "contraportada": "img/98f55127d269f939.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "ab73e80fbe2d46f9"
   },
   {
@@ -3672,7 +3802,7 @@
    "portada": "img/89ff7b49b678d707.jpg",
    "contraportada": "img/8a2c269143f2a6e7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "c2e5435313779411"
   },
   {
@@ -3701,7 +3831,7 @@
    "portada": "img/1701b5e46a2b266a.jpg",
    "contraportada": "img/3721f6ef7f434379.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "e3fc9ce34bd4a509"
   },
   {
@@ -3730,7 +3860,7 @@
    "portada": "img/91b7ffdd3da10103.jpg",
    "contraportada": "img/fbc6426b23a87ac9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "44596d9b49fc73cd"
   },
   {
@@ -3759,7 +3889,7 @@
    "portada": "img/42e59c4d1d1d89af.jpg",
    "contraportada": "img/092227ff8b39d291.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "eb19410ce7799d12"
   },
   {
@@ -3788,7 +3918,7 @@
    "portada": "img/3810097d4d3756f7.jpg",
    "contraportada": "img/30a337e3c6490c51.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "d0496ec91fb57ee3"
   },
   {
@@ -3817,7 +3947,7 @@
    "portada": "img/2132814c1ef9f2e2.jpg",
    "contraportada": "img/0e01755c4e810d76.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "15f85f3ae1ac9ef4"
   },
   {
@@ -3846,7 +3976,7 @@
    "portada": "img/b7a7f5d820854162.jpg",
    "contraportada": "img/31459cf74b38b1ad.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "6a0095cf61109921"
   },
   {
@@ -3875,7 +4005,7 @@
    "portada": "img/12ee897af3fad010.jpg",
    "contraportada": "img/67c70ac292540544.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "d57201112a4c02b7"
   },
   {
@@ -3904,7 +4034,7 @@
    "portada": "img/1fc04404fdc6499e.jpg",
    "contraportada": "img/8933095403c8f676.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "e124199e413e92b8"
   },
   {
@@ -3933,7 +4063,7 @@
    "portada": "img/581c894539543d43.jpg",
    "contraportada": "img/26f130f7421ab5c5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "905952911745ddab"
   },
   {
@@ -3962,7 +4092,7 @@
    "portada": "img/2a99d8fa26fa2e28.jpg",
    "contraportada": "img/8294f150a9a82ea2.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "f8bc01d8c18d087e"
   },
   {
@@ -3991,7 +4121,7 @@
    "portada": "img/ef534009a85c5f5f.jpg",
    "contraportada": "img/2f186ac063e22ba2.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "1a7dc8daeadaa624"
   },
   {
@@ -4020,7 +4150,7 @@
    "portada": "img/7720cf586cf203da.jpg",
    "contraportada": "img/60d82aeae9fda414.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "7cbd6e2edccc3550"
   },
   {
@@ -4049,7 +4179,7 @@
    "portada": "img/93f181ede7615c5b.jpg",
    "contraportada": "img/4acf1c9154a2fdc7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "4d752968b05f1b0e"
   },
   {
@@ -4078,7 +4208,7 @@
    "portada": "img/249820b3dda5b3e1.jpg",
    "contraportada": "img/32e768802492c296.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "48ab5803a86f8225"
   },
   {
@@ -4107,7 +4237,7 @@
    "portada": "img/6055c64c8d5be2ae.jpg",
    "contraportada": "img/c5ac534adbf0de10.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "9c6dd581b3718107"
   },
   {
@@ -4136,7 +4266,7 @@
    "portada": "img/624ed72f52c46b79.jpg",
    "contraportada": "img/43746e309f99508e.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "60166193c9d1978d"
   },
   {
@@ -4165,7 +4295,7 @@
    "portada": "img/bf3c0cf181efa073.jpg",
    "contraportada": "img/883782f257b4a6e0.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "6bf4eb26b270247c"
   },
   {
@@ -4194,7 +4324,7 @@
    "portada": "img/7d260215ec107e67.jpg",
    "contraportada": "img/ea87d9faaebffe14.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "bdc88712c9e53fb4"
   },
   {
@@ -4223,7 +4353,7 @@
    "portada": "img/5eb6f07c2c55173e.jpg",
    "contraportada": "img/f2479b329e651354.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "a7d6468f54f9152d"
   },
   {
@@ -4252,7 +4382,7 @@
    "portada": "img/75ce4769d5b60fbb.jpg",
    "contraportada": "img/2ece4a21e3f15c1f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "a870695817def862"
   },
   {
@@ -4281,7 +4411,7 @@
    "portada": "img/644f624fcd7f6259.jpg",
    "contraportada": "img/6f8aecb46199dbae.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "97997d0a159d4ef8"
   },
   {
@@ -4310,7 +4440,7 @@
    "portada": "img/cf708269964bb517.jpg",
    "contraportada": "img/7418f4e251389bf4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "f5a59020f705d19e"
   },
   {
@@ -4339,7 +4469,7 @@
    "portada": "img/fd209c5ffab0fbb9.jpg",
    "contraportada": "img/e59c45d3ef3469d9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "967b084c54fcfd62"
   },
   {
@@ -4368,7 +4498,7 @@
    "portada": "img/be0b3df36170e315.jpg",
    "contraportada": "img/d7d6e27db1f9ec4b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "d87e7ca5c894b2ff"
   },
   {
@@ -4397,7 +4527,7 @@
    "portada": "img/09ec4e18f7aff81a.jpg",
    "contraportada": "img/016827e692e956e0.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "7a1231c9cde1a5a7"
   },
   {
@@ -4426,7 +4556,7 @@
    "portada": "img/6054f22f0d391f61.jpg",
    "contraportada": "img/1f0eb823c842c171.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "67b98ef03c4df166"
   },
   {
@@ -4455,7 +4585,7 @@
    "portada": "img/329ec27a14768a58.jpg",
    "contraportada": "img/3d8e636eb1633b60.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "ae599dbe6b6b9304"
   },
   {
@@ -4484,7 +4614,7 @@
    "portada": "img/183dd910aceeb57e.jpg",
    "contraportada": "img/ca2c7addb4abb6bf.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "eb035b5731555e3d"
   },
   {
@@ -4513,7 +4643,7 @@
    "portada": "img/29b60e548e2775c6.jpg",
    "contraportada": "img/c9a7eef6c088fef4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "94e3ec328eb1e644"
   },
   {
@@ -4542,7 +4672,7 @@
    "portada": "img/72e2487c50b66372.jpg",
    "contraportada": "img/c29a68c2f37a4eb0.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "d6a770e470f7c6aa"
   },
   {
@@ -4571,7 +4701,7 @@
    "portada": "img/5ba497bf615169d1.jpg",
    "contraportada": "img/294c14985fdb94fe.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "9f51757d77f81733"
   },
   {
@@ -4600,7 +4730,7 @@
    "portada": "img/298cab98eeb222da.jpg",
    "contraportada": "img/4153f3b50fd058f3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "87760c330b164de5"
   },
   {
@@ -4629,7 +4759,7 @@
    "portada": "img/f3b4bebe996b2388.jpg",
    "contraportada": "img/9c36f1c272ba95d0.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "9bd2b183ebabe04d"
   },
   {
@@ -4658,7 +4788,7 @@
    "portada": "img/24eb3861148bac43.jpg",
    "contraportada": "img/72196effba9e4c95.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "db9c0470038114b6"
   },
   {
@@ -4687,7 +4817,7 @@
    "portada": "img/1cafc23fd03f105d.jpg",
    "contraportada": "img/f01db4ddea289d13.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "4242ef452681a28f"
   },
   {
@@ -4716,7 +4846,7 @@
    "portada": "img/244e2dfc70079c3e.jpg",
    "contraportada": "img/3b70a78afbca35f8.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "1003aaa7abc7a4a9"
   },
   {
@@ -4745,7 +4875,7 @@
    "portada": "img/803746573c68346d.jpg",
    "contraportada": "img/220aaa883da3a2f6.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "038d49129d752698"
   },
   {
@@ -4774,7 +4904,7 @@
    "portada": "img/4b71126f7f6a7805.jpg",
    "contraportada": "img/470c84fd0d0a7d97.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "15be0029634a5ef3"
   },
   {
@@ -4803,7 +4933,7 @@
    "portada": "img/6f3520ec05234f4a.jpg",
    "contraportada": "img/5ed335d61ee01e54.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "e81316c757be16a1"
   },
   {
@@ -4832,7 +4962,7 @@
    "portada": "img/9685f5b5a7fe065b.jpg",
    "contraportada": "img/ee6a3b8d998611f3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "f096707b8ca5c53d"
   },
   {
@@ -4861,7 +4991,7 @@
    "portada": "img/ebc42be35dbfd031.jpg",
    "contraportada": "img/3c09c73f2d016be5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "d8556e2c357a338a"
@@ -4892,7 +5022,7 @@
    "portada": "img/51c3f5c9d37bcbab.jpg",
    "contraportada": "img/fa014ac129315227.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [
     {
      "nombre": "Prueba de sonido secreta",
@@ -4931,7 +5061,7 @@
    "portada": "img/a00c1c47cec849c9.jpg",
    "contraportada": "img/2ee5e1ad895a896b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "112908e38b917435"
   },
   {
@@ -4960,7 +5090,7 @@
    "portada": "img/d664ec5cceb5d3be.jpg",
    "contraportada": "img/4e9bb81cb964c946.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "916e6be56fd45907"
   },
   {
@@ -4989,7 +5119,7 @@
    "portada": "img/b806d4818c9db20b.jpg",
    "contraportada": "img/0e8b5598c113100a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "83209ac27d5f4a54"
   },
   {
@@ -5018,7 +5148,7 @@
    "portada": "img/4a87d2a631ce5aac.jpg",
    "contraportada": "img/28a9655c9180a196.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "f4fac2d677cf3640"
   },
   {
@@ -5047,7 +5177,7 @@
    "portada": "img/f73ee55e5692d6ec.jpg",
    "contraportada": "img/2ed2103b954d7a01.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "c9bf3c5d1ce5af13"
   },
   {
@@ -5076,7 +5206,7 @@
    "portada": "img/b71478fb1a9092b9.jpg",
    "contraportada": "img/e016cb2e3c3343ec.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "3415c38ab764ac54"
   },
   {
@@ -5105,7 +5235,7 @@
    "portada": "img/5599548503e4c237.jpg",
    "contraportada": "img/784d5b3efd8947b4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "c38f166562eed017"
   },
   {
@@ -5134,7 +5264,7 @@
    "portada": "img/f72e5fc3eb17507d.jpg",
    "contraportada": "img/10fad66767b2f7e5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "54a6c6500352e102"
   },
   {
@@ -5163,7 +5293,7 @@
    "portada": "img/e035aadfe6ae6f61.jpg",
    "contraportada": "img/0deebb001df9f24a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "19c190666501fc94"
   },
   {
@@ -5192,7 +5322,7 @@
    "portada": "img/45c116fc7d52d8da.jpg",
    "contraportada": "img/54a6ca04deff5bb6.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "1df2b39592c19207"
   },
   {
@@ -5221,7 +5351,7 @@
    "portada": "img/513c273c4df34486.jpg",
    "contraportada": "img/160c622bc6dddec5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "3f1192753d9b711b"
   },
   {
@@ -5250,7 +5380,7 @@
    "portada": "img/cc3d7d280ae1f18a.jpg",
    "contraportada": "img/743710de0e0e4cb4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "df11a720012aa07a"
   },
   {
@@ -5279,7 +5409,7 @@
    "portada": "img/4d2f0ffc81699baa.jpg",
    "contraportada": "img/b26b73b4491f076e.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "c2ce56aeb5835dc8"
   },
   {
@@ -5308,7 +5438,7 @@
    "portada": "img/0e03b07eac27d214.jpg",
    "contraportada": "img/dcf50faa81e8dfbc.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "a39b229e11b2ee50"
   },
   {
@@ -5337,7 +5467,7 @@
    "portada": "img/a1e29dc93fdebfbb.jpg",
    "contraportada": "img/caf3d1a07924f076.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "7493674a1c2de11c"
   },
   {
@@ -5366,7 +5496,7 @@
    "portada": "img/dd51bc158f5864e7.jpg",
    "contraportada": "img/a95b0527877dd845.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "287f6ca9a7e74c43"
   },
   {
@@ -5395,7 +5525,7 @@
    "portada": "img/e766725a77c37ae8.jpg",
    "contraportada": "img/6887b96bf2b55a51.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "c98ea3aa6ea682c0"
   },
   {
@@ -5424,7 +5554,7 @@
    "portada": "img/78c324b6bf2305ec.jpg",
    "contraportada": "img/503e33b22803f984.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "cf324526242ea2e0"
   },
   {
@@ -5453,7 +5583,7 @@
    "portada": "img/0f6eac4bd66a0bc9.jpg",
    "contraportada": "img/cdbb451c2f9bb7fe.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "98e1c2489faac862"
   },
   {
@@ -5482,7 +5612,7 @@
    "portada": "img/e9c46cd24ae0f1a0.jpg",
    "contraportada": "img/9ebd8533c30c541d.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "27f576ae9162bc70"
   },
   {
@@ -5511,7 +5641,7 @@
    "portada": "img/9eff778a8dcb870c.jpg",
    "contraportada": "img/f8d4aac93e02ace3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "f5414054223e9fba"
   },
   {
@@ -5540,7 +5670,7 @@
    "portada": "img/35b1d987fc6ddf09.jpg",
    "contraportada": "img/2cffb3b654e6b3b4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "14ec6c317e53a38b"
   },
   {
@@ -5569,7 +5699,7 @@
    "portada": "img/1e4f8c91cb5fe813.jpg",
    "contraportada": "img/8eb58742394bbff8.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "1d66f1cfa43f8f11"
   },
   {
@@ -5598,7 +5728,7 @@
    "portada": "img/06108a17fe16d33d.jpg",
    "contraportada": "img/9ba7b18721a61701.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "35b666010f0319c7"
@@ -5629,7 +5759,7 @@
    "portada": "img/5c1b54667ebf2064.jpg",
    "contraportada": "img/76ad9de06d92623a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "26b67ea171704e07"
   },
   {
@@ -5658,7 +5788,7 @@
    "portada": "img/5567d477c113ece5.jpg",
    "contraportada": "img/559be68e1b870e54.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "a7940f22e432af74"
   },
   {
@@ -5687,7 +5817,7 @@
    "portada": "img/690f374ea95c114c.jpg",
    "contraportada": "img/e6d9009e0e6d593c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "cdabe098e794703a"
   },
   {
@@ -5716,7 +5846,7 @@
    "portada": "img/520746fb07298fd5.jpg",
    "contraportada": "img/2f4b245d471411c3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "e7f9f0f162cb3613"
   },
   {
@@ -5745,7 +5875,7 @@
    "portada": "img/ffde00c4f52e392a.jpg",
    "contraportada": "img/8e27c0ec1634520a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "7516790027385b82"
   },
   {
@@ -5774,7 +5904,7 @@
    "portada": "img/cb94800f0031aadd.jpg",
    "contraportada": "img/5370752dc6b6c2b7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "e1f91f7a113b68a8"
   },
   {
@@ -5803,7 +5933,7 @@
    "portada": "img/7a5752b47acf19e6.jpg",
    "contraportada": "img/e73118dfab992819.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "90db5420a4c76daa"
   },
   {
@@ -5832,7 +5962,7 @@
    "portada": "img/6e3e8d04f9c596a2.jpg",
    "contraportada": "img/694532688299ad36.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "3f5c6fa107171c5b"
   },
   {
@@ -5861,7 +5991,7 @@
    "portada": "img/1a0f139c7b7f4382.jpg",
    "contraportada": "img/532ab98f91307929.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "b36b717a047322c0"
   },
   {
@@ -5890,7 +6020,7 @@
    "portada": "img/817629183668ea86.jpg",
    "contraportada": "img/21ee60929a471ca4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "edcfc1d4686d9ac6"
   },
   {
@@ -5919,7 +6049,7 @@
    "portada": "img/68da76efd5a0d0e5.jpg",
    "contraportada": "img/32e872ce46c723a4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "f07d923b108d84e5"
   },
   {
@@ -5948,7 +6078,7 @@
    "portada": "img/b63a775f3ab0d5b1.jpg",
    "contraportada": "img/b2e887311699ed6f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "trucos": [],
    "secretos": [],
    "huella": "dfda0e65ff5c99d3"
@@ -5979,7 +6109,7 @@
    "portada": "img/a3af3001590d82c7.jpg",
    "contraportada": "img/289ac36c70763eea.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "6850c2b546a390cf"
   },
   {
@@ -6008,7 +6138,7 @@
    "portada": "img/7d491fed5646b793.jpg",
    "contraportada": "img/cfb13ee313099835.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792237678517,
+   "actualizado": 1792238020068,
    "huella": "75e71823e9388d81"
   }
  ]
