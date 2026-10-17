@@ -190,6 +190,16 @@ h2.sec{margin:0 0 10px;font-family:var(--f-pixel);font-size:11px;color:var(--gol
 .k.plus{min-width:auto;background:none;box-shadow:none;color:var(--muted);padding:0 2px}
 .trick .eff{font-family:var(--f-read);font-size:15px;line-height:1.5;margin:0}
 .trick .src{font-size:12px;color:var(--muted)}
+.tag2{font-family:var(--f-pixel);font-size:6px;padding:4px 5px;border-radius:4px;background:transparent;border:1px solid var(--muted);color:var(--muted);flex:0 0 auto;transform:translateY(-2px);white-space:nowrap}
+.pc{font-size:13px;line-height:1.45;color:var(--ink);background:rgba(232,116,42,.12);border:1px dashed rgba(232,116,42,.6);border-radius:8px;padding:8px 10px}
+.tfb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;border-top:1px solid var(--line);padding-top:10px;margin-top:2px}
+.tfb .q{font-size:13px;color:var(--muted);flex:1 1 100%}
+.tv{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:var(--surface2);color:var(--ink);border-radius:999px;padding:7px 12px;font:600 13px var(--f-ui);cursor:pointer}
+.tv b{font-variant-numeric:tabular-nums;color:var(--muted);font-weight:700}
+.tv.yes[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#10200f}
+.tv.no[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.tv[aria-pressed="true"] b{color:inherit}
+.tv:disabled{opacity:.6;cursor:default}
 .nofound{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--muted);font-size:14px;text-align:center}
 .curios{margin:0;padding:0;list-style:none;counter-reset:c;display:grid;gap:12px}
 .curios li{counter-increment:c;display:grid;grid-template-columns:30px 1fr;gap:10px;font-family:var(--f-read);font-size:16px;line-height:1.55}
@@ -420,7 +430,7 @@ function open(id,push){
   $('sheet').hidden=false;$('sheet').scrollTop=0;document.body.style.overflow='hidden';
   if(state.newIds[g.id]){delete state.newIds[g.id];markOneSeen(g);renderNotice();}
   renderCommunity(g);renderMyRate(g);
-  bindVeils($('boleta'));if(g.premium&&!hasInlinePremium(g))renderPremium(g);
+  bindVeils($('boleta'));bindTricks($('boleta'));if(g.premium&&!hasInlinePremium(g))renderPremium(g);
   $('ownBtn').onclick=function(){
     if(state.owned[g.id])delete state.owned[g.id];else state.owned[g.id]=1;
     lsSet('owned',state.owned);this.setAttribute('aria-pressed',!!state.owned[g.id]);this.textContent=state.owned[g.id]?'✔ Lo tengo':'＋ Lo tengo';
@@ -594,18 +604,66 @@ function keyHtml(tok,cons){
   if(tok==='A'||tok==='B'){return '<span class="k '+(n64?(tok==='A'?'n64a':'n64b'):'ab')+'">'+tok+'</span>'}
   return '<span class="k sh">'+esc(tok)+'</span>';
 }
+function hash32(str){var h=0x811c9dc5;for(var i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0}return ('0000000'+h.toString(16)).slice(-8)}
+function trickKey(gid,egg,x){return (cid(gid).replace(/[^A-Za-z0-9_-]/g,'_')+'__'+(egg?'s':'t')+hash32(String(x.nombre||'')+'|'+String(x.seq||''))).slice(0,150)}
+var tvBusy={};
+function paintTv(box,c,mine){
+  var y=box.querySelector('.tv.yes'),n=box.querySelector('.tv.no');
+  if(c){y.querySelector('b').textContent=c.si||0;n.querySelector('b').textContent=c.no||0}
+  y.setAttribute('aria-pressed',mine===1);n.setAttribute('aria-pressed',mine===-1);
+}
+function bindTricks(root){
+  var boxes=root.querySelectorAll('.tfb[data-tk]');if(!boxes.length)return;
+  if(!cloud.ready)return;
+  boxes.forEach(function(box){
+    var tk=box.dataset.tk;box.hidden=false;
+    var cached=lsGet('tc:'+tk,null);paintTv(box,cached,lsGet('tv:'+tk,0));
+    box.querySelectorAll('.tv').forEach(function(b){b.onclick=function(){voteTrick(box,Number(b.dataset.v))}});
+  });
+  cloud.ready.then(function(){if(!cloud.on)return;
+    boxes.forEach(function(box){var tk=box.dataset.tk;
+      cloud.db.collection('trucos').doc(tk).get().then(function(s){var c=s.exists?s.data():{si:0,no:0};lsSet('tc:'+tk,c);paintTv(box,c,lsGet('tv:'+tk,0))}).catch(function(){});
+    });
+  });
+}
+function voteTrick(box,v){
+  var tk=box.dataset.tk;if(tvBusy[tk])return;
+  if(!cloud.on){toast('Sin conexión: intenta más tarde');return}
+  var mine=lsGet('tv:'+tk,0),d=(mine===v)?0:v;tvBusy[tk]=1;
+  box.querySelectorAll('.tv').forEach(function(b){b.disabled=true});
+  cloud.ready.then(function(){return cloud.authed}).then(function(){
+    var db=cloud.db,cRef=db.collection('trucos').doc(tk),vRef=cRef.collection('votos').doc(cloud.uid);
+    return db.runTransaction(function(tx){
+      return tx.get(cRef).then(function(cs){return tx.get(vRef).then(function(vs){
+        var c=cs.exists?cs.data():{si:0,no:0};var a=vs.exists?(vs.data().v||0):0;
+        if(a===d)return {si:c.si||0,no:c.no||0};
+        var nc={si:(c.si||0)-(a===1?1:0)+(d===1?1:0),no:(c.no||0)-(a===-1?1:0)+(d===-1?1:0)};
+        tx.set(cRef,nc);
+        if(d)tx.set(vRef,{v:d,at:firebase.firestore.FieldValue.serverTimestamp()});else tx.delete(vRef);
+        return nc;
+      })});
+    });
+  }).then(function(nc){
+    lsSet('tv:'+tk,d);lsSet('tc:'+tk,nc);paintTv(box,nc,d);
+    toast(d===1?'¡Gracias! Marcaste que funciona':d===-1?'¡Gracias! Marcaste que no funciona':'Voto quitado');
+  }).catch(function(e){console.warn('Voto de truco no guardado:',e);toast('No se pudo guardar tu voto. Revisa tu conexión.')})
+  .then(function(){delete tvBusy[tk];box.querySelectorAll('.tv').forEach(function(b){b.disabled=false})});
+}
 function seqHtml(seq,cons){
   var toks=[],re=/"[^"]*"|\S+/g,m;while((m=re.exec(seq||'')))toks.push(m[0]);
   return toks.length?'<div class="seq" aria-label="'+esc(seq)+'">'+toks.map(function(t){return keyHtml(t,cons)}).join('')+'</div>':'';
 }
-function tricksHtml(p,cons){
+function tricksHtml(p,cons,gid){gid=gid||(current&&current.id)||p.id||'';
   var tr=Array.isArray(p.trucos)?p.trucos.filter(Boolean).slice(0,3):null;
   var eg=Array.isArray(p.secretos)?p.secretos.filter(Boolean).slice(0,3):null;
   if(!tr&&!eg)return '';
   tr=tr||[];eg=eg||[];
-  function card(x,egg){return '<details class="trick'+(egg?' egg':'')+'"><summary><h3><span class="tag">'+(egg?'SECRETO':'TRUCO')+'</span><span class="tn">'+esc(x.nombre||'')+'</span></h3><span class="chev" aria-hidden="true">▾</span></summary><div class="tbody">'+
+  function card(x,egg){var tk=trickKey(gid,egg,x);var pc=x.conf===false;return '<details class="trick'+(egg?' egg':'')+'"><summary><h3><span class="tag">'+(egg?'SECRETO':'TRUCO')+'</span><span class="tn">'+esc(x.nombre||'')+'</span>'+(pc?'<span class="tag2">POR CONFIRMAR</span>':'')+'</h3><span class="chev" aria-hidden="true">▾</span></summary><div class="tbody">'+
     (x.donde?'<span class="where">📍 '+esc(x.donde)+'</span>':'')+seqHtml(x.seq,cons)+
-    (x.efecto?'<p class="eff">'+esc(x.efecto)+'</p>':'')+(x.fuente?'<span class="src">Fuente: '+esc(x.fuente)+'</span>':'')+'</div></details>'}
+    (x.efecto?'<p class="eff">'+esc(x.efecto)+'</p>':'')+(x.fuente?'<span class="src">Fuente: '+esc(x.fuente)+'</span>':'')+
+    (pc?'<span class="pc">⚠️ <b>Por confirmar:</b> aparece en una sola fuente o aún no está comprobado. Si lo pruebas, cuéntanos abajo si te funcionó.</span>':'')+
+    '<div class="tfb" data-tk="'+esc(tk)+'" hidden><span class="q">¿Lo probaste? Ayuda al Profe L a confirmarlo:</span><button type="button" class="tv yes" data-v="1" aria-pressed="false">👍 Funciona <b>0</b></button><button type="button" class="tv no" data-v="-1" aria-pressed="false">👎 No funciona <b>0</b></button></div>'+
+    '</div></details>'}
   var body=(tr.length?'<div class="tsub">🎮 TRUCOS <span class="hint2">(toca para ver cómo se hace)</span></div>'+tr.map(function(x){return card(x,false)}).join(''):'<div class="nofound">🎮 No se conocen trucos documentados para este juego.</div>')+
     (eg.length?'<div class="tsub">🥚 EASTER EGGS Y SECRETOS</div>'+eg.map(function(x){return card(x,true)}).join(''):'<div class="nofound">🥚 No se conocen easter eggs documentados para este juego.</div>');
   return '<section><h2 class="sec">TRUCOS Y SECRETOS</h2><div class="tricks">'+body+'</div></section>';
@@ -616,7 +674,7 @@ function premiumHtml(p){
   return (f?'<section><h2 class="sec">FICHA DE COLECCIONISTA</h2><dl class="facts">'+f+'</dl></section>':'')+
     (p.historia?'<section><h2 class="sec">HISTORIA DEL JUEGO</h2><div class="read"><p>'+esc(p.historia)+'</p></div></section>':'')+
     (cur.length?'<section><h2 class="sec">DATOS CURIOSOS Y MISTERIOS</h2><ol class="curios">'+cur.map(function(c){return '<li><span>'+esc(c)+'</span></li>'}).join('')+'</ol></section>':'')+
-    tricksHtml(p,(p.consola||(current&&current.consola)||''))+
+    tricksHtml(p,(p.consola||(current&&current.consola)||''),(current&&current.id)||p.id)+
     (p.notaMundial?'<section><h2 class="sec">NOTA A NIVEL MUNDIAL</h2><div class="world"><div class="content">'+esc(p.notaMundial)+'</div><button type="button" class="veil" data-veil>🔒 TOCA PARA REVELAR<br>LA NOTA MUNDIAL</button></div></section>':'');
 }
 function bindVeils(root){root.querySelectorAll('[data-veil]').forEach(function(v){v.onclick=function(){v.remove()}})}
@@ -639,7 +697,7 @@ function renderPremium(g,msg){
   var box=$('premiumBox');if(!box)return;
   if(prem.status==='active'){
     var cached=lsGet('prem:'+cid(g.id),null);
-    if(cached&&cached.huella===g.huella){box.innerHTML=premiumHtml(cached);bindVeils(box);return}
+    if(cached&&cached.huella===g.huella){box.innerHTML=premiumHtml(cached);bindVeils(box);bindTricks(box);return}
     box.innerHTML='<p class="hint" style="text-align:center">Cargando contenido premium…</p>';
     if(!cloud.ready){box.innerHTML=lockedHtml('Sin conexión al servidor. Intenta de nuevo más tarde.');bindLock(g);return}
     cloud.ready.then(function(){return cloud.authed}).then(function(){
@@ -647,10 +705,10 @@ function renderPremium(g,msg){
     }).then(function(s){
       if(!current||current.id!==g.id)return;
       if(!s.exists){box.innerHTML='<p class="hint" style="text-align:center">Este juego aún no tiene contenido premium publicado.</p>';return}
-      var d=s.data();lsSet('prem:'+cid(g.id),d);box.innerHTML=premiumHtml(d);bindVeils(box);
+      var d=s.data();lsSet('prem:'+cid(g.id),d);box.innerHTML=premiumHtml(d);bindVeils(box);bindTricks(box);
     }).catch(function(e){
       if(String(e&&e.code||e).indexOf('permission')>-1){setPrem('revoked');renderPremium(g,'Tu clave ya no está activa. Si crees que es un error, contacta al Profe L.');return}
-      if(cached){box.innerHTML=premiumHtml(cached);bindVeils(box);return}
+      if(cached){box.innerHTML=premiumHtml(cached);bindVeils(box);bindTricks(box);return}
       box.innerHTML='<p class="hint" style="text-align:center">No se pudo cargar. Revisa tu conexión.</p>';
     });
     return;
