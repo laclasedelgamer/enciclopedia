@@ -161,6 +161,36 @@ h2.sec{margin:0 0 10px;font-family:var(--f-pixel);font-size:11px;color:var(--gol
 .fact dd{margin:2px 0 0;font-weight:600;overflow-wrap:anywhere}
 .read{font-family:var(--f-read);font-size:17px;line-height:1.65;max-width:65ch}
 .read p{margin:0}
+/* ---------- trucos y secretos ---------- */
+.tricks{display:grid;gap:12px}
+.tsub{font-family:var(--f-pixel);font-size:9px;letter-spacing:.06em;color:var(--muted);margin:6px 0 2px}
+.trick{background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0;overflow:hidden}
+.trick summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:12px 14px;-webkit-tap-highlight-color:transparent}
+.trick summary::-webkit-details-marker{display:none}
+.trick summary:hover h3{color:var(--gold)}
+.trick summary h3{flex:1;min-width:0}
+.trick .chev{flex:0 0 auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);color:var(--gold);transition:transform .2s ease}
+.trick[open] .chev{transform:rotate(180deg)}
+.trick[open]{border-color:rgba(232,177,58,.5)}
+.trick .tbody{display:grid;gap:8px;padding:0 14px 14px}
+.tsub .hint2{font-family:var(--f-ui);letter-spacing:0;font-size:11px;margin-left:6px;opacity:.8}
+.trick h3{margin:0;font-size:15px;font-weight:700;color:var(--ink);display:flex;gap:8px;align-items:baseline;transition:color .15s}
+.trick h3 .tag{font-family:var(--f-pixel);font-size:7px;padding:4px 6px;border-radius:4px;background:var(--gold);color:var(--surface2);flex:0 0 auto;transform:translateY(-2px)}
+.trick.egg h3 .tag{background:var(--green)}
+.trick .where{font-size:13px;color:var(--muted)}
+.seq{display:flex;flex-wrap:wrap;gap:6px;align-items:center;background:var(--surface2);border-radius:8px;padding:10px;min-width:0}
+.k{display:inline-grid;place-items:center;min-width:30px;height:30px;padding:0 6px;font-weight:800;font-size:14px;line-height:1;color:#fff;box-shadow:inset 0 -3px 0 rgba(0,0,0,.35)}
+.k.dp{background:#3a3a3a;border-radius:6px;font-size:16px}
+.k.ab{background:#C8102E;border-radius:50%;width:30px;padding:0}
+.k.sys{background:#6b6b6b;border-radius:999px;font-size:10px;letter-spacing:.08em;height:24px;padding:0 10px}
+.k.n64a{background:#2f5fd0;border-radius:50%;width:30px;padding:0}.k.n64b{background:#2f9e48;border-radius:50%;width:30px;padding:0}
+.k.n64c{background:#e3b320;color:#222;border-radius:50%;width:30px;padding:0;font-size:12px}.k.n64s{background:#C8102E;border-radius:999px;font-size:10px;height:24px;padding:0 10px}
+.k.sh{background:#555;border-radius:6px;font-size:12px}
+.k.name{background:transparent;border:1.5px dashed var(--gold);color:var(--gold);border-radius:6px;font-family:var(--f-pixel);font-size:10px;font-weight:400;box-shadow:none;padding:0 10px;height:30px}
+.k.plus{min-width:auto;background:none;box-shadow:none;color:var(--muted);padding:0 2px}
+.trick .eff{font-family:var(--f-read);font-size:15px;line-height:1.5;margin:0}
+.trick .src{font-size:12px;color:var(--muted)}
+.nofound{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--muted);font-size:14px;text-align:center}
 .curios{margin:0;padding:0;list-style:none;counter-reset:c;display:grid;gap:12px}
 .curios li{counter-increment:c;display:grid;grid-template-columns:30px 1fr;gap:10px;font-family:var(--f-read);font-size:16px;line-height:1.55}
 .curios li::before{content:counter(c);font-family:var(--f-pixel);font-size:10px;width:30px;height:30px;border-radius:6px;background:var(--surface);border:1px solid var(--line);color:var(--gold);display:grid;place-items:center}
@@ -554,12 +584,39 @@ function renderCommunity(g){
 /* ---------- PREMIUM ---------- */
 var prem={status:lsGet('premStatus','none'),codigo:lsGet('premCodigo','')};
 var PREM_FIELDS=['duracion','dificultad','rareza','precio','disponibilidad','historia','curiosidades','notaMundial'];
+function keyHtml(tok,cons){
+  var n64=/N64|Nintendo 64/i.test(cons||'');
+  if(/^".*"$/.test(tok))return '<span class="k name">'+esc(tok.slice(1,-1))+'</span>';
+  if(tok==='+')return '<span class="k plus">+</span>';
+  if(/^[↑↓←→↖↗↘↙]$/.test(tok))return '<span class="k dp">'+tok+'</span>';
+  if(/^C[↑↓←→]$/.test(tok))return '<span class="k n64c">'+tok+'</span>';
+  if(tok==='START'||tok==='SELECT')return '<span class="k '+(n64?'n64s':'sys')+'">'+tok+'</span>';
+  if(tok==='A'||tok==='B'){return '<span class="k '+(n64?(tok==='A'?'n64a':'n64b'):'ab')+'">'+tok+'</span>'}
+  return '<span class="k sh">'+esc(tok)+'</span>';
+}
+function seqHtml(seq,cons){
+  var toks=[],re=/"[^"]*"|\S+/g,m;while((m=re.exec(seq||'')))toks.push(m[0]);
+  return toks.length?'<div class="seq" aria-label="'+esc(seq)+'">'+toks.map(function(t){return keyHtml(t,cons)}).join('')+'</div>':'';
+}
+function tricksHtml(p,cons){
+  var tr=Array.isArray(p.trucos)?p.trucos.filter(Boolean).slice(0,3):null;
+  var eg=Array.isArray(p.secretos)?p.secretos.filter(Boolean).slice(0,3):null;
+  if(!tr&&!eg)return '';
+  tr=tr||[];eg=eg||[];
+  function card(x,egg){return '<details class="trick'+(egg?' egg':'')+'"><summary><h3><span class="tag">'+(egg?'SECRETO':'TRUCO')+'</span><span class="tn">'+esc(x.nombre||'')+'</span></h3><span class="chev" aria-hidden="true">▾</span></summary><div class="tbody">'+
+    (x.donde?'<span class="where">📍 '+esc(x.donde)+'</span>':'')+seqHtml(x.seq,cons)+
+    (x.efecto?'<p class="eff">'+esc(x.efecto)+'</p>':'')+(x.fuente?'<span class="src">Fuente: '+esc(x.fuente)+'</span>':'')+'</div></details>'}
+  var body=(tr.length?'<div class="tsub">🎮 TRUCOS <span class="hint2">(toca para ver cómo se hace)</span></div>'+tr.map(function(x){return card(x,false)}).join(''):'<div class="nofound">🎮 No se conocen trucos documentados para este juego.</div>')+
+    (eg.length?'<div class="tsub">🥚 EASTER EGGS Y SECRETOS</div>'+eg.map(function(x){return card(x,true)}).join(''):'<div class="nofound">🥚 No se conocen easter eggs documentados para este juego.</div>');
+  return '<section><h2 class="sec">TRUCOS Y SECRETOS</h2><div class="tricks">'+body+'</div></section>';
+}
 function premiumHtml(p){
   var f=fact('Duración',p.duracion)+fact('Dificultad',p.dificultad)+fact('Rareza del cartucho',p.rareza)+fact('Precio estimado',p.precio)+fact('Qué tan difícil es de conseguir',p.disponibilidad);
   var cur=(p.curiosidades||[]).filter(Boolean);
   return (f?'<section><h2 class="sec">FICHA DE COLECCIONISTA</h2><dl class="facts">'+f+'</dl></section>':'')+
     (p.historia?'<section><h2 class="sec">HISTORIA DEL JUEGO</h2><div class="read"><p>'+esc(p.historia)+'</p></div></section>':'')+
     (cur.length?'<section><h2 class="sec">DATOS CURIOSOS Y MISTERIOS</h2><ol class="curios">'+cur.map(function(c){return '<li><span>'+esc(c)+'</span></li>'}).join('')+'</ol></section>':'')+
+    tricksHtml(p,(p.consola||(current&&current.consola)||''))+
     (p.notaMundial?'<section><h2 class="sec">NOTA A NIVEL MUNDIAL</h2><div class="world"><div class="content">'+esc(p.notaMundial)+'</div><button type="button" class="veil" data-veil>🔒 TOCA PARA REVELAR<br>LA NOTA MUNDIAL</button></div></section>':'');
 }
 function bindVeils(root){root.querySelectorAll('[data-veil]').forEach(function(v){v.onclick=function(){v.remove()}})}
