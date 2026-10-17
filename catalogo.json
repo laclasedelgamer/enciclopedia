@@ -1,5 +1,5 @@
 {
- "version": 1792239199758,
+ "version": 1792240835583,
  "juegos": [
   {
    "id": "game:bubsy-snes-1993",
@@ -27,7 +27,7 @@
    "portada": "img/c3103d5f2686d6b9.jpg",
    "contraportada": "img/4d981a0b2c127189.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832847,
    "trucos": [],
    "secretos": [],
    "huella": "bd07f4cbf15ffe8d"
@@ -58,7 +58,7 @@
    "portada": "img/acd40ed85c3bb0d6.jpg",
    "contraportada": "img/80b8275a8b35f83c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832847,
    "trucos": [
     {
      "nombre": "Bombermans miniatura",
@@ -66,10 +66,18 @@
      "seq": "\"5656\"",
      "efecto": "Ingresa 5656 como contraseña y todos los Bombermans se ven mucho más pequeños. No cambia la jugabilidad, es solo visual.",
      "fuente": "Codex Gamicus y Critical Hits"
+    },
+    {
+     "nombre": "Prueba de sonido con el Multitap",
+     "donde": "Pantalla de título",
+     "seq": "R",
+     "efecto": "Conecta un control en el puerto del jugador 5 del Multitap y aprieta R en el título.",
+     "fuente": "Critical Hits",
+     "conf": false
     }
    ],
    "secretos": [],
-   "huella": "2589c0d6e72348b4"
+   "huella": "c96a6b960c54c604"
   },
   {
    "id": "game:super-james-pond-gb-1992",
@@ -97,7 +105,7 @@
    "portada": "img/1c26c72e2e490ce8.jpg",
    "contraportada": "img/4e577cfb109a760d.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832847,
    "trucos": [],
    "secretos": [],
    "huella": "c2635bcc66209c36"
@@ -128,7 +136,7 @@
    "portada": "img/cb278eb578693af3.jpg",
    "contraportada": "img/da558163a9587129.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832847,
    "trucos": [],
    "secretos": [
     {
@@ -168,7 +176,7 @@
    "portada": "img/540c6f033dfaff41.jpg",
    "contraportada": "img/3634c1acf0daad8a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832847,
    "trucos": [
     {
      "nombre": "Selección de nivel y modo de prueba",
@@ -216,7 +224,7 @@
    "portada": "img/9f0e3d79e0331d17.jpg",
    "contraportada": "img/96085d3d3c92c67f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832847,
    "trucos": [],
    "secretos": [],
    "huella": "17fb129e550a19d0"
@@ -247,7 +255,7 @@
    "portada": "img/77c65b54a80ea8b6.jpg",
    "contraportada": "img/bbfafd9b2820c33d.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832847,
    "trucos": [
     {
      "nombre": "Conserva tu habilidad para siempre",
@@ -325,7 +333,7 @@
    "portada": "img/71e0b22e5bd99290.jpg",
    "contraportada": "img/128e7a78f9fb22ca.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832847,
    "trucos": [
     {
      "nombre": "Contraseñas de nivel",
@@ -333,10 +341,18 @@
      "seq": "\"QUESTION\" \"MASTERED\" \"MOTORWAY\" \"CABINETS\" \"SQUIRREL\"",
      "efecto": "Cada palabra te lleva directo a un nivel: QUESTION al 2, MASTERED al 3, MOTORWAY al 4, CABINETS al 5 y SQUIRREL al 6.",
      "fuente": "SuperCheats y Cyberly"
+    },
+    {
+     "nombre": "Menú de trucos con el control 2",
+     "donde": "Durante el juego",
+     "seq": "A B Y X",
+     "efecto": "Ingresa A, B, Y, X en el control 2 y luego, en el control 1, aprieta A para invencibilidad, B para doble daño o X para munición infinita.",
+     "fuente": "Cyberly",
+     "conf": false
     }
    ],
    "secretos": [],
-   "huella": "97dbfe3553d1de9f"
+   "huella": "d7cced5703482251"
   },
   {
    "id": "game:bugs-bunny-crazy-castle-nes-1989",
@@ -364,7 +380,7 @@
    "portada": "img/a6983703f24a0455.jpg",
    "contraportada": "img/408a865c13f84832.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832847,
    "trucos": [],
    "secretos": [
     {
@@ -404,7 +420,7 @@
    "portada": "img/7f1a97c1ab9a8807.jpg",
    "contraportada": "img/704e028c8e535cea.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "5371b554dc2bd286"
@@ -435,7 +451,7 @@
    "portada": "img/793af546afe75354.jpg",
    "contraportada": "img/2c11a955194a526b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Contraseña a la etapa 50",
@@ -505,7 +521,7 @@
    "portada": "img/b0104cc8c0f0f3ca.jpg",
    "contraportada": "img/669997b5fa4de083.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Salta directo a la Parte III",
@@ -552,7 +568,7 @@
    "portada": "img/3d5b9457bf781b01.jpg",
    "contraportada": "img/25716404ae348f12.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Empieza con 6 vidas",
@@ -615,7 +631,7 @@
    "portada": "img/3d9ad09229b15460.jpg",
    "contraportada": "img/2d257811ead8d2c3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Prueba de sonido",
@@ -623,10 +639,26 @@
      "seq": "START + SELECT",
      "efecto": "Mantén START y aprieta SELECT mientras juegas: se abre un menú para escuchar la música del juego.",
      "fuente": "The Cutting Room Floor y Cyberly"
+    },
+    {
+     "nombre": "Menú de trucos secreto",
+     "donde": "Pantalla de contraseña y luego en pausa",
+     "seq": "\"SPCCMD!\"",
+     "efecto": "Ingresa SPCCMD! como contraseña, acepta, cancela y empieza una partida nueva. En pausa aprieta B, Y, ↑, ↓, ←, →, L, R; luego mantén START y aprieta SELECT para abrir un menú con selección de nivel, prueba de sonido y más energía.",
+     "fuente": "The Cutting Room Floor",
+     "conf": false
+    },
+    {
+     "nombre": "Empieza con todas las botellas de energía",
+     "donde": "Pantalla de contraseña",
+     "seq": "\"UUUUUUW\"",
+     "efecto": "Comienzas el primer nivel con todas las botellas de energía.",
+     "fuente": "Cyberly",
+     "conf": false
     }
    ],
    "secretos": [],
-   "huella": "a134b7b40d69dfae"
+   "huella": "03ad3a177f219771"
   },
   {
    "id": "game:street-fighter-2010-nes-1990",
@@ -654,7 +686,7 @@
    "portada": "img/e52acb79ef775333.jpg",
    "contraportada": "img/5b413e895d83753f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "b892b3aa786b6b14"
@@ -685,7 +717,7 @@
    "portada": "img/8b0046e79f907501.jpg",
    "contraportada": "img/f32e52c86b45cc26.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Salir de un área",
@@ -747,7 +779,7 @@
    "portada": "img/2580c77cded54052.jpg",
    "contraportada": "img/43d4bc254741353b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "a6eb01cf91a81c91"
@@ -778,7 +810,7 @@
    "portada": "img/bf559a4f5a7b56f9.jpg",
    "contraportada": "img/9a59480bd8a9d6bd.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "1cfca35245a0fc94"
@@ -809,10 +841,19 @@
    "portada": "img/976862290c938d57.jpg",
    "contraportada": "img/dcd4c42756747c8d.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
-   "trucos": [],
+   "actualizado": 1792240832848,
+   "trucos": [
+    {
+     "nombre": "Modo de trucos",
+     "donde": "Pantalla de título",
+     "seq": "↑ ↓ ← →",
+     "efecto": "Abre un modo de trucos donde se ingresan códigos: 022-A9F-F7E da vidas extra y 001-3EC-E6E deja el tiempo infinito.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
    "secretos": [],
-   "huella": "545cdb3ebb6cb594"
+   "huella": "4d94c3e4c70632be"
   },
   {
    "id": "game:alien3-gb-1992",
@@ -840,7 +881,7 @@
    "portada": "img/ec3897f4bfaed95e.jpg",
    "contraportada": "img/9e993e4d9ab5b06b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "36e705c71ad2bcb1"
@@ -871,7 +912,7 @@
    "portada": "img/c35097e69fdb6578.jpg",
    "contraportada": "img/940c30bc9b9e6f22.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "62894898fce7142a"
@@ -902,10 +943,19 @@
    "portada": "img/cbc69639426d3e8b.jpg",
    "contraportada": "img/e0975f4829afc25a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
-   "trucos": [],
+   "actualizado": 1792240832848,
+   "trucos": [
+    {
+     "nombre": "Contraseña a la etapa 5",
+     "donde": "Pantalla de contraseña (versión americana y europea)",
+     "seq": "",
+     "efecto": "Ingresa Plátano, Cereza, Diamante azul, Diamante rojo, Plátano para empezar en la última etapa.",
+     "fuente": "Critical Hits y Almar's Guides",
+     "conf": true
+    }
+   ],
    "secretos": [],
-   "huella": "437e1077897afa89"
+   "huella": "6e12fd53c5a5adc1"
   },
   {
    "id": "game:mortal-kombat-snes-1993",
@@ -933,18 +983,18 @@
    "portada": "img/840b20ccde3f7c26.jpg",
    "contraportada": "img/e59d2fbbc7fcbe95.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [
     {
      "nombre": "Pelea contra Reptile",
      "donde": "The Pit, en el modo de un jugador",
      "seq": "",
-     "efecto": "Si ves una silueta cruzar la luna en The Pit, tienes la oportunidad: gana los dos rounds sin recibir daño y sin usar el botón de bloqueo, y termina con el movimiento final de tu personaje. Así aparece Reptile, el luchador secreto. Solo se puede hacer con Sub-Zero, Johnny Cage o Rayden, porque sus movimientos finales no usan el botón de bloqueo.",
+     "efecto": "Si ves una silueta cruzar la luna en The Pit, tienes la oportunidad: gana los dos rounds sin recibir daño y sin usar el botón de bloqueo, y termina con el movimiento final de tu personaje. Así aparece Reptile, el luchador secreto. Funciona mejor con Sub-Zero, Johnny Cage o Rayden.",
      "fuente": "Leedberg (MK Secrets) y Arcade-History"
     }
    ],
-   "huella": "44a6879aa47bdca4"
+   "huella": "4114952d4025b567"
   },
   {
    "id": "game:mario-is-missing-snes-1993",
@@ -972,7 +1022,7 @@
    "portada": "img/dee74defcb47c74d.jpg",
    "contraportada": "img/ec5d8648fe85c3de.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [
     {
@@ -1011,18 +1061,18 @@
    "portada": "img/e2e70659e87b01b3.jpg",
    "contraportada": "img/1d2b4e244f114c5a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Desafío secreto",
      "donde": "Pantalla de título",
      "seq": "L + R + X + Y + START",
-     "efecto": "Aprieta los cinco botones al mismo tiempo para jugar una nueva aventura más difícil. El propio Yoshi da la pista dentro del juego.",
+     "efecto": "Aprieta los cinco botones al mismo tiempo para jugar una nueva aventura más difícil. El propio Yoshi da la pista dentro del juego al terminarlo.",
      "fuente": "Super Mario Wiki y el propio juego"
     }
    ],
    "secretos": [],
-   "huella": "59a0aeb88a1d706e"
+   "huella": "4615eeacd063e66a"
   },
   {
    "id": "game:baby-t-rex-gb-1993",
@@ -1050,7 +1100,7 @@
    "portada": "img/36bc37e66089f930.jpg",
    "contraportada": "",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "d38f2feb8d246859"
@@ -1081,10 +1131,28 @@
    "portada": "img/e5024bb1d3ed67a3.jpg",
    "contraportada": "img/4fefbf0b01490971.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
-   "trucos": [],
-   "secretos": [],
-   "huella": "da8ade9c3871806a"
+   "actualizado": 1792240832848,
+   "trucos": [
+    {
+     "nombre": "Menú de opciones escondido",
+     "donde": "Pantalla de título (versiones americana y europea)",
+     "seq": "SELECT",
+     "efecto": "Aprieta SELECT en el título para abrir un menú donde puedes apagar la música o los efectos y elegir empezar con 1 a 7 vidas.",
+     "fuente": "The Cutting Room Floor",
+     "conf": false
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "El teléfono y la mermelada",
+     "donde": "Áreas secretas de las etapas",
+     "seq": "",
+     "efecto": "En áreas secretas hay teléfonos: si Alfred contesta, Mr. Pekles (una flor gigante) le regala un frasco de mermelada como bonus.",
+     "fuente": "Wikipedia",
+     "conf": false
+    }
+   ],
+   "huella": "445145cba275f401"
   },
   {
    "id": "game:biometal-snes-1993",
@@ -1112,7 +1180,7 @@
    "portada": "img/fe0d5d74762a426a.jpg",
    "contraportada": "img/e99690a99db8d6b7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "f52e3aaa4efefc80"
@@ -1143,7 +1211,7 @@
    "portada": "img/2bcaf60924001ca3.jpg",
    "contraportada": "img/df4b66297e48ae93.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "bee4a1283e65c16e"
@@ -1174,10 +1242,19 @@
    "portada": "img/f7422120fd2e811a.jpg",
    "contraportada": "img/c07299a378d18b41.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
-   "trucos": [],
+   "actualizado": 1792240832848,
+   "trucos": [
+    {
+     "nombre": "Selección de nivel",
+     "donde": "Pantalla de título",
+     "seq": "↑ + A + B",
+     "efecto": "Mantén arriba y aprieta A + B ocho veces hasta escuchar un sonido. Luego, en el título, mantén abajo + A y aprieta B para cambiar el nivel.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
    "secretos": [],
-   "huella": "22f169af36ec59c9"
+   "huella": "373eabab02ce48fd"
   },
   {
    "id": "game:addams-pugsley-snes-1993",
@@ -1205,7 +1282,7 @@
    "portada": "img/f4353ea89ef83df6.jpg",
    "contraportada": "img/d5f8590684ba4810.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "ed19c82445ba3d92"
@@ -1236,7 +1313,7 @@
    "portada": "img/93a68bf46a62c63a.jpg",
    "contraportada": "img/efc1bcb690180670.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "83551fb8850a25e6"
@@ -1267,7 +1344,7 @@
    "portada": "img/cf5f893af48bfd64.jpg",
    "contraportada": "img/c1bab0006c0d89fa.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "e379475008805f0e"
@@ -1298,7 +1375,7 @@
    "portada": "img/8d3a74e9c6149227.jpg",
    "contraportada": "img/d85efea9e8f481af.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Selección de nivel",
@@ -1338,7 +1415,7 @@
    "portada": "img/73df479c3654bffe.jpg",
    "contraportada": "img/669cc9ab7db1a241.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "3f1b040feac742b1"
@@ -1369,7 +1446,7 @@
    "portada": "img/bef19fdc9456beda.jpg",
    "contraportada": "img/ff3400014693678f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "cc79a18d3dc491e7"
@@ -1400,7 +1477,7 @@
    "portada": "img/2c25b9fb128774e9.jpg",
    "contraportada": "img/dfb0319327d086c1.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "28e6365e3519d280"
@@ -1431,7 +1508,7 @@
    "portada": "img/80bd0e0f4b9be365.jpg",
    "contraportada": "img/1bd5865f888123b9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "da6fd0a8ba6f7aee"
@@ -1462,7 +1539,7 @@
    "portada": "img/63f300be5566f908.jpg",
    "contraportada": "img/d56c2cc18014f963.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Continuaciones extra",
@@ -1509,7 +1586,7 @@
    "portada": "img/722b41aec3d10fc4.jpg",
    "contraportada": "img/b1e2f0b39c8e65e1.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [],
    "secretos": [],
    "huella": "348f52777f7a5369"
@@ -1540,7 +1617,7 @@
    "portada": "img/95ca01e7e79b2a11.jpg",
    "contraportada": "img/e362cd81af2d6e6b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Salta al siguiente nivel",
@@ -1579,7 +1656,7 @@
    "portada": "img/fec16bca0cfcfc58.jpg",
    "contraportada": "img/3727a32dd4d5de8b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197159,
+   "actualizado": 1792240832848,
    "trucos": [
     {
      "nombre": "Más velocidades Turbo",
@@ -1587,10 +1664,18 @@
      "seq": "↓ R ↑ L Y B",
      "efecto": "Desbloquea velocidades Turbo más rápidas que las normales, hasta 10 estrellas. En la versión japonesa la secuencia termina además con X A.",
      "fuente": "StrategyWiki, Arcade-History y Wikipedia"
+    },
+    {
+     "nombre": "Desactivar los movimientos especiales",
+     "donde": "Pantalla de Capcom",
+     "seq": "↓ R ↑ L Y B X A",
+     "efecto": "Desactiva los movimientos especiales en el modo de un jugador.",
+     "fuente": "Arcade-History",
+     "conf": false
     }
    ],
    "secretos": [],
-   "huella": "17836bf668951178"
+   "huella": "5cc47e6738f6e2d9"
   },
   {
    "id": "game:super-valis-iv-snes-1993",
@@ -1618,7 +1703,7 @@
    "portada": "img/8d7c9fd86a3c332a.jpg",
    "contraportada": "img/ce348c5c5e50763a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "2bdca2c2898e893c"
@@ -1649,7 +1734,7 @@
    "portada": "img/50495bb66f3a6d28.jpg",
    "contraportada": "img/0db727b88dac27b2.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "f4c37b72fd6ac8b4"
@@ -1680,7 +1765,7 @@
    "portada": "img/df313a19cbbb28ab.jpg",
    "contraportada": "img/f8be13cf6c3bd541.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "b0d7c351d4b8808f"
@@ -1711,7 +1796,7 @@
    "portada": "img/6017435b1f50fce1.jpg",
    "contraportada": "img/cc1447253e7b6767.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "054741bd367fed57"
@@ -1742,10 +1827,28 @@
    "portada": "img/c1d2d185ac6bc9bb.jpg",
    "contraportada": "img/88f6a176ee2538e8.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "trucos": [],
-   "secretos": [],
-   "huella": "42b806d05b3d90e6"
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Contraseña de selección de etapa",
+     "donde": "Pantalla de contraseña",
+     "seq": "",
+     "efecto": "Elige los íconos Mono, Estrella, Corona y Congo, en ese orden, para poder elegir la etapa.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "Vidas infinitas con la estatua",
+     "donde": "Etapas embrujadas",
+     "seq": "",
+     "efecto": "Busca la estatua de Joe y golpéala varias veces con tu garrote: suelta vidas extra, todas las veces que quieras.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "huella": "9bafb3fc8298779e"
   },
   {
    "id": "game:spy-hunter-nes-1987",
@@ -1773,7 +1876,7 @@
    "portada": "img/06639bfe74c8e214.jpg",
    "contraportada": "img/0586086c787666d2.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "26331a71a7d378f7"
@@ -1804,7 +1907,7 @@
    "portada": "img/7dea3f240462f4d6.jpg",
    "contraportada": "img/50a00ad3db91ba71.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "3ce1153186350b07"
@@ -1835,7 +1938,7 @@
    "portada": "img/35c0adfca3403686.jpg",
    "contraportada": "img/946a7e9b2afe35fd.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [
     {
@@ -1881,7 +1984,7 @@
    "portada": "img/349af42d480ed76b.jpg",
    "contraportada": "img/3ede4f290368306f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [
     {
      "nombre": "Empieza con el Energy Balancer",
@@ -1945,7 +2048,7 @@
    "portada": "img/a0b373c020e9c366.jpg",
    "contraportada": "img/7bef0ce9a53741af.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "ebdaf86d647720bf"
@@ -1976,7 +2079,7 @@
    "portada": "img/3ed7ccdf6297bf25.jpg",
    "contraportada": "img/aadf79d326747419.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "3146bb8c2bda8f96"
@@ -2007,7 +2110,7 @@
    "portada": "img/77a54b1b9e5a092d.jpg",
    "contraportada": "img/1cc754e8f38baa6e.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "ffd0fb795bfd4b0b"
@@ -2038,10 +2141,19 @@
    "portada": "img/069b6a07d8833c2d.jpg",
    "contraportada": "img/0de364dfd5d09fa9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "trucos": [],
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Selección de nivel",
+     "donde": "Pantalla de título",
+     "seq": "L R L R ↓",
+     "efecto": "Escucharás un sonido; al empezar la partida podrás elegir el nivel.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
    "secretos": [],
-   "huella": "afe2792e8bea2000"
+   "huella": "c94e9ba27de7bd04"
   },
   {
    "id": "game:thunder-spirits-snes-1992",
@@ -2069,10 +2181,35 @@
    "portada": "img/8f4eaab8fbefc0e6.jpg",
    "contraportada": "img/153520b1a9ba671f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "trucos": [],
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Modificar tu nave",
+     "donde": "Con la partida en pausa",
+     "seq": "SELECT×10 L R R SELECT",
+     "efecto": "En pausa, aprieta SELECT diez veces y luego L, R, R, SELECT. Después: A mejora o agrega armas, B las baja, X agrega naves de apoyo, Y agrega escudo y R hace autodestrucción. Otra fuente indica L, R, L al final, así que si no resulta prueba esa variante.",
+     "fuente": "The Cutting Room Floor y Almar's Guides",
+     "conf": false
+    },
+    {
+     "nombre": "Continuaciones extra",
+     "donde": "Pantalla de título",
+     "seq": "B",
+     "efecto": "Aprieta B lo más rápido que puedas en el título: un sonido confirma el truco.",
+     "fuente": "Almar's Guides",
+     "conf": false
+    },
+    {
+     "nombre": "Pantalla de configuración",
+     "donde": "Pantalla de título",
+     "seq": "SELECT + START",
+     "efecto": "Mantén SELECT y aprieta START para abrir una configuración básica. Al terminar el juego se desbloquean más opciones, como la prueba de sonido.",
+     "fuente": "The Cutting Room Floor",
+     "conf": false
+    }
+   ],
    "secretos": [],
-   "huella": "99db680d4d5c19ff"
+   "huella": "fa8f9d7f442b9061"
   },
   {
    "id": "game:cool-spot-snes-1993",
@@ -2100,10 +2237,36 @@
    "portada": "img/4cf3ee43da018c49.jpg",
    "contraportada": "img/6843399ec6c71ff4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "trucos": [],
-   "secretos": [],
-   "huella": "e8a53b67511dbd35"
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Selección de nivel",
+     "donde": "Al encender la consola, en el logo de Virgin",
+     "seq": "L + R + SELECT",
+     "efecto": "Mantén L y R mientras enciendes el SNES y, con el logo de Virgin todavía en pantalla, aprieta SELECT 30 veces sin soltar L y R.",
+     "fuente": "SuperCheats",
+     "conf": false
+    },
+    {
+     "nombre": "Ver los créditos",
+     "donde": "Pantalla de título",
+     "seq": "L L R",
+     "efecto": "Muestra los créditos del juego.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "El mejor final",
+     "donde": "Final del juego",
+     "seq": "",
+     "efecto": "Termina el juego en dificultad difícil para ver el final completo.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
+   "huella": "713ebe5ae7d3c2e4"
   },
   {
    "id": "game:flashback-snes-1993",
@@ -2131,10 +2294,19 @@
    "portada": "img/2ffded7ae791f138.jpg",
    "contraportada": "img/7990fde32ca87699.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "trucos": [],
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Contraseña del final",
+     "donde": "Pantalla de contraseña",
+     "seq": "\"PKRSLC\"",
+     "efecto": "Te lleva directo al final de la aventura. Hay además contraseñas para cada nivel en las tres dificultades.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
    "secretos": [],
-   "huella": "645ded0ed92f3904"
+   "huella": "94932be387161e21"
   },
   {
    "id": "game:james-bond-jr-snes-1992",
@@ -2162,7 +2334,7 @@
    "portada": "img/2dd6a6786b29e0ae.jpg",
    "contraportada": "img/403ef9d77caea375.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "01c3a16f08b59dc1"
@@ -2193,7 +2365,7 @@
    "portada": "img/1fb6e2dca7949416.jpg",
    "contraportada": "img/68c18b9e8058655c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "6f0d146ec59b551c"
@@ -2224,8 +2396,27 @@
    "portada": "img/f73a71d9b161d93b.jpg",
    "contraportada": "img/a1c7e6ad86ecb8bf.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "62481db02c1b8b2e"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [
+    {
+     "nombre": "Nivel secreto de vidas infinitas",
+     "donde": "Cordillera del este del parque",
+     "seq": "",
+     "efecto": "En las montañas del este hay un nivel secreto donde puedes conseguir todas las vidas que quieras.",
+     "fuente": "Jurassic Park Wiki",
+     "conf": false
+    },
+    {
+     "nombre": "La gran búsqueda del huevo",
+     "donde": "Por todo el parque",
+     "seq": "",
+     "efecto": "Hay ocho letras escondidas en el parque. Fueron parte de un concurso de la época: juntas forman \"Dr. Horner\", por el paleontólogo Jack Horner, asesor de la película.",
+     "fuente": "Jurassic Park Wiki",
+     "conf": false
+    }
+   ],
+   "huella": "48ee8587f0c15059"
   },
   {
    "id": "game:jurassic-park-2-gameboy-1995",
@@ -2253,10 +2444,19 @@
    "portada": "img/fc3a7381b9ff2a6f.jpg",
    "contraportada": "img/9598743f704ed055.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "trucos": [],
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Saltar etapa",
+     "donde": "Con la partida en pausa",
+     "seq": "↑ ↓ ← → A B ↑ ↓ ← → A B",
+     "efecto": "Ingresa la secuencia en pausa hasta escuchar un sonido. Luego mantén SELECT y aprieta START para pasar a la siguiente etapa.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
    "secretos": [],
-   "huella": "4ead167e55da9310"
+   "huella": "5ec0550657feca5c"
   },
   {
    "id": "game:battletoads-battlemaniacs-snes-1993",
@@ -2284,8 +2484,36 @@
    "portada": "img/b72b585071dd5216.jpg",
    "contraportada": "img/172ae33973c23707.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "8bb371e5b98eeba3"
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "5 vidas y 5 continuaciones",
+     "donde": "Antes y durante la pantalla de título",
+     "seq": "↓ + A + B + START",
+     "efecto": "Mantén abajo, A y B desde antes de que aparezca el título y aprieta START sin soltarlos: la pantalla parpadea en rojo y empiezas con 5 vidas y 5 continuaciones.",
+     "fuente": "Critical Hits y Cyberly",
+     "conf": true
+    },
+    {
+     "nombre": "Súper salto",
+     "donde": "Pantalla de título",
+     "seq": "↑ ↑ ↓ ← → B START",
+     "efecto": "Activa un salto mucho más alto.",
+     "fuente": "Critical Hits y Cyberly",
+     "conf": true
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "Vida extra en el nivel del árbol",
+     "donde": "Nivel 2",
+     "seq": "",
+     "efecto": "Golpea al mismo insecto cinco veces para ganar una vida extra.",
+     "fuente": "Cyberly",
+     "conf": false
+    }
+   ],
+   "huella": "b1a475f70b49140d"
   },
   {
    "id": "game:ferrari-grand-prix-challenge-nes-1992",
@@ -2313,7 +2541,7 @@
    "portada": "img/d693d5329ba0e630.jpg",
    "contraportada": "img/7a552b359ad47c23.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [
     {
      "nombre": "Contraseña a la carrera final",
@@ -2353,7 +2581,7 @@
    "portada": "img/1d7f278f222829ed.jpg",
    "contraportada": "img/9fe8d2a099041ede.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [
     {
      "nombre": "Menú secreto: selección de etapa y prueba de sonido",
@@ -2393,7 +2621,7 @@
    "portada": "img/b1f47180a6a750b6.jpg",
    "contraportada": "img/b0a39df64c1ab56c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [
     {
@@ -2432,7 +2660,7 @@
    "portada": "img/3475faf72536d44d.jpg",
    "contraportada": "img/64cf3baa2a9fe634.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "25b20a1b2039b485"
@@ -2463,8 +2691,10 @@
    "portada": "img/cfbd88e08c118bd2.jpg",
    "contraportada": "img/fa8ab7bed5da005c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "65afeb187a491fda"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "00dd726c9101e296"
   },
   {
    "id": "game:vice-project-doom-nes-1991",
@@ -2492,7 +2722,7 @@
    "portada": "img/1e521511da4a21f3.jpg",
    "contraportada": "img/4a49ba486400d2da.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "4391e0954e7fe677"
@@ -2523,8 +2753,36 @@
    "portada": "img/bce4e8c07349fd7a.jpg",
    "contraportada": "img/af04830df2da5b6b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "2ae3a88c263ecf5a"
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Luchador miniatura",
+     "donde": "Pantalla donde los luchadores conversan antes del combate",
+     "seq": "↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑",
+     "efecto": "Aprieta arriba (o abajo) diez veces seguidas y tu personaje se vuelve diminuto.",
+     "fuente": "Critical Hits",
+     "conf": false
+    },
+    {
+     "nombre": "Modos Turbo",
+     "donde": "Al encender la consola, con el control 2",
+     "seq": "L + R",
+     "efecto": "Mantén L o R en el control 2 hasta que hable Goku para el Turbo 1 (el título parpadea rosado). Con L + R juntos activas el Turbo 2 (parpadea rosado y blanco).",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "Broly y Goku ya desbloqueados",
+     "donde": "Modo versus",
+     "seq": "",
+     "efecto": "En Japón había que conseguir un código para usar a Broly y a Goku. En esta versión europea (La Légende Saien) ya vienen desbloqueados.",
+     "fuente": "StrategyWiki",
+     "conf": false
+    }
+   ],
+   "huella": "4b042387037025ad"
   },
   {
    "id": "game:cliffhanger-snes-1993",
@@ -2552,8 +2810,10 @@
    "portada": "img/2cdcd18c86a50a32.jpg",
    "contraportada": "img/cdac52450e5e36a3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "de82afa415256cde"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "62be6f286e661a5a"
   },
   {
    "id": "game:dennis-the-menace-snes-1993",
@@ -2581,8 +2841,10 @@
    "portada": "img/9baa3164f3ecdbb6.jpg",
    "contraportada": "img/ff58df086aa0624a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "11796fbb5b190ae9"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "d67e912b1f7aa4e9"
   },
   {
    "id": "game:dennis-the-menace-gameboy-1993",
@@ -2610,7 +2872,7 @@
    "portada": "img/c4192683b0d9f999.jpg",
    "contraportada": "img/192a3a5cccebcc46.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "39c26b7141d08e5b"
@@ -2641,8 +2903,10 @@
    "portada": "img/73b7447b7686466d.jpg",
    "contraportada": "img/1edb21cccf2713c6.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "d8f2c1f3f78415d5"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "c30733032ae4c125"
   },
   {
    "id": "game:the-ultimate-stuntman-nes-1990",
@@ -2670,7 +2934,7 @@
    "portada": "img/0e663d4977f2ae33.jpg",
    "contraportada": "img/2cf485d7adc1f025.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "bb8cbd1cfc2a52be"
@@ -2701,7 +2965,7 @@
    "portada": "img/1cd3dd5bd9130485.jpg",
    "contraportada": "img/915cf00bd39d7b75.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "8284fa7ac81286d0"
@@ -2732,8 +2996,10 @@
    "portada": "img/8b51ccf3e81bd5cd.jpg",
    "contraportada": "img/ceed91458429d9bf.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "888f4674efef0f2a"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "389288b8524cbd66"
   },
   {
    "id": "game:batman-the-animated-series-gameboy-1993",
@@ -2761,7 +3027,7 @@
    "portada": "img/5ae3fbddce0b67a7.jpg",
    "contraportada": "img/d2893becd571f812.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "ed876ed4c22b2916"
@@ -2792,8 +3058,36 @@
    "portada": "img/c11eb509939b8b73.jpg",
    "contraportada": "img/f37cea9632f62a3c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "0fcd50dfd74edca9"
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Selección de nivel",
+     "donde": "Menú de opciones, con el control 2",
+     "seq": "L R START SELECT X Y A B",
+     "efecto": "Ingresa la secuencia en el control 2 hasta escuchar un sonido. En el título, mantén L + R y usa arriba/abajo para el nivel e izquierda/derecha para la sección.",
+     "fuente": "SuperCheats",
+     "conf": false
+    },
+    {
+     "nombre": "Vidas extra en los niveles bonus",
+     "donde": "Niveles de bonus",
+     "seq": "B",
+     "efecto": "Aprieta B justo cuando el Genio parpadea.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "Final distinto",
+     "donde": "Final del juego",
+     "seq": "",
+     "efecto": "Termina el juego con más de 70 gemas rojas para ver un final diferente.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
+   "huella": "82d519ca0b4b85bc"
   },
   {
    "id": "game:buster-bros-gameboy-1993",
@@ -2821,7 +3115,7 @@
    "portada": "img/d04e15a396b9cab9.jpg",
    "contraportada": "img/2ee8a64c51fcc2ba.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "01e3c407d8eda195"
@@ -2852,7 +3146,7 @@
    "portada": "img/c77a7a3ef92c03f0.jpg",
    "contraportada": "",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "0f5ad25e4e390660"
@@ -2883,8 +3177,10 @@
    "portada": "img/ace30f77c0b278e5.jpg",
    "contraportada": "img/082c42d20b61c8b4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "18f857296af19fa7"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "4c0b8529bae34e27"
   },
   {
    "id": "game:darkwing-duck-gameboy-1993",
@@ -2912,10 +3208,19 @@
    "portada": "img/90bbded41ad31722.jpg",
    "contraportada": "img/54d7b8a4ea49f656.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
-   "secretos": [],
-   "huella": "d3ad4a6a67d5b1f8"
+   "secretos": [
+    {
+     "nombre": "La misión secreta",
+     "donde": "Misión del puente de Quackerjack",
+     "seq": "",
+     "efecto": "Camina hasta el primer hoyo del suelo, baja a la cornisa y dispara a la pared del otro lado: aparece la palabra \"Go\" rodeada de asteriscos. Salta sobre ella y un informante te contará de la misión secreta.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
+   "huella": "b6ba9332d91e72dc"
   },
   {
    "id": "game:popn-twinbee-snes-1993",
@@ -2943,8 +3248,10 @@
    "portada": "img/0f6f5179b879ad97.jpg",
    "contraportada": "img/1e69d4cf43f8d735.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "8152390091d68c9a"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "46744a54a9e29956"
   },
   {
    "id": "game:ranma-1-2-hard-battle-snes-1993",
@@ -2972,8 +3279,27 @@
    "portada": "img/8328178bb5b317c9.jpg",
    "contraportada": "img/e7e3829772cf9ac5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "1811f3179c036849"
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Todos los personajes",
+     "donde": "Selección de personaje",
+     "seq": "L + R",
+     "efecto": "Al comienzo solo están Ranma hombre y mujer: mantén L y R al elegir personaje para usar al resto del elenco.",
+     "fuente": "Hardcore Gaming 101",
+     "conf": false
+    },
+    {
+     "nombre": "Menú de depuración y Happosai jugable",
+     "donde": "Después de elegir personaje, antes del round",
+     "seq": "R + X + A",
+     "efecto": "Abre un menú secreto para cambiar los personajes, sus estadísticas y el escenario. Además desbloquea a Happosai, normalmente solo el jefe final.",
+     "fuente": "The Cutting Room Floor",
+     "conf": false
+    }
+   ],
+   "secretos": [],
+   "huella": "4543013745c70631"
   },
   {
    "id": "game:the-blues-brothers-snes-1993",
@@ -3001,8 +3327,10 @@
    "portada": "img/61c5d893e0e6aced.jpg",
    "contraportada": "img/c13b07d256d790e4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "a49ef6f9407310f7"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "5f295eb951d7e0f7"
   },
   {
    "id": "game:chuck-rock-snes-1993",
@@ -3030,8 +3358,10 @@
    "portada": "img/5b1d439cd57e55e6.jpg",
    "contraportada": "img/3a42047f0a833b21.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "12b5ae14d10c3586"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "24f6885858827422"
   },
   {
    "id": "game:the-fidgetts-gameboy-1997",
@@ -3059,7 +3389,7 @@
    "portada": "img/99dde58900ef9cff.jpg",
    "contraportada": "img/0bfa760d576381a7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "62128f6f4afbd251"
@@ -3090,7 +3420,7 @@
    "portada": "img/1c45040b41451b2d.jpg",
    "contraportada": "img/6cdb8dfc48c35756.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "f3112afeadf140d4"
@@ -3121,8 +3451,19 @@
    "portada": "img/daab737e73ae906c.jpg",
    "contraportada": "img/6fca89dcd1a50dea.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "590d0b20a85864a2"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [
+    {
+     "nombre": "La Gárgola Definitiva y el jefe secreto",
+     "donde": "Al terminar el juego con el tercer final",
+     "seq": "",
+     "efecto": "El juego tiene varios finales. Con el tercero recibes una contraseña especial para seguir con una nueva transformación, la Gárgola Definitiva, y acceder al cuarto final escondido contra un jefe secreto: Dark Demon.",
+     "fuente": "Wikipedia",
+     "conf": false
+    }
+   ],
+   "huella": "4bdacd1c1c155cfa"
   },
   {
    "id": "game:musya-snes-1992",
@@ -3150,8 +3491,10 @@
    "portada": "img/d9aa919d33535233.jpg",
    "contraportada": "img/af3be2e17d8461df.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "95157632364a4868"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [],
+   "huella": "b9623c4e6776c27c"
   },
   {
    "id": "game:friday-the-13th-nes-1989",
@@ -3179,7 +3522,7 @@
    "portada": "img/56b25ebee96f58e0.jpg",
    "contraportada": "img/b19a42b91fd8ce57.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [
     {
@@ -3226,7 +3569,7 @@
    "portada": "img/507413bbab0f99f1.jpg",
    "contraportada": "img/61e3b755de8b3783.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "997bcb53c52bfd91"
@@ -3257,8 +3600,19 @@
    "portada": "img/7d1291654890b917.jpg",
    "contraportada": "img/0b149693ab0c2ca5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "42c18415439a415f"
+   "actualizado": 1792240832890,
+   "trucos": [],
+   "secretos": [
+    {
+     "nombre": "Los múltiples finales",
+     "donde": "Durante toda la aventura",
+     "seq": "",
+     "efecto": "Clock Tower tiene varios finales según lo que descubras y a quién salves. Por ejemplo, puedes encontrar las llaves de un auto en el garaje y huir, pero obtienes un mal final si escapas sin descubrir los secretos de la mansión. En el mejor final logras rescatar a una de tus compañeras.",
+     "fuente": "Everything is Scary",
+     "conf": false
+    }
+   ],
+   "huella": "9a02fff7dc94cfed"
   },
   {
    "id": "game:castlevania-iii-draculas-curse-nes-1990",
@@ -3286,7 +3640,7 @@
    "portada": "img/66d80c0a10c40510.jpg",
    "contraportada": "img/a95997cf86e1e8c5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [
     {
      "nombre": "Empieza con 10 vidas",
@@ -3347,7 +3701,7 @@
    "portada": "img/5b8971abbd588c71.jpg",
    "contraportada": "img/dd0da1986518dcde.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [
     {
@@ -3386,7 +3740,7 @@
    "portada": "img/a7a6c04ad7674c60.jpg",
    "contraportada": "img/7f75fc7cf33ea89e.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [
     {
      "nombre": "Selección de nivel",
@@ -3426,7 +3780,7 @@
    "portada": "img/b381db08455bc6f2.jpg",
    "contraportada": "img/c1d15fb51d28716f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [
     {
      "nombre": "Saltar nivel con el control 2",
@@ -3474,7 +3828,7 @@
    "portada": "img/079cf283707c0205.jpg",
    "contraportada": "img/54186d3e2f609200.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "d8c2e91e90c0dcfc"
@@ -3505,7 +3859,7 @@
    "portada": "img/2ceb86710e8560eb.jpg",
    "contraportada": "img/40138569582384fb.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [
     {
      "nombre": "10 vidas",
@@ -3561,7 +3915,7 @@
    "portada": "img/e15f4919c0e84463.jpg",
    "contraportada": "img/5e95a399cfdfa2af.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "6d9a24e1d9d2a9cf"
@@ -3592,7 +3946,7 @@
    "portada": "img/911bad73af090431.jpg",
    "contraportada": "img/e9d4ab17495a72bd.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "54a1ed96ec972bdc"
@@ -3623,7 +3977,7 @@
    "portada": "img/e248656322f652f5.jpg",
    "contraportada": "img/cbf34d1621bb73a4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [
     {
      "nombre": "Saltar a la siguiente etapa",
@@ -3663,7 +4017,7 @@
    "portada": "img/cd11b9a208ded22c.jpg",
    "contraportada": "img/86a69b1a76445080.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "791e3f44a72bba22"
@@ -3694,7 +4048,7 @@
    "portada": "img/79c7b8cd7f974c4f.jpg",
    "contraportada": "img/e3ffd0bae75a4730.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "25d51328233b811a"
@@ -3725,7 +4079,7 @@
    "portada": "img/bd6fa7122039661c.jpg",
    "contraportada": "img/7e55903115c59c2f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "ebeb126199faa12f"
   },
   {
@@ -3754,7 +4108,7 @@
    "portada": "img/49861dbf6be08691.jpg",
    "contraportada": "img/62c538e990f7e39b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "65742fc7576b4241"
   },
   {
@@ -3783,7 +4137,7 @@
    "portada": "img/8849133d825f9117.jpg",
    "contraportada": "img/a8c0c7b94aede533.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "81c426fb34282251"
   },
   {
@@ -3812,7 +4166,7 @@
    "portada": "img/9007ce500562077e.jpg",
    "contraportada": "img/d1baf12763261eb9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "0c8892d4cf6fe40a"
   },
   {
@@ -3841,7 +4195,7 @@
    "portada": "img/81be59541d404f82.jpg",
    "contraportada": "img/ab75bfd6bf59fa94.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "b135b51271af6320"
   },
   {
@@ -3870,7 +4224,7 @@
    "portada": "img/8c91451cd135ffe2.jpg",
    "contraportada": "img/693ec5a0a3274b82.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "ad024b03ca782f5d"
   },
   {
@@ -3899,7 +4253,7 @@
    "portada": "img/490f70e127c5b57f.jpg",
    "contraportada": "img/14fe5641acba079b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "0c186f30d53aa912"
   },
   {
@@ -3928,7 +4282,7 @@
    "portada": "img/78c167d6e6681b2c.jpg",
    "contraportada": "img/1727265272da6a80.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "e7a2b2f1b5775927"
   },
   {
@@ -3957,7 +4311,7 @@
    "portada": "img/430b94f89aa1efc2.jpg",
    "contraportada": "img/53ab109d5090032b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "340426972ad4b51d"
   },
   {
@@ -3986,7 +4340,7 @@
    "portada": "img/fc06a3c08aa09aa6.jpg",
    "contraportada": "img/98f55127d269f939.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "ab73e80fbe2d46f9"
   },
   {
@@ -4015,7 +4369,7 @@
    "portada": "img/89ff7b49b678d707.jpg",
    "contraportada": "img/8a2c269143f2a6e7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "c2e5435313779411"
   },
   {
@@ -4044,7 +4398,7 @@
    "portada": "img/1701b5e46a2b266a.jpg",
    "contraportada": "img/3721f6ef7f434379.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "e3fc9ce34bd4a509"
   },
   {
@@ -4073,7 +4427,7 @@
    "portada": "img/91b7ffdd3da10103.jpg",
    "contraportada": "img/fbc6426b23a87ac9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "44596d9b49fc73cd"
   },
   {
@@ -4102,7 +4456,7 @@
    "portada": "img/42e59c4d1d1d89af.jpg",
    "contraportada": "img/092227ff8b39d291.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "eb19410ce7799d12"
   },
   {
@@ -4131,7 +4485,7 @@
    "portada": "img/3810097d4d3756f7.jpg",
    "contraportada": "img/30a337e3c6490c51.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "d0496ec91fb57ee3"
   },
   {
@@ -4160,7 +4514,7 @@
    "portada": "img/2132814c1ef9f2e2.jpg",
    "contraportada": "img/0e01755c4e810d76.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "15f85f3ae1ac9ef4"
   },
   {
@@ -4189,7 +4543,7 @@
    "portada": "img/b7a7f5d820854162.jpg",
    "contraportada": "img/31459cf74b38b1ad.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "6a0095cf61109921"
   },
   {
@@ -4218,7 +4572,7 @@
    "portada": "img/12ee897af3fad010.jpg",
    "contraportada": "img/67c70ac292540544.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "d57201112a4c02b7"
   },
   {
@@ -4247,7 +4601,7 @@
    "portada": "img/1fc04404fdc6499e.jpg",
    "contraportada": "img/8933095403c8f676.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "e124199e413e92b8"
   },
   {
@@ -4276,7 +4630,7 @@
    "portada": "img/581c894539543d43.jpg",
    "contraportada": "img/26f130f7421ab5c5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "905952911745ddab"
   },
   {
@@ -4305,7 +4659,7 @@
    "portada": "img/2a99d8fa26fa2e28.jpg",
    "contraportada": "img/8294f150a9a82ea2.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "f8bc01d8c18d087e"
   },
   {
@@ -4334,7 +4688,7 @@
    "portada": "img/ef534009a85c5f5f.jpg",
    "contraportada": "img/2f186ac063e22ba2.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "1a7dc8daeadaa624"
   },
   {
@@ -4363,7 +4717,7 @@
    "portada": "img/7720cf586cf203da.jpg",
    "contraportada": "img/60d82aeae9fda414.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "7cbd6e2edccc3550"
   },
   {
@@ -4392,7 +4746,7 @@
    "portada": "img/93f181ede7615c5b.jpg",
    "contraportada": "img/4acf1c9154a2fdc7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "4d752968b05f1b0e"
   },
   {
@@ -4421,7 +4775,7 @@
    "portada": "img/249820b3dda5b3e1.jpg",
    "contraportada": "img/32e768802492c296.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "48ab5803a86f8225"
   },
   {
@@ -4450,7 +4804,7 @@
    "portada": "img/6055c64c8d5be2ae.jpg",
    "contraportada": "img/c5ac534adbf0de10.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "9c6dd581b3718107"
   },
   {
@@ -4479,7 +4833,7 @@
    "portada": "img/624ed72f52c46b79.jpg",
    "contraportada": "img/43746e309f99508e.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "60166193c9d1978d"
   },
   {
@@ -4508,7 +4862,7 @@
    "portada": "img/bf3c0cf181efa073.jpg",
    "contraportada": "img/883782f257b4a6e0.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "6bf4eb26b270247c"
   },
   {
@@ -4537,7 +4891,7 @@
    "portada": "img/7d260215ec107e67.jpg",
    "contraportada": "img/ea87d9faaebffe14.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "bdc88712c9e53fb4"
   },
   {
@@ -4566,7 +4920,7 @@
    "portada": "img/5eb6f07c2c55173e.jpg",
    "contraportada": "img/f2479b329e651354.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "a7d6468f54f9152d"
   },
   {
@@ -4595,7 +4949,7 @@
    "portada": "img/75ce4769d5b60fbb.jpg",
    "contraportada": "img/2ece4a21e3f15c1f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "a870695817def862"
   },
   {
@@ -4624,7 +4978,7 @@
    "portada": "img/644f624fcd7f6259.jpg",
    "contraportada": "img/6f8aecb46199dbae.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "97997d0a159d4ef8"
   },
   {
@@ -4653,7 +5007,7 @@
    "portada": "img/cf708269964bb517.jpg",
    "contraportada": "img/7418f4e251389bf4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "f5a59020f705d19e"
   },
   {
@@ -4682,7 +5036,7 @@
    "portada": "img/fd209c5ffab0fbb9.jpg",
    "contraportada": "img/e59c45d3ef3469d9.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "967b084c54fcfd62"
   },
   {
@@ -4711,7 +5065,7 @@
    "portada": "img/be0b3df36170e315.jpg",
    "contraportada": "img/d7d6e27db1f9ec4b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "d87e7ca5c894b2ff"
   },
   {
@@ -4740,7 +5094,7 @@
    "portada": "img/09ec4e18f7aff81a.jpg",
    "contraportada": "img/016827e692e956e0.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "7a1231c9cde1a5a7"
   },
   {
@@ -4769,7 +5123,7 @@
    "portada": "img/6054f22f0d391f61.jpg",
    "contraportada": "img/1f0eb823c842c171.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "67b98ef03c4df166"
   },
   {
@@ -4798,7 +5152,7 @@
    "portada": "img/329ec27a14768a58.jpg",
    "contraportada": "img/3d8e636eb1633b60.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "ae599dbe6b6b9304"
   },
   {
@@ -4827,7 +5181,7 @@
    "portada": "img/183dd910aceeb57e.jpg",
    "contraportada": "img/ca2c7addb4abb6bf.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "eb035b5731555e3d"
   },
   {
@@ -4856,7 +5210,7 @@
    "portada": "img/29b60e548e2775c6.jpg",
    "contraportada": "img/c9a7eef6c088fef4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "94e3ec328eb1e644"
   },
   {
@@ -4885,7 +5239,7 @@
    "portada": "img/72e2487c50b66372.jpg",
    "contraportada": "img/c29a68c2f37a4eb0.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "d6a770e470f7c6aa"
   },
   {
@@ -4914,7 +5268,7 @@
    "portada": "img/5ba497bf615169d1.jpg",
    "contraportada": "img/294c14985fdb94fe.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "9f51757d77f81733"
   },
   {
@@ -4943,7 +5297,7 @@
    "portada": "img/298cab98eeb222da.jpg",
    "contraportada": "img/4153f3b50fd058f3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "87760c330b164de5"
   },
   {
@@ -4972,7 +5326,7 @@
    "portada": "img/f3b4bebe996b2388.jpg",
    "contraportada": "img/9c36f1c272ba95d0.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "9bd2b183ebabe04d"
   },
   {
@@ -5001,7 +5355,7 @@
    "portada": "img/24eb3861148bac43.jpg",
    "contraportada": "img/72196effba9e4c95.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "db9c0470038114b6"
   },
   {
@@ -5030,7 +5384,7 @@
    "portada": "img/1cafc23fd03f105d.jpg",
    "contraportada": "img/f01db4ddea289d13.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "4242ef452681a28f"
   },
   {
@@ -5059,7 +5413,7 @@
    "portada": "img/244e2dfc70079c3e.jpg",
    "contraportada": "img/3b70a78afbca35f8.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "1003aaa7abc7a4a9"
   },
   {
@@ -5088,7 +5442,7 @@
    "portada": "img/803746573c68346d.jpg",
    "contraportada": "img/220aaa883da3a2f6.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "038d49129d752698"
   },
   {
@@ -5117,7 +5471,7 @@
    "portada": "img/4b71126f7f6a7805.jpg",
    "contraportada": "img/470c84fd0d0a7d97.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "15be0029634a5ef3"
   },
   {
@@ -5146,7 +5500,7 @@
    "portada": "img/6f3520ec05234f4a.jpg",
    "contraportada": "img/5ed335d61ee01e54.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "e81316c757be16a1"
   },
   {
@@ -5175,7 +5529,7 @@
    "portada": "img/9685f5b5a7fe065b.jpg",
    "contraportada": "img/ee6a3b8d998611f3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "f096707b8ca5c53d"
   },
   {
@@ -5204,7 +5558,7 @@
    "portada": "img/ebc42be35dbfd031.jpg",
    "contraportada": "img/3c09c73f2d016be5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [],
    "huella": "d8556e2c357a338a"
@@ -5235,7 +5589,7 @@
    "portada": "img/51c3f5c9d37bcbab.jpg",
    "contraportada": "img/fa014ac129315227.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [
     {
      "nombre": "Prueba de sonido secreta",
@@ -5274,7 +5628,7 @@
    "portada": "img/a00c1c47cec849c9.jpg",
    "contraportada": "img/2ee5e1ad895a896b.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "112908e38b917435"
   },
   {
@@ -5303,7 +5657,7 @@
    "portada": "img/d664ec5cceb5d3be.jpg",
    "contraportada": "img/4e9bb81cb964c946.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "916e6be56fd45907"
   },
   {
@@ -5332,7 +5686,7 @@
    "portada": "img/b806d4818c9db20b.jpg",
    "contraportada": "img/0e8b5598c113100a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "83209ac27d5f4a54"
   },
   {
@@ -5361,7 +5715,7 @@
    "portada": "img/4a87d2a631ce5aac.jpg",
    "contraportada": "img/28a9655c9180a196.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "f4fac2d677cf3640"
   },
   {
@@ -5390,7 +5744,7 @@
    "portada": "img/f73ee55e5692d6ec.jpg",
    "contraportada": "img/2ed2103b954d7a01.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "c9bf3c5d1ce5af13"
   },
   {
@@ -5419,7 +5773,7 @@
    "portada": "img/b71478fb1a9092b9.jpg",
    "contraportada": "img/e016cb2e3c3343ec.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "3415c38ab764ac54"
   },
   {
@@ -5448,7 +5802,7 @@
    "portada": "img/5599548503e4c237.jpg",
    "contraportada": "img/784d5b3efd8947b4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "c38f166562eed017"
   },
   {
@@ -5477,7 +5831,7 @@
    "portada": "img/f72e5fc3eb17507d.jpg",
    "contraportada": "img/10fad66767b2f7e5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "54a6c6500352e102"
   },
   {
@@ -5506,7 +5860,7 @@
    "portada": "img/e035aadfe6ae6f61.jpg",
    "contraportada": "img/0deebb001df9f24a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "19c190666501fc94"
   },
   {
@@ -5535,7 +5889,7 @@
    "portada": "img/45c116fc7d52d8da.jpg",
    "contraportada": "img/54a6ca04deff5bb6.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "1df2b39592c19207"
   },
   {
@@ -5564,7 +5918,7 @@
    "portada": "img/513c273c4df34486.jpg",
    "contraportada": "img/160c622bc6dddec5.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "3f1192753d9b711b"
   },
   {
@@ -5593,7 +5947,7 @@
    "portada": "img/cc3d7d280ae1f18a.jpg",
    "contraportada": "img/743710de0e0e4cb4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "df11a720012aa07a"
   },
   {
@@ -5622,7 +5976,7 @@
    "portada": "img/4d2f0ffc81699baa.jpg",
    "contraportada": "img/b26b73b4491f076e.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "c2ce56aeb5835dc8"
   },
   {
@@ -5651,7 +6005,7 @@
    "portada": "img/0e03b07eac27d214.jpg",
    "contraportada": "img/dcf50faa81e8dfbc.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "a39b229e11b2ee50"
   },
   {
@@ -5680,7 +6034,7 @@
    "portada": "img/a1e29dc93fdebfbb.jpg",
    "contraportada": "img/caf3d1a07924f076.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "7493674a1c2de11c"
   },
   {
@@ -5709,7 +6063,7 @@
    "portada": "img/dd51bc158f5864e7.jpg",
    "contraportada": "img/a95b0527877dd845.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "287f6ca9a7e74c43"
   },
   {
@@ -5738,7 +6092,7 @@
    "portada": "img/e766725a77c37ae8.jpg",
    "contraportada": "img/6887b96bf2b55a51.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "c98ea3aa6ea682c0"
   },
   {
@@ -5767,7 +6121,7 @@
    "portada": "img/78c324b6bf2305ec.jpg",
    "contraportada": "img/503e33b22803f984.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "cf324526242ea2e0"
   },
   {
@@ -5796,7 +6150,7 @@
    "portada": "img/0f6eac4bd66a0bc9.jpg",
    "contraportada": "img/cdbb451c2f9bb7fe.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "98e1c2489faac862"
   },
   {
@@ -5825,7 +6179,7 @@
    "portada": "img/e9c46cd24ae0f1a0.jpg",
    "contraportada": "img/9ebd8533c30c541d.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "27f576ae9162bc70"
   },
   {
@@ -5854,7 +6208,7 @@
    "portada": "img/9eff778a8dcb870c.jpg",
    "contraportada": "img/f8d4aac93e02ace3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "f5414054223e9fba"
   },
   {
@@ -5883,7 +6237,7 @@
    "portada": "img/35b1d987fc6ddf09.jpg",
    "contraportada": "img/2cffb3b654e6b3b4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "14ec6c317e53a38b"
   },
   {
@@ -5912,7 +6266,7 @@
    "portada": "img/1e4f8c91cb5fe813.jpg",
    "contraportada": "img/8eb58742394bbff8.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "huella": "1d66f1cfa43f8f11"
   },
   {
@@ -5941,7 +6295,7 @@
    "portada": "img/06108a17fe16d33d.jpg",
    "contraportada": "img/9ba7b18721a61701.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832890,
    "trucos": [],
    "secretos": [
     {
@@ -5981,8 +6335,44 @@
    "portada": "img/5c1b54667ebf2064.jpg",
    "contraportada": "img/76ad9de06d92623a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "26b67ea171704e07"
+   "actualizado": 1792240832890,
+   "trucos": [
+    {
+     "nombre": "Contraseña de 100 vidas",
+     "donde": "Pantalla de contraseña",
+     "seq": "\"11111\"",
+     "efecto": "Empiezas con 100 vidas. La fuente indica que funciona en todas las versiones del juego.",
+     "fuente": "Critical Hits",
+     "conf": false
+    },
+    {
+     "nombre": "Todos los familiares rescatados",
+     "donde": "Pantalla de contraseña",
+     "seq": "\"2B11T\"",
+     "efecto": "Empiezas con toda la familia rescatada, 5 corazones y la espada.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "Habitación secreta con extras",
+     "donde": "Cerca del inicio, en el salón de las escaleras",
+     "seq": "↑",
+     "efecto": "Ve a la izquierda pasando la última puerta del lado izquierdo y aprieta arriba: hay una puerta escondida a la guarida de Pugsley, con una sala de extras detrás de las escaleras.",
+     "fuente": "SuperCheats",
+     "conf": false
+    },
+    {
+     "nombre": "Cosa chasquea los dedos",
+     "donde": "Secuencia de inicio",
+     "seq": "L + R",
+     "efecto": "Aprieta L y R juntos durante la introducción y la mano Cosa chasquea los dedos.",
+     "fuente": "SuperCheats",
+     "conf": false
+    }
+   ],
+   "huella": "b77164bd4dcaa94b"
   },
   {
    "id": "game:super-empire-strikes-back-snes-1993",
@@ -6010,8 +6400,35 @@
    "portada": "img/5567d477c113ece5.jpg",
    "contraportada": "img/559be68e1b870e54.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "a7940f22e432af74"
+   "actualizado": 1792240832891,
+   "trucos": [
+    {
+     "nombre": "Desbloquear todo y modo de depuración",
+     "donde": "Pantalla de título",
+     "seq": "A B Y X A B Y X A B A B Y X X Y A B Y X",
+     "efecto": "Escucharás un sonido. Desbloquea todo, incluyendo invencibilidad y detonadores térmicos infinitos, y habilita los trucos siguientes.",
+     "fuente": "Prima Games y The Cutting Room Floor",
+     "conf": true
+    },
+    {
+     "nombre": "Menú secreto en los niveles",
+     "donde": "Durante un nivel de desplazamiento lateral (después del código anterior)",
+     "seq": "L + R",
+     "efecto": "Abre un menú para elegir área, etapa, vidas, energía y arma.",
+     "fuente": "The Cutting Room Floor",
+     "conf": false
+    },
+    {
+     "nombre": "Saltar etapa y prueba de sonido",
+     "donde": "Durante el juego (después del código anterior)",
+     "seq": "START",
+     "efecto": "Aprieta START en el control 2 para saltar la etapa. Para la prueba de sonido, en el control 1 mantén A + B + X + Y + abajo y aprieta START.",
+     "fuente": "The Cutting Room Floor",
+     "conf": false
+    }
+   ],
+   "secretos": [],
+   "huella": "65f5ff986fc0f496"
   },
   {
    "id": "game:tmnt-tournament-fighters-snes-1993",
@@ -6039,8 +6456,35 @@
    "portada": "img/690f374ea95c114c.jpg",
    "contraportada": "img/e6d9009e0e6d593c.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "cdabe098e794703a"
+   "actualizado": 1792240832891,
+   "trucos": [
+    {
+     "nombre": "Dos personajes nuevos en Versus",
+     "donde": "Al comienzo, con el control 2",
+     "seq": "X ↑ Y ← B ↓ A → X ↑",
+     "efecto": "Luego entra al modo Versus y aprieta izquierda en el control 1 para ver a los dos personajes extra.",
+     "fuente": "Critical Hits",
+     "conf": false
+    },
+    {
+     "nombre": "Velocidad 3 en opciones",
+     "donde": "Al comienzo, con el control 2",
+     "seq": "↑ ↑ ↓ ↓ ← → ← → B A",
+     "efecto": "Desbloquea la velocidad de juego 3 en el menú de opciones.",
+     "fuente": "Critical Hits",
+     "conf": false
+    },
+    {
+     "nombre": "10 créditos",
+     "donde": "Al comienzo, con el control 2",
+     "seq": "B B B A A A X X X X X X X",
+     "efecto": "Empiezas con 10 créditos para continuar.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "secretos": [],
+   "huella": "f96abf7bfe2711e1"
   },
   {
    "id": "game:sunset-riders-snes-1993",
@@ -6068,8 +6512,36 @@
    "portada": "img/520746fb07298fd5.jpg",
    "contraportada": "img/2f4b245d471411c3.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "e7f9f0f162cb3613"
+   "actualizado": 1792240832891,
+   "trucos": [
+    {
+     "nombre": "Más vidas y continuaciones",
+     "donde": "Pantalla con 1PLAYER / 2PLAYERS / OPTION",
+     "seq": "R L R L R L A R L R L R L Y",
+     "efecto": "Después, en opciones, puedes subir hasta 5 vidas (REST) y 5 continuaciones (CONTINUE).",
+     "fuente": "Critical Hits",
+     "conf": false
+    },
+    {
+     "nombre": "Selección de etapa y prueba de sonido",
+     "donde": "Selección de personaje",
+     "seq": "L L L L L R R R R R",
+     "efecto": "Al elegir a tu vaquero aparece un menú para elegir etapa y escuchar la música.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "Modo Muy Difícil",
+     "donde": "Al terminar el juego en Difícil",
+     "seq": "",
+     "efecto": "El juego vuelve a empezar en un modo Muy Difícil que no aparece en las opciones.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "huella": "60bfc52b05a747b5"
   },
   {
    "id": "game:zombies-ate-my-neighbors-snes-1993",
@@ -6097,8 +6569,44 @@
    "portada": "img/ffde00c4f52e392a.jpg",
    "contraportada": "img/8e27c0ec1634520a.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "7516790027385b82"
+   "actualizado": 1792240832891,
+   "trucos": [
+    {
+     "nombre": "Tres niveles bonus",
+     "donde": "Pantalla de contraseña",
+     "seq": "\"XDSJ\"",
+     "efecto": "Abre los niveles extra \"Curse of the Pharaohs\", \"Mushroom Men\" y \"Cheerleaders vs. the Monsters\".",
+     "fuente": "Critical Hits",
+     "conf": false
+    },
+    {
+     "nombre": "Nivel 25 con los 10 sobrevivientes",
+     "donde": "Pantalla de contraseña",
+     "seq": "\"GYLM\"",
+     "efecto": "Empiezas en el nivel 25 con los diez vecinos a salvo.",
+     "fuente": "Critical Hits",
+     "conf": false
+    },
+    {
+     "nombre": "Gritos en el logo de LucasArts",
+     "donde": "Logo de LucasArts al comenzar",
+     "seq": "L",
+     "efecto": "L hace sonar un grito y R un ladrido de perro.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "secretos": [
+    {
+     "nombre": "Nivel secreto",
+     "donde": "Pantalla de contraseña",
+     "seq": "\"BCDF\"",
+     "efecto": "Te lleva a un nivel secreto del juego.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "huella": "94160b545c3181be"
   },
   {
    "id": "game:art-of-fighting-snes-1993",
@@ -6126,8 +6634,10 @@
    "portada": "img/cb94800f0031aadd.jpg",
    "contraportada": "img/5370752dc6b6c2b7.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "e1f91f7a113b68a8"
+   "actualizado": 1792240832891,
+   "trucos": [],
+   "secretos": [],
+   "huella": "3014e636ff4ae6bc"
   },
   {
    "id": "game:clayfighter-snes-1993",
@@ -6155,8 +6665,10 @@
    "portada": "img/7a5752b47acf19e6.jpg",
    "contraportada": "img/e73118dfab992819.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "90db5420a4c76daa"
+   "actualizado": 1792240832891,
+   "trucos": [],
+   "secretos": [],
+   "huella": "2500e9745c6e27e6"
   },
   {
    "id": "game:pink-goes-to-hollywood-snes-1993",
@@ -6184,8 +6696,10 @@
    "portada": "img/6e3e8d04f9c596a2.jpg",
    "contraportada": "img/694532688299ad36.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "3f5c6fa107171c5b"
+   "actualizado": 1792240832891,
+   "trucos": [],
+   "secretos": [],
+   "huella": "ec6c3c619aa365cb"
   },
   {
    "id": "game:secret-of-mana-snes-1993",
@@ -6213,8 +6727,35 @@
    "portada": "img/1a0f139c7b7f4382.jpg",
    "contraportada": "img/532ab98f91307929.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "b36b717a047322c0"
+   "actualizado": 1792240832891,
+   "trucos": [],
+   "secretos": [
+    {
+     "nombre": "La firma escondida del programador",
+     "donde": "Con un arma en la mano",
+     "seq": "L + A",
+     "efecto": "Mantén L + A (botón de correr) en el control 1, aprieta R 39 veces, suelta L y A y aprieta R una vez más: el juego se congela un instante y aparece \"NAS\" en la barra de carga del arma, por Nasir Gebelli, su programador.",
+     "fuente": "The Cutting Room Floor y Critical Hits",
+     "conf": true
+    },
+    {
+     "nombre": "Volver a la aldea Potos",
+     "donde": "Entrada de la aldea, con los tres personajes",
+     "seq": "↑ + SELECT",
+     "efecto": "Junto al guardia que te prohíbe entrar, mantén arriba y aprieta SELECT varias veces: atraviesas al guardia y vuelves a la aldea de la que te expulsaron. Lleva el tambor de Flammie, porque puede que no puedas salir caminando.",
+     "fuente": "Critical Hits",
+     "conf": false
+    },
+    {
+     "nombre": "Esquivar magias enemigas",
+     "donde": "En combate",
+     "seq": "",
+     "efecto": "Mientras se ve la animación de una magia enemiga, usa dos veces el Pygmy Hammer o el Moogle Belt sobre el personaje atacado: no recibirá daño. Útil contra la Mana Beast.",
+     "fuente": "Critical Hits",
+     "conf": false
+    }
+   ],
+   "huella": "e165fafbd237d719"
   },
   {
    "id": "game:adventures-of-kid-kleets-snes-1994",
@@ -6242,8 +6783,10 @@
    "portada": "img/817629183668ea86.jpg",
    "contraportada": "img/21ee60929a471ca4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "edcfc1d4686d9ac6"
+   "actualizado": 1792240832891,
+   "trucos": [],
+   "secretos": [],
+   "huella": "4469b31836920662"
   },
   {
    "id": "game:world-heroes-snes-1993",
@@ -6271,8 +6814,10 @@
    "portada": "img/68da76efd5a0d0e5.jpg",
    "contraportada": "img/32e872ce46c723a4.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "f07d923b108d84e5"
+   "actualizado": 1792240832891,
+   "trucos": [],
+   "secretos": [],
+   "huella": "334d9fababfe40f5"
   },
   {
    "id": "game:road-rash-gb-1994",
@@ -6300,7 +6845,7 @@
    "portada": "img/b63a775f3ab0d5b1.jpg",
    "contraportada": "img/b2e887311699ed6f.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832891,
    "trucos": [],
    "secretos": [],
    "huella": "dfda0e65ff5c99d3"
@@ -6331,8 +6876,10 @@
    "portada": "img/a3af3001590d82c7.jpg",
    "contraportada": "img/289ac36c70763eea.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
-   "huella": "6850c2b546a390cf"
+   "actualizado": 1792240832891,
+   "trucos": [],
+   "secretos": [],
+   "huella": "e6cf0d85891e5dcf"
   },
   {
    "id": "game:centre-court-tennis-n64-1999",
@@ -6360,7 +6907,7 @@
    "portada": "img/7d491fed5646b793.jpg",
    "contraportada": "img/cfb13ee313099835.jpg",
    "youtubeUrl": "",
-   "actualizado": 1792239197187,
+   "actualizado": 1792240832891,
    "huella": "75e71823e9388d81"
   }
  ]
