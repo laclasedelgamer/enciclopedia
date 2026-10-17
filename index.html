@@ -164,6 +164,13 @@ h2.sec{margin:0 0 10px;font-family:var(--f-pixel);font-size:11px;color:var(--gol
 /* ---------- trucos y secretos ---------- */
 .tricks{display:grid;gap:12px}
 .tsub{font-family:var(--f-pixel);font-size:9px;letter-spacing:.06em;color:var(--muted);margin:6px 0 2px}
+.man{margin:14px 0}
+.manbtn{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.manbtn.ofi{border-color:var(--gold,#e0b43c)}
+.manbtn .mi{font-size:26px;line-height:1}
+.manbtn b{display:block;font:700 15px var(--f-ui)}
+.manbtn small{display:block;color:var(--muted);font:12px var(--f-ui);margin-top:3px}
+.manbtn .go{margin-left:auto;color:var(--muted);font-size:18px}
 .trick{background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0;overflow:hidden}
 .trick summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:12px 14px;-webkit-tap-highlight-color:transparent}
 .trick summary::-webkit-details-marker{display:none}
@@ -418,6 +425,7 @@ function open(id,push){
     '<div class="covers">'+cov(g.portada,'Portada',g.titulo)+cov(g.contraportada,'Contraportada',g.titulo)+'</div>'+
     (n?'<div class="rating"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="stars" aria-hidden="true">'+stars(n)+'</span><span class="num">'+n+' / 7</span><span class="word">'+esc(NOTAS[n]||'')+'</span></div>'
       :'<div class="rating none"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="num">Próximamente en el canal</span></div>')+
+    manualHtml(g,g.consola)+
     '<section class="myrate community" id="community" hidden></section>'+
     '<section class="myrate" id="myrate"></section>'+
     '<div class="actions"><button type="button" class="btn st-own" id="ownBtn" aria-pressed="'+!!state.owned[g.id]+'">'+(state.owned[g.id]?'✔ Lo tengo':'＋ Lo tengo')+'</button>'+
@@ -652,6 +660,14 @@ function voteTrick(box,v){
 function seqHtml(seq,cons){
   var toks=[],re=/"[^"]*"|\S+/g,m;while((m=re.exec(seq||'')))toks.push(m[0]);
   return toks.length?'<div class="seq" aria-label="'+esc(seq)+'">'+toks.map(function(t){return keyHtml(t,cons)}).join('')+'</div>':'';
+}
+function manualHtml(p,cons){
+  var b;
+  if(p.manual&&/^https:\/\//.test(p.manual)){var dom=p.manual.replace(/^https:\/\/(www\.)?/,'').split('/')[0];
+    b='<a class="manbtn ofi" href="'+esc(p.manual)+'" target="_blank" rel="noopener"><span class="mi">📖</span><span><b>Ver manual</b><small>'+esc(p.manualFuente||dom)+'</small></span><span class="go">↗</span></a>';}
+  else{var q='https://www.google.com/search?q='+encodeURIComponent((p.titulo||'')+' '+(CONSOLE_LABEL[cons]||cons||'')+' manual en español');
+    b='<a class="manbtn" href="'+esc(q)+'" target="_blank" rel="noopener"><span class="mi">🔎</span><span><b>Buscar manual</b><small>Aún no tenemos el manual de este juego. Te llevamos a la búsqueda.</small></span><span class="go">↗</span></a>';}
+  return '<div class="man">'+b+'</div>';
 }
 function tricksHtml(p,cons,gid){gid=gid||(current&&current.id)||p.id||'';
   var tr=Array.isArray(p.trucos)?p.trucos.filter(Boolean).slice(0,3):null;
