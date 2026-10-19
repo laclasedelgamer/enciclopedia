@@ -549,6 +549,7 @@ function initCloud(){
       cloud.authed=auth.signInAnonymously().then(function(c){cloud.uid=c.user.uid});
       // No se devuelve esta cadena: cloud.ready debe quedar listo antes de activar claves
       cloud.authed.then(function(){
+        trackUso();
         flushPending();
         return checkMembership().then(function(){
           if(pendingCode){var c=pendingCode;pendingCode='';return activateCode(c).then(function(r){toast(r.msg)})}
@@ -557,6 +558,33 @@ function initCloud(){
     })
     .catch(function(e){console.warn('Nota de la comunidad no disponible:',e)});
 }
+function esInstalada(){try{return (window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true}catch(e){return false}}
+function hoyStr(){var d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
+// Contador anónimo de visitas e instalaciones (no guarda nada personal)
+function trackUso(){
+  if(!cloud.on||!cloud.uid)return Promise.resolve();
+  var inst=esInstalada()||lsGet('instalada',false)===true;
+  var ya=lsGet('usoReg',null);
+  if(ya&&ya.uid===cloud.uid&&ya.dia===hoyStr()&&(ya.inst||!inst))return Promise.resolve();
+  var db=cloud.db,dRef=db.collection('dispositivos').doc(cloud.uid),sRef=db.doc('stats/uso');
+  var TS=firebase.firestore.FieldValue.serverTimestamp();
+  return db.runTransaction(function(tx){
+    return tx.get(sRef).then(function(s){return tx.get(dRef).then(function(d){
+      var st=s.exists?s.data():{};var v=st.visitas||0,n=st.instalaciones||0;
+      if(!d.exists){
+        tx.set(dRef,{primera:TS,ultima:TS,instalada:!!inst});
+        tx.set(sRef,{visitas:v+1,instalaciones:n+(inst?1:0)});
+      }else{
+        var x=d.data(),was=x.instalada===true,nd={primera:x.primera,ultima:TS,instalada:was||!!inst};
+        if(x.instaladaEn)nd.instaladaEn=x.instaladaEn;
+        if(inst&&!was){nd.instaladaEn=TS;tx.set(dRef,nd);tx.set(sRef,{visitas:v,instalaciones:n+1})}
+        else tx.set(dRef,nd);
+      }
+    })});
+  }).then(function(){lsSet('usoReg',{uid:cloud.uid,dia:hoyStr(),inst:!!inst})})
+    .catch(function(e){console.warn('Contador no disponible:',e)});
+}
+window.addEventListener('appinstalled',function(){lsSet('instalada',true);trackUso()});
 function fetchStats(){
   if(!cloud.on)return Promise.resolve();
   return cloud.db.doc('stats/global').get().then(function(s){
