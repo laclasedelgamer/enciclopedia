@@ -143,11 +143,6 @@ button,input,select{font:inherit;color:inherit}
 .rating .word{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
 .rating.none{background:var(--surface);box-shadow:inset 0 0 0 1.5px var(--line)}
 .rating.none .num{font-size:18px;color:var(--muted)}
-.rubric{width:100%;max-width:340px;margin-top:10px;padding-top:12px;border-top:1px dashed rgba(242,233,220,.35);display:grid;gap:7px}
-.rubric .rl{display:grid;grid-template-columns:96px 1fr 34px;align-items:center;gap:8px;font-size:13px;font-weight:700;text-align:left}
-.rubric .dots{display:flex;gap:4px}.rubric .dots i{flex:1;height:10px;border-radius:3px;background:rgba(242,233,220,.22)}.rubric .dots i.on{background:var(--gold)}
-.rubric .pts{text-align:right;font-variant-numeric:tabular-nums}
-.rubric .tot{font-family:var(--f-pixel);font-size:8px;letter-spacing:.06em;opacity:.85;margin-top:2px}
 .actions{display:flex;gap:10px;flex-wrap:wrap}
 .btn{border:1.5px solid rgba(232,177,58,.45);background:var(--surface);border-radius:10px;padding:10px 14px;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:6px}
 .btn[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--surface2)}
@@ -267,7 +262,6 @@ h2.sec{margin:0 0 10px;font-family:var(--f-pixel);font-size:11px;color:var(--gol
         <option value="alpha">A – Z</option>
         <option value="recent">Más recientes</option>
         <option value="year">Por año</option>
-        <option value="rating">Mejor nota del Profe</option>
         <option value="mine">Mi nota</option>
       </select>
     </div>
@@ -306,14 +300,11 @@ function buildTabs(){
 function lsGet(k,d){try{var v=localStorage.getItem(LS+k);return v==null?d:JSON.parse(v)}catch(e){return d}}
 function lsSet(k,v){try{localStorage.setItem(LS+k,JSON.stringify(v))}catch(e){}}
 
-var state={games:[],version:0,filter:lsGet('filter',''),sort:lsGet('sort','alpha'),q:'',owned:lsGet('owned',{}),play:lsGet('playStatus',{}),mine:lsGet('myRatings',{}),known:lsGet('known',null),newIds:{}};
+var state={games:[],version:0,filter:lsGet('filter',''),sort:(function(v){return v==='rating'?'alpha':v})(lsGet('sort','alpha')),q:'',owned:lsGet('owned',{}),play:lsGet('playStatus',{}),mine:lsGet('myRatings',{}),known:lsGet('known',null),newIds:{}};
 var $=function(id){return document.getElementById(id)};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
 function slug(id){return 'j-'+String(id).replace(/^game:/,'').replace(/[^A-Za-z0-9._~-]/g,'-')}
-var RUBRICA=[['graficos','Gráficos'],['jugabilidad','Jugabilidad'],['sonido','Sonido'],['diversion','Diversión']];
-function rubricHtml(g){var r=g.rubrica;if(!r)return '';var t=0,h='';RUBRICA.forEach(function(c){var v=Math.max(0,Math.min(5,Number(r[c[0]])||0));t+=v;var d='';for(var i=1;i<=5;i++)d+='<i'+(i<=v?' class="on"':'')+'></i>';h+='<div class="rl"><span>'+c[1]+'</span><span class="dots" aria-hidden="true">'+d+'</span><span class="pts">'+v+'/5</span></div>'});
-  return '<div class="rubric" aria-label="Rúbrica de evaluación">'+h+'<span class="tot">PUNTAJE '+t+' / 20 · ESCALA 60%</span></div>'}
 function stars(n){var s='';for(var i=1;i<=7;i++){s+= n>=i?'★':(n>=i-.5?'⯪':'☆')}return s}
 function toast(msg){var t=$('toast');t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(function(){t.hidden=true},2600)}
 
@@ -394,7 +385,6 @@ function visible(){
     alpha:function(a,b){return norm(a.titulo).localeCompare(norm(b.titulo))},
     recent:function(a,b){return (b.actualizado||0)-(a.actualizado||0)||(b._i||0)-(a._i||0)},
     year:function(a,b){return (parseInt(a.anio)||9999)-(parseInt(b.anio)||9999)||norm(a.titulo).localeCompare(norm(b.titulo))},
-    rating:function(a,b){return (b.nota||0)-(a.nota||0)||norm(a.titulo).localeCompare(norm(b.titulo))},
     community:function(a,b){var x=comm(a.id),y=comm(b.id);return (y?y.avg:0)-(x?x.avg:0)||(y?y.v:0)-(x?x.v:0)||norm(a.titulo).localeCompare(norm(b.titulo))},
     mine:function(a,b){return (state.mine[b.id]||0)-(state.mine[a.id]||0)||norm(a.titulo).localeCompare(norm(b.titulo))}
   }[state.sort]||function(){return 0};
@@ -411,7 +401,6 @@ function render(){
       '<div class="cover">'+(g.portada?'<img loading="lazy" decoding="async" src="'+esc(g.portada)+'" alt="Portada de '+esc(g.titulo)+'">':'<span class="ph">SIN PORTADA</span>')+
       '<span class="chip">'+esc(CONSOLE_LABEL[g.consola]||g.consola||'—')+'</span>'+
       (state.newIds[g.id]?'<span class="badge-new">NUEVO</span>':'')+
-      (g.nota?'<span class="stamp">'+esc(g.nota)+'</span>':'')+
       ((state.owned[g.id]||state.mine[g.id]||state.play[g.id])?'<span class="pills">'+(state.mine[g.id]?'<span class="mine">Tú: '+state.mine[g.id]+'</span>':'')+(state.play[g.id]==='done'?'<span class="done">🏁 Terminado</span>':state.play[g.id]==='played'?'<span class="played">🎮 Jugado</span>':'')+(state.owned[g.id]?'<span class="own">✔ Lo tengo</span>':'')+'</span>':'')+
       '</div><span class="ttl">'+esc(g.titulo)+'</span><span class="sub">'+esc([g.anio,g.genero].filter(Boolean).join(' · '))+(comm(g.id)?' · <span title="Nota de la comunidad">👥 '+comm(g.id).avg+'</span>':'')+'</span></button>';
   }).join('');
@@ -426,23 +415,20 @@ function open(id,push){
   var g=state.games.find(function(x){return x.id===id});if(!g)return;
   current=g;
   if(push){lastScroll=window.scrollY;try{history.pushState(null,'','#'+slug(id))}catch(e){location.hash=slug(id)}}
-  var n=Number(g.nota)||0;
   var facts=fact('Año',g.anio)+fact('Género',g.genero)+fact('Desarrolladora',g.desarrolladora)+fact('Consola',CONSOLE_LABEL[g.consola]||g.consola);
   $('boleta').innerHTML=
     '<header class="b-head"><span class="pix">BOLETÍN DE CALIFICACIÓN</span><h1 id="sheetTitle">'+esc(g.titulo)+'</h1><span class="line">'+esc([CONSOLE_LABEL[g.consola]||g.consola,g.anio,g.desarrolladora].filter(Boolean).join(' · '))+'</span></header>'+
     '<div class="covers">'+cov(g.portada,'Portada',g.titulo)+cov(g.contraportada,'Contraportada',g.titulo)+'</div>'+
-    (n?'<div class="rating"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="stars" aria-hidden="true">'+stars(Math.round(n*2)/2)+'</span><span class="num">'+n+' / 7</span><span class="word">'+esc(NOTAS[Math.round(n*2)/2]||'')+'</span>'+rubricHtml(g)+'</div>'
-      :'<div class="rating none"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="num">Próximamente en el canal</span></div>')+
-    manualHtml(g,g.consola)+
     '<section class="myrate community" id="community" hidden></section>'+
     '<section class="myrate" id="myrate"></section>'+
+    manualHtml(g,g.consola)+
     '<div class="actions"><button type="button" class="btn st-own" id="ownBtn" aria-pressed="'+!!state.owned[g.id]+'">'+(state.owned[g.id]?'✔ Lo tengo':'＋ Lo tengo')+'</button>'+
       '<button type="button" class="btn st-done" id="doneBtn" aria-pressed="'+(state.play[g.id]==='done')+'">🏁 Terminado</button>'+
       '<button type="button" class="btn st-played" id="playedBtn" aria-pressed="'+(state.play[g.id]==='played')+'">🎮 Jugado, no terminado</button>'+
       (isYT(g.youtubeUrl)?'<a class="btn yt" href="'+esc(g.youtubeUrl)+'" target="_blank" rel="noopener">▶ Ver en YouTube</a>':'')+'</div>'+
     (facts?'<section><h2 class="sec">FICHA</h2><dl class="facts">'+facts+'</dl></section>':'')+
     (hasInlinePremium(g)?premiumHtml(g):g.premium?'<section id="premiumBox" class="premium"></section>':'')+
-    '<footer class="foot"><span>Calificado por El Profe L · La Clase del Gamer</span></footer>';
+    '<footer class="foot"><span>Ficha de El Profe L · La Clase del Gamer</span></footer>';
   $('sheet').hidden=false;$('sheet').scrollTop=0;document.body.style.overflow='hidden';
   if(state.newIds[g.id]){delete state.newIds[g.id];markOneSeen(g);renderNotice();}
   renderCommunity(g);renderMyRate(g);
@@ -466,14 +452,13 @@ function open(id,push){
 }
 function renderMyRate(g){
   var box=$('myrate');if(!box)return;
-  var n=state.mine[g.id]||0,profe=Number(g.nota)||0,html='';
+  var n=state.mine[g.id]||0,html='';
   for(var i=1;i<=7;i++){
     var fill=n>=i?100:(n>=i-.5?50:0);
     var lo=i===1?1:i-.5;
     html+='<span class="mystar" style="--fill:'+fill+'%">☆<button type="button" data-r="'+lo+'" aria-label="Calificar '+lo+'"></button><button type="button" data-r="'+i+'" aria-label="Calificar '+i+'"></button></span>';
   }
   var cmp='';
-  if(n&&profe){var d=n-profe;cmp=d===0?'¡Coincides con el Profe L!':(d>0?'Le diste '+d+' más que el Profe L ('+profe+')':'Le diste '+(-d)+' menos que el Profe L ('+profe+')')}
   box.innerHTML='<span class="lbl">TU CALIFICACIÓN</span><div class="mystars" role="group" aria-label="Tu nota de 1 a 7">'+html+'</div>'+
     '<span class="verdict">'+(n?n+' · '+esc(NOTAS[n]||''):'')+'</span>'+
     (n?(cmp?'<span class="cmp">'+cmp+'</span>':'')+'<button type="button" class="link" id="clearMine">Borrar mi nota</button>':'<span class="hint">Toca una estrella. Mitad izquierda = media nota.</span>');
