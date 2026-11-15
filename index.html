@@ -113,6 +113,15 @@ button,input,select{font:inherit;color:inherit}
 .myrate .verdict{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:14px;min-height:1.4em;font-variant-numeric:tabular-nums}
 .myrate .cmp{font-size:13px;color:var(--muted)}
 .myrate .hint{font-size:12px;color:var(--muted)}
+.myrate .rbq{width:100%;max-width:360px;display:grid;gap:8px}
+.myrate .rbrow{display:grid;grid-template-columns:96px 1fr;align-items:center;gap:8px;text-align:left}
+.myrate .rbname{font-weight:800;font-size:13px;letter-spacing:.03em;text-transform:uppercase}
+.myrate .rbname small{display:block;font-weight:400;font-size:11px;letter-spacing:0;text-transform:none;color:var(--muted)}
+.myrate .rbpts{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+.myrate .rbpts button{height:38px;border-radius:8px;border:1.5px solid var(--line);background:var(--bg);color:var(--muted);font-weight:800;font-size:15px;cursor:pointer;font-variant-numeric:tabular-nums}
+.myrate .rbpts button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#17130F}
+.myrate .rbscale{display:flex;justify-content:space-between;width:100%;max-width:360px;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-left:104px;box-sizing:border-box}
+.myrate .rbtot{font-size:12px;color:var(--muted)}
 .mystars.small .mystar{width:28px;height:30px;font-size:26px;line-height:30px}
 .community .cnum{font-weight:800;font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
 .community .cnum small{font-size:15px;color:var(--muted);font-weight:600}
@@ -450,22 +459,31 @@ function open(id,push){
   $('boleta').querySelectorAll('[data-zoom]').forEach(function(b){b.onclick=function(){$('lbImg').src=b.dataset.zoom;$('lbImg').alt=b.getAttribute('aria-label');$('lightbox').hidden=false}});
   $('backBtn').focus({preventScroll:true});
 }
+var RB_CRIT=[['graficos','Gráficos','Arte y animación'],['jugabilidad','Jugabilidad','Control y desafío'],['sonido','Sonido','Música y efectos'],['diversion','Diversión','¿Dan ganas de seguir?']];
+state.rub=lsGet('myRubric',{});
+function rbNota(p){var n=p>=12?4+3*(p-12)/8:1+3*(p-4)/8;return Math.round(n*2)/2}
 function renderMyRate(g){
   var box=$('myrate');if(!box)return;
-  var n=state.mine[g.id]||0,html='';
-  for(var i=1;i<=7;i++){
-    var fill=n>=i?100:(n>=i-.5?50:0);
-    var lo=i===1?1:i-.5;
-    html+='<span class="mystar" style="--fill:'+fill+'%">☆<button type="button" data-r="'+lo+'" aria-label="Calificar '+lo+'"></button><button type="button" data-r="'+i+'" aria-label="Calificar '+i+'"></button></span>';
-  }
-  var cmp='';
-  box.innerHTML='<span class="lbl">TU CALIFICACIÓN</span><div class="mystars" role="group" aria-label="Tu nota de 1 a 7">'+html+'</div>'+
-    '<span class="verdict">'+(n?n+' · '+esc(NOTAS[n]||''):'')+'</span>'+
-    (n?(cmp?'<span class="cmp">'+cmp+'</span>':'')+'<button type="button" class="link" id="clearMine">Borrar mi nota</button>':'<span class="hint">Toca una estrella. Mitad izquierda = media nota.</span>');
-  box.querySelectorAll('button[data-r]').forEach(function(b){b.onclick=function(){
-    state.mine[g.id]=Number(b.dataset.r);lsSet('myRatings',state.mine);sendVote(g.id,state.mine[g.id]);renderMyRate(g);toast('Tu nota: '+b.dataset.r+' · '+NOTAS[b.dataset.r]);
+  var n=state.mine[g.id]||0,r=state.rub[g.id]||{},k=0,t=0,rows='';
+  RB_CRIT.forEach(function(c){var v=r[c[0]]||0;if(v){k++;t+=v}
+    var b='';for(var i=1;i<=5;i++)b+='<button type="button" data-c="'+c[0]+'" data-v="'+i+'" aria-pressed="'+(v===i)+'" aria-label="'+c[1]+' '+i+' de 5">'+i+'</button>';
+    rows+='<div class="rbrow"><span class="rbname">'+c[1]+'<small>'+c[2]+'</small></span><div class="rbpts" role="group" aria-label="'+c[1]+'">'+b+'</div></div>'});
+  var shown='<div class="mystars small" aria-hidden="true">'+starsHtml(n)+'</div>';
+  var info;
+  if(k===4)info='<span class="verdict">'+String(n).replace('.',',')+' / 7 · '+esc(NOTAS[n]||'')+'</span><span class="rbtot">'+t+' de 20 puntos</span>';
+  else if(k)info='<span class="hint">'+(4-k>1?'Faltan '+(4-k)+' criterios':'Falta 1 criterio')+' para calcular tu nota.</span>';
+  else if(n)info='<span class="verdict">'+String(n).replace('.',',')+' / 7 · '+esc(NOTAS[n]||'')+'</span><span class="hint">Marca los 4 criterios para recalcular tu nota con la rúbrica.</span>';
+  else info='<span class="hint">Califica de 1 (mediocre) a 5 (excelente) cada criterio. Tu nota del 1 al 7 se calcula sola y se suma a la nota de la comunidad.</span>';
+  box.innerHTML='<span class="lbl">TU CALIFICACIÓN</span><div class="rbq">'+rows+'</div><div class="rbscale"><span>1 · Mediocre</span><span>5 · Excelente</span></div>'+(n?shown:'')+info+
+    ((n||k)?'<button type="button" class="link" id="clearMine">Borrar mi nota</button>':'');
+  box.querySelectorAll('.rbpts button').forEach(function(b){b.onclick=function(){
+    var cur=Object.assign({},state.rub[g.id]||{});cur[b.dataset.c]=Number(b.dataset.v);state.rub[g.id]=cur;lsSet('myRubric',state.rub);
+    var kk=0,tt=0;RB_CRIT.forEach(function(c){if(cur[c[0]]){kk++;tt+=cur[c[0]]}});
+    if(kk===4){var nn=rbNota(tt);var changed=state.mine[g.id]!==nn;state.mine[g.id]=nn;lsSet('myRatings',state.mine);
+      if(changed){sendVote(g.id,nn);toast('Tu nota: '+String(nn).replace('.',',')+' · '+NOTAS[nn])}}
+    renderMyRate(g);
   }});
-  var c=$('clearMine');if(c)c.onclick=function(){delete state.mine[g.id];lsSet('myRatings',state.mine);sendVote(g.id,0);renderMyRate(g)};
+  var c=$('clearMine');if(c)c.onclick=function(){delete state.mine[g.id];delete state.rub[g.id];lsSet('myRatings',state.mine);lsSet('myRubric',state.rub);sendVote(g.id,0);renderMyRate(g)};
 }
 function cov(src,label,t){
   return '<figure>'+(src?'<button type="button" data-zoom="'+esc(src)+'" aria-label="'+label+' de '+esc(t)+' (ampliar)"><div class="cover"><img src="'+esc(src)+'" alt="'+label+' de '+esc(t)+'"></div></button>':'<div class="cover"><span class="ph">SIN '+label.toUpperCase()+'</span></div>')+'<figcaption>'+label+'</figcaption></figure>';
