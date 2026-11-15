@@ -143,6 +143,11 @@ button,input,select{font:inherit;color:inherit}
 .rating .word{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
 .rating.none{background:var(--surface);box-shadow:inset 0 0 0 1.5px var(--line)}
 .rating.none .num{font-size:18px;color:var(--muted)}
+.rubric{width:100%;max-width:340px;margin-top:10px;padding-top:12px;border-top:1px dashed rgba(242,233,220,.35);display:grid;gap:7px}
+.rubric .rl{display:grid;grid-template-columns:96px 1fr 34px;align-items:center;gap:8px;font-size:13px;font-weight:700;text-align:left}
+.rubric .dots{display:flex;gap:4px}.rubric .dots i{flex:1;height:10px;border-radius:3px;background:rgba(242,233,220,.22)}.rubric .dots i.on{background:var(--gold)}
+.rubric .pts{text-align:right;font-variant-numeric:tabular-nums}
+.rubric .tot{font-family:var(--f-pixel);font-size:8px;letter-spacing:.06em;opacity:.85;margin-top:2px}
 .actions{display:flex;gap:10px;flex-wrap:wrap}
 .btn{border:1.5px solid rgba(232,177,58,.45);background:var(--surface);border-radius:10px;padding:10px 14px;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:6px}
 .btn[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--surface2)}
@@ -306,6 +311,9 @@ var $=function(id){return document.getElementById(id)};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
 function slug(id){return 'j-'+String(id).replace(/^game:/,'').replace(/[^A-Za-z0-9._~-]/g,'-')}
+var RUBRICA=[['graficos','Gráficos'],['jugabilidad','Jugabilidad'],['sonido','Sonido'],['diversion','Diversión']];
+function rubricHtml(g){var r=g.rubrica;if(!r)return '';var t=0,h='';RUBRICA.forEach(function(c){var v=Math.max(0,Math.min(5,Number(r[c[0]])||0));t+=v;var d='';for(var i=1;i<=5;i++)d+='<i'+(i<=v?' class="on"':'')+'></i>';h+='<div class="rl"><span>'+c[1]+'</span><span class="dots" aria-hidden="true">'+d+'</span><span class="pts">'+v+'/5</span></div>'});
+  return '<div class="rubric" aria-label="Rúbrica de evaluación">'+h+'<span class="tot">PUNTAJE '+t+' / 20 · ESCALA 60%</span></div>'}
 function stars(n){var s='';for(var i=1;i<=7;i++){s+= n>=i?'★':(n>=i-.5?'⯪':'☆')}return s}
 function toast(msg){var t=$('toast');t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(function(){t.hidden=true},2600)}
 
@@ -423,7 +431,7 @@ function open(id,push){
   $('boleta').innerHTML=
     '<header class="b-head"><span class="pix">BOLETÍN DE CALIFICACIÓN</span><h1 id="sheetTitle">'+esc(g.titulo)+'</h1><span class="line">'+esc([CONSOLE_LABEL[g.consola]||g.consola,g.anio,g.desarrolladora].filter(Boolean).join(' · '))+'</span></header>'+
     '<div class="covers">'+cov(g.portada,'Portada',g.titulo)+cov(g.contraportada,'Contraportada',g.titulo)+'</div>'+
-    (n?'<div class="rating"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="stars" aria-hidden="true">'+stars(n)+'</span><span class="num">'+n+' / 7</span><span class="word">'+esc(NOTAS[n]||'')+'</span></div>'
+    (n?'<div class="rating"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="stars" aria-hidden="true">'+stars(Math.round(n*2)/2)+'</span><span class="num">'+n+' / 7</span><span class="word">'+esc(NOTAS[Math.round(n*2)/2]||'')+'</span>'+rubricHtml(g)+'</div>'
       :'<div class="rating none"><span class="lbl">CALIFICACIÓN DEL PROFE L</span><span class="num">Próximamente en el canal</span></div>')+
     manualHtml(g,g.consola)+
     '<section class="myrate community" id="community" hidden></section>'+
